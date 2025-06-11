@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav-underline {
     position: absolute;
-    bottom: -2px;
+    bottom: 0px;
     left: 12px; /* Account for left padding */
     width: 0;
     height: 2px;
