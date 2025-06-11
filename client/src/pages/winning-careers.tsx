@@ -96,9 +96,8 @@ export default function WinningCareers() {
           <div className="text-center">
             <Link href="/testimonials">
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-[hsl(var(--dark-text))] text-[hsl(var(--dark-text))] hover:bg-[hsl(var(--dark-text))] hover:text-white transition-all duration-200"
+                className="coacha-button"
               >
                 See all testimonials
               </Button>

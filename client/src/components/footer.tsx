@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import coacheLogo from "@assets/Coacha Logo LATEST_1749609249362.png";
 
 export default function Footer() {
   return (
@@ -7,9 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Tagline */}
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-4">
-              Coacha
-            </div>
+            <img 
+              src={coacheLogo} 
+              alt="Coacha"
+              className="h-8 w-auto mb-4"
+            />
             <p className="text-[hsl(var(--medium-text))] mb-6 max-w-md">
               Unlock performance through leadership, culture & capability
             </p>

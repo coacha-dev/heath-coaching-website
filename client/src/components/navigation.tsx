@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import ContactDialog from "./contact-dialog";
+import coacheLogo from "@assets/Coacha Logo LATEST_1749609249362.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -25,9 +26,11 @@ export default function Navigation() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/">
-                <div className="text-2xl font-bold text-[hsl(var(--dark-text))] cursor-pointer">
-                  Coacha
-                </div>
+                <img 
+                  src={coacheLogo} 
+                  alt="Coacha"
+                  className="h-8 w-auto cursor-pointer"
+                />
               </Link>
             </div>
 

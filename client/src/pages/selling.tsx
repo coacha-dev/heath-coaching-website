@@ -45,7 +45,7 @@ export default function Selling() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Equip your sales team with a modern approach that prioritizes authentic value creation over traditional selling techniques.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Learn More
               </Button>
             </div>
@@ -57,7 +57,7 @@ export default function Selling() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Understand your sales team's natural selling styles, strengths, and development areas with our comprehensive assessment.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Learn More
               </Button>
             </div>
@@ -83,9 +83,8 @@ export default function Selling() {
           <div className="text-center">
             <Link href="/testimonials">
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-[hsl(var(--dark-text))] text-[hsl(var(--dark-text))] hover:bg-[hsl(var(--dark-text))] hover:text-white transition-all duration-200"
+                className="coacha-button"
               >
                 See all testimonials
               </Button>

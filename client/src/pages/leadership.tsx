@@ -45,7 +45,7 @@ export default function Leadership() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Develop balanced leadership skills across rational, emotional, and social domains.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Learn More
               </Button>
             </div>
@@ -57,7 +57,7 @@ export default function Leadership() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Gain insights into your leadership profile across three critical intelligence domains.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Learn More
               </Button>
             </div>
@@ -69,7 +69,7 @@ export default function Leadership() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Receive the latest research and insights to enhance your leadership effectiveness.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Subscribe
               </Button>
             </div>
@@ -95,9 +95,8 @@ export default function Leadership() {
           <div className="text-center">
             <Link href="/testimonials">
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-[hsl(var(--dark-text))] text-[hsl(var(--dark-text))] hover:bg-[hsl(var(--dark-text))] hover:text-white transition-all duration-200"
+                className="coacha-button"
               >
                 See all testimonials
               </Button>
