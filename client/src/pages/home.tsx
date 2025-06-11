@@ -87,10 +87,9 @@ export default function Home() {
     }
   ];
 
-  // Split testimonials into three rows
-  const row1Testimonials = testimonials.slice(0, 5);
-  const row2Testimonials = testimonials.slice(5, 10);
-  const row3Testimonials = testimonials.slice(10, 15);
+  // Split testimonials into two rows
+  const row1Testimonials = testimonials.slice(0, 8);
+  const row2Testimonials = testimonials.slice(8, 15);
 
   return (
     <>
@@ -175,13 +174,19 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Three Row Auto-Scrolling Layout */}
-          <div className="space-y-6">
+          {/* Two Row Auto-Scrolling Layout */}
+          <div className="space-y-8 relative">
+            {/* Left fade mask */}
+            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            
+            {/* Right fade mask */}
+            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
             {/* Row 1 - Left to Right */}
             <div className="testimonial-row-container">
               <div className="testimonial-row testimonial-row-lr">
                 {[...row1Testimonials, ...row1Testimonials].map((testimonial, index) => (
-                  <div key={`row1-${index}`} className="testimonial-card-auto bg-white rounded-lg shadow-md p-4 mx-3 flex-shrink-0">
+                  <div key={`row1-${index}`} className="testimonial-card-auto bg-[#faf8f5] rounded-lg border border-gray-200 shadow-sm p-5 mx-4 flex-shrink-0">
                     <blockquote className="text-sm text-[hsl(var(--dark-text))] mb-3 italic leading-relaxed">
                       "{testimonial.quote}"
                     </blockquote>
@@ -198,24 +203,7 @@ export default function Home() {
             <div className="testimonial-row-container">
               <div className="testimonial-row testimonial-row-rl">
                 {[...row2Testimonials, ...row2Testimonials].map((testimonial, index) => (
-                  <div key={`row2-${index}`} className="testimonial-card-auto bg-white rounded-lg shadow-md p-4 mx-3 flex-shrink-0">
-                    <blockquote className="text-sm text-[hsl(var(--dark-text))] mb-3 italic leading-relaxed">
-                      "{testimonial.quote}"
-                    </blockquote>
-                    <div>
-                      <p className="font-semibold text-[hsl(var(--dark-text))] text-sm">{testimonial.name}</p>
-                      <p className="text-[hsl(var(--medium-text))] text-xs">{testimonial.title}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Row 3 - Left to Right */}
-            <div className="testimonial-row-container">
-              <div className="testimonial-row testimonial-row-lr">
-                {[...row3Testimonials, ...row3Testimonials].map((testimonial, index) => (
-                  <div key={`row3-${index}`} className="testimonial-card-auto bg-white rounded-lg shadow-md p-4 mx-3 flex-shrink-0">
+                  <div key={`row2-${index}`} className="testimonial-card-auto bg-[#faf8f5] rounded-lg border border-gray-200 shadow-sm p-5 mx-4 flex-shrink-0">
                     <blockquote className="text-sm text-[hsl(var(--dark-text))] mb-3 italic leading-relaxed">
                       "{testimonial.quote}"
                     </blockquote>
