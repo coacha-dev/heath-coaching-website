@@ -172,10 +172,10 @@ export default function Testimonials() {
             <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-8">
               Coacha has worked with companies across the globe, including:
             </p>
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap justify-center gap-2 text-sm">
                 {companies.map((company, index) => (
-                  <span key={index} className="inline-block bg-white px-3 py-1 rounded text-[hsl(var(--dark-text))]">
+                  <span key={index} className="inline-block bg-white px-3 py-1 rounded shadow-md hover:shadow-lg transition-shadow duration-200 text-[hsl(var(--dark-text))]">
                     {company}
                   </span>
                 ))}
@@ -186,17 +186,17 @@ export default function Testimonials() {
       </section>
 
       {/* All Testimonials */}
-      <section className="pb-16 lg:pb-20">
+      <section className="pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--dark-text))] mb-4">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[hsl(var(--dark-text))] mb-4">
               See what our clients say about working with Coacha
             </h2>
           </div>
 
           <div className="space-y-6">
             {clientTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200">
                 <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-4 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
@@ -207,6 +207,21 @@ export default function Testimonials() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-[hsl(var(--dark-text))] mb-4">
+            Ready to join our clients?
+          </h3>
+          <p className="text-lg text-[hsl(var(--medium-text))] mb-8">
+            Contact us to discuss how Coacha can help your team develop the skills needed for success.
+          </p>
+          <button className="bg-[hsl(var(--dark-text))] text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200">
+            Contact Us Today
+          </button>
         </div>
       </section>
     </div>
