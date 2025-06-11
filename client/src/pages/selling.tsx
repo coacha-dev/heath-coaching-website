@@ -21,7 +21,7 @@ export default function Selling() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[hsl(var(--cream))] py-16 lg:py-24">
+      <section className="bg-[#faf8f5] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-6">
@@ -66,7 +66,7 @@ export default function Selling() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-[hsl(var(--light-beige))] py-16 lg:py-24">
+      <section className="bg-[#f6f2ed] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
