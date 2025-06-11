@@ -2,12 +2,6 @@ import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import ContactDialog from "./contact-dialog";
 import coacheLogo from "@assets/Coacha Logo LATEST_1749609249362.png";
 
@@ -15,6 +9,7 @@ export default function Navigation() {
   const [location] = useLocation();
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesHovered, setIsServicesHovered] = useState(false);
 
   const isActive = (path: string) => location === path;
 
@@ -36,16 +31,21 @@ export default function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
+              <div className="flex items-center space-x-8">
                 {/* Services Dropdown */}
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <button className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] px-3 py-2 text-sm font-medium flex items-center transition-colors duration-200">
-                      Services
-                      <ChevronDown className="ml-1 h-3 w-3" />
-                    </button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent className="w-96 p-6">
+                <div 
+                  className="relative group"
+                  onMouseEnter={() => setIsServicesHovered(true)}
+                  onMouseLeave={() => setIsServicesHovered(false)}
+                >
+                  <button className="nav-item relative px-3 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200 flex items-center">
+                    Services
+                    <ChevronDown className={`ml-1 h-3 w-3 transition-transform duration-200 ${isServicesHovered ? 'rotate-180' : ''}`} />
+                    <span className="nav-underline"></span>
+                  </button>
+                  
+                  {/* Dropdown Menu */}
+                  <div className={`absolute left-0 top-full mt-1 w-96 bg-white rounded-lg shadow-lg border border-gray-100 py-6 px-6 transition-all duration-200 ${isServicesHovered ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
                     <div className="grid grid-cols-1 gap-6">
                       {/* Winning Careers */}
                       <div className="border-l-4 border-[hsl(var(--coacha-blue))] pl-4">
@@ -53,21 +53,15 @@ export default function Navigation() {
                           Winning Careers
                         </h3>
                         <div className="space-y-1 text-sm">
-                          <DropdownMenuItem asChild>
-                            <Link href="/winning-careers" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              Winning Careers Workshop
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/winning-careers" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              Winning Careers Personality Assessment
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/winning-careers" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              CareerCoacha Newsletter
-                            </Link>
-                          </DropdownMenuItem>
+                          <Link href="/winning-careers" className="text-gray-600 hover:text-black block py-1">
+                            Winning Careers Workshop
+                          </Link>
+                          <Link href="/winning-careers" className="text-gray-600 hover:text-black block py-1">
+                            Winning Careers Personality Assessment
+                          </Link>
+                          <Link href="/winning-careers" className="text-gray-600 hover:text-black block py-1">
+                            CareerCoacha Newsletter
+                          </Link>
                         </div>
                       </div>
 
@@ -77,21 +71,15 @@ export default function Navigation() {
                           Leadership
                         </h3>
                         <div className="space-y-1 text-sm">
-                          <DropdownMenuItem asChild>
-                            <Link href="/leadership" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              Triple Intelligence Leadership Workshop
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/leadership" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              Triple Intelligence Leadership Assessment
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/leadership" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              LeaderCoacha Newsletter
-                            </Link>
-                          </DropdownMenuItem>
+                          <Link href="/leadership" className="text-gray-600 hover:text-black block py-1">
+                            Triple Intelligence Leadership Workshop
+                          </Link>
+                          <Link href="/leadership" className="text-gray-600 hover:text-black block py-1">
+                            Triple Intelligence Leadership Assessment
+                          </Link>
+                          <Link href="/leadership" className="text-gray-600 hover:text-black block py-1">
+                            LeaderCoacha Newsletter
+                          </Link>
                         </div>
                       </div>
 
@@ -101,47 +89,46 @@ export default function Navigation() {
                           Selling
                         </h3>
                         <div className="space-y-1 text-sm">
-                          <DropdownMenuItem asChild>
-                            <Link href="/selling" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              Value-Centred Selling Workshop
-                            </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                            <Link href="/selling" className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] block">
-                              Value-Centred Selling Assessment
-                            </Link>
-                          </DropdownMenuItem>
+                          <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
+                            Value-Centred Selling Workshop
+                          </Link>
+                          <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
+                            Value-Centred Selling Assessment
+                          </Link>
                         </div>
                       </div>
                     </div>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+                  </div>
+                </div>
 
                 <Link href="/testimonials">
-                  <span className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  <span className={`nav-item relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                     isActive("/testimonials")
-                      ? "text-[hsl(var(--dark-text))]"
-                      : "text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))]"
+                      ? "text-black"
+                      : "text-gray-700 hover:text-black"
                   }`}>
                     Testimonials
+                    <span className="nav-underline"></span>
                   </span>
                 </Link>
 
                 <Link href="/team">
-                  <span className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  <span className={`nav-item relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                     isActive("/team")
-                      ? "text-[hsl(var(--dark-text))]"
-                      : "text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))]"
+                      ? "text-black"
+                      : "text-gray-700 hover:text-black"
                   }`}>
                     Our Team
+                    <span className="nav-underline"></span>
                   </span>
                 </Link>
 
                 <a
                   href="#"
-                  className="text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="nav-item relative text-gray-700 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   One-to-One Coaching
+                  <span className="nav-underline"></span>
                 </a>
               </div>
             </div>
@@ -173,16 +160,16 @@ export default function Navigation() {
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100">
                 <Link href="/testimonials">
-                  <span className="block px-3 py-2 text-sm font-medium text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))]">
+                  <span className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
                     Testimonials
                   </span>
                 </Link>
                 <Link href="/team">
-                  <span className="block px-3 py-2 text-sm font-medium text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))]">
+                  <span className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
                     Our Team
                   </span>
                 </Link>
-                <a href="#" className="block px-3 py-2 text-sm font-medium text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))]">
+                <a href="#" className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
                   One-to-One Coaching
                 </a>
                 <Button

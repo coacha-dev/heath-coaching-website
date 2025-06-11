@@ -105,6 +105,26 @@ h1, h2, h3, h4, h5, h6 {
     @apply bg-transparent text-black border-black;
   }
 
+  /* Navigation underline animations */
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-underline {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .nav-item:hover .nav-underline {
+    width: 100%;
+  }
+
   .service-card:hover {
     transform: translateY(-4px);
     transition: all 0.3s ease;
