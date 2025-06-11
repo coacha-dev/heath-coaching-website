@@ -12,41 +12,151 @@ export default function Testimonials() {
     "NAB", "Nissan", "Nomura", "Orbis", "Platinum Asset Management"
   ];
 
-  const featuredTestimonials = [
+  const clientTestimonials = [
     {
       quote: "I am happy to highly recommend Luke as an Executive Coach, as Luke has a flair for the psychology of corporations as well as adaptive style, to suit many leaders' individual needs.",
       name: "Alva Devoy",
-      title: "Managing Director",
-      company: "Fidelity International"
+      title: "Managing Director, Fidelity International"
     },
     {
-      quote: "Luke has been a tremendous help in my career - he is a very good listener and his advice is always sensible and to the point.",
+      quote: "Luke has been a tremendous help in my career. He is a very good listener and his advice is always sensible and to the point. He has steered me to play to my strengths and has helped me improve my weaknesses. His insight into how to deal with difficult situations has proven to be unparalleled. I always come away from a discussion with Luke feeling like I have improved myself.",
       name: "Nicholas Scarf",
-      title: "Managing Director",
-      company: "Newedge Singapore"
+      title: "Managing Director and Country Head, Newedge Singapore"
     },
     {
-      quote: "GoGet Carshare would be nowhere without the support of Luke Heath, especially during a particularly challenging period in our company's development.",
+      quote: "GoGet Carshare would be nowhere without the support of Luke Heath. A few years ago, during a particularly challenging period, Luke convinced me to stick at it and continue the business. This considered and dispassionate advice from someone who has experienced similar challenges was the difference between success and failure for us. Thanks again Luke!",
       name: "Nic Lowe",
-      title: "Founder",
-      company: "GoGet Carshare"
+      title: "Founder, GoGet Carshare"
     },
     {
-      quote: "A considerate listener and mentor, always available to provide guidance and support when needed most.",
+      quote: "A considered intellectual, patient listener and passionate coach and mentor. Always generous with time, ideas and positive energy, and uncompromising in pursuit of excellent outcomes. I count myself privileged to benefit from Luke's wisdom and experience in shaping my career.",
       name: "Lisa Boyd",
-      title: "Fund Operations"
+      title: "Fund Operations Senior Manager, Janus Henderson"
     },
     {
-      quote: "Luke's coaching methodology is both practical and transformative. His insights have been invaluable to our leadership team.",
-      name: "Marcus Thompson",
-      title: "CEO",
-      company: "Innovation Partners"
+      quote: "Luke is a rare breed, whippet smart, full of empathy and insight. He understands the complexities within organisations and their inextricable connection to the people that lead them. Luke has provided me with an understanding of my own skills and strengths and the ability to understand others. He is an incredibly talented coach.",
+      name: "Brooke Lloyd",
+      title: "Director, Cox Architecture"
     },
     {
-      quote: "The leadership development program exceeded our expectations. Our managers are now more confident and effective leaders.",
-      name: "Sarah Williams",
-      title: "Head of People & Culture",
-      company: "Tech Dynamics"
+      quote: "Very few, if any coaches have the intellect and conceptual understanding (of people, business and overall working environments) that Luke Heath has.",
+      name: "Daniel Wise",
+      title: "Global Head of Property, Orica"
+    },
+    {
+      quote: "I arranged for Luke to host a cross divisional coaching session to motivate a group of 50 company employees via VC across 3 locations. This session was a phenomenal success due to Luke's clear and strategic thinking on converting the brief. The session showcased Luke's unique ability to listen intently and engage an audience across a diverse range of personalities, roles and ranks.",
+      name: "Chelsea Wise",
+      title: "Director, Private Banking, Credit Suisse"
+    },
+    {
+      quote: "Luke was knowledgeable, engaging, and quick to understand our business. Possessing an exceptional business acumen and an in-depth knowledge of human psychology, Luke was able to offer insightful and innovative ideas to create deeper client relationships, expand our referral networks and engage new prospective clients. It was time well spent and I would highly recommend Luke for those looking to grow their business.",
+      name: "Scott Spain",
+      title: "Director, Private Wealth Management, JB Were"
+    },
+    {
+      quote: "Luke facilitated a few short, sharp sessions over a couple week period which helped us get clear on what our fellow senior leaders in the business were doing well along with areas of improvement for each to work on. What we didn't bargain for thought was the new level of respect and appreciation we all gained for each other as a result of his process. We have grown professionally and are now communicating with each other in a way that we previously didn't know was possible.",
+      name: "Drew Mansur",
+      title: "Co-Founder, TileCloud"
+    },
+    {
+      quote: "Luke did a superb job facilitating our strategy retreat and guiding a consensus outcome. There is no way we would have had the success we did without his advice and skill. We highly recommended Luke's services.",
+      name: "Chris Millman and Ian Smith",
+      title: "Director & Chair; Director & Managing Partner, Cox Architecture"
+    },
+    {
+      quote: "I have had the pleasure of working with Luke Heath for the past 12 months. Since our first session I have learnt about myself and grown incredibly as an adviser. Luke has a unique ability of being able to guide and subtly encourage me to achieve far beyond my expectations. A proven performer with enormous insight to business, I would and do recommend his services to those who wish to succeed.",
+      name: "Hamish Church",
+      title: "Partner, Crestone Wealth Management"
+    },
+    {
+      quote: "Luke Heath is a most professional executive coach on both national and international levels. He has an outstanding intellect, emotional intelligence, and well-honed commercial acumen. He has provided my clients the highest level of coaching and he is the 'coaches' coach'. I seriously recommend him for his ability to deliver unsurpassed value time and time again to executives and their organisations.",
+      name: "Nancy Kazdan",
+      title: "CEO, Kazdan Group"
+    },
+    {
+      quote: "Luke Heath has been a trusted adviser to me and my business interests for fifteen years. He has the great ability to quickly get to the heart of an issue.",
+      name: "Ajit Wijesinghe",
+      title: "Entrepreneur"
+    },
+    {
+      quote: "At a critical point in my career, Luke Heath helped me to move on to the next level. His professional expertise and individualised approach were instrumental in getting me to where I am in a highly competitive field of my profession.",
+      name: "Rex Chan",
+      title: "Urologist"
+    },
+    {
+      quote: "I have over twenty years financial markets' experience and have completed many sales and management courses. The best aspects of all those courses barely match the quality and insight that Luke Heath provides.",
+      name: "Andrew Hardman",
+      title: "Director, Corporate Sales, Westpac"
+    },
+    {
+      quote: "Luke Heath has been a valuable resource in identifying core developmental issues and personal growth opportunities. His willingness to listen and ability to clearly dissect an issue helped me develop better working relationships, increased productivity, and retain my focus on both firm and personal goals.",
+      name: "Beau Dixon",
+      title: "Investment Banker, Investec"
+    },
+    {
+      quote: "Luke is my favourite person in the market to speak to, he is highly intelligent yet accessible and a genuine listener, very rare qualities. I've been fortunate enough to have Luke's input on several career decisions and I can honestly say that his logical processes and attention to detail have been invaluable.",
+      name: "Rhett Dinsdale",
+      title: "Proprietary Trader, Credit Suisse"
+    },
+    {
+      quote: "Luke Heath has advised me in senior banking roles across India, Indonesia, and Australia for 20 years. He is at the forefront of critical thinking across psychology and business and has the rare ability to translate theoretical knowledge to practical solutions for complex problems.",
+      name: "Nicholas Evans",
+      title: "Director, Private Wealth Management, JB Were"
+    },
+    {
+      quote: "I have called on Luke over the years for career advice, mentoring and coaching. His straight-forward demeanour, coupled with his vast industry knowledge, has provided me much needed clarity and direction. He will remain a confidant to me throughout my career and I hold him in extremely high regard.",
+      name: "Al Fullerton",
+      title: "Venture Capitalist"
+    },
+    {
+      quote: "Luke is the rock star of career coaches.",
+      name: "Adam De Michiel",
+      title: "Listed Derivatives Sales"
+    },
+    {
+      quote: "Luke has coached me in an executive capacity over a period of 6 years. I have found Luke to be dynamic, pragmatic, empathetic and professional. I highly recommend Luke for anyone wishing to further their coaching skill set, whilst also getting the added benefit of personal growth.",
+      name: "Justin Williams",
+      title: "Head of Trader Development, Genesis Trading"
+    },
+    {
+      quote: "Luke provided outplacement coaching to 35 of our people from Managing Directors to Junior Accountants. Feedback on Luke is consistently excellent.",
+      name: "Diana Lollato",
+      title: "Managing Director, Lloyds International"
+    },
+    {
+      quote: "I have had the pleasure of engaging with Luke personally and professionally for more than 30 years. I don't think there has ever been a meeting with Luke where I have not learned something useful. An enduring relationship I value extremely highly.",
+      name: "Toby Lawson",
+      title: "Chief Country Officer and CEO, Societe Generale India"
+    },
+    {
+      quote: "Luke has provided me with invaluable advice which has not only helped me to succeed but has also improved my health, well-being, and overall happiness. He is exceptionally professional and caring by nature.",
+      name: "Joe Jin",
+      title: "Vice President, PIMCO"
+    },
+    {
+      quote: "Luke has the insight to steer you through the complex and the trivial. He quickly focuses you on tangible realisable goals, whilst assisting you to appreciate the truly insurmountable.",
+      name: "Peter Monford",
+      title: "Manager, Australian Tax Office"
+    },
+    {
+      quote: "Luke Heath's coaching expertise is unparalleled. His strategic guidance and deep understanding of both business and psychology fronts have been paramount in my career advancement. I highly recommend Luke for anyone seeking to excel in leadership roles.",
+      name: "Danail Stanev",
+      title: "Chief Risk Officer, Koa Capital"
+    },
+    {
+      quote: "Few people approach their work with the ethics, professionalism, passion, and dedication that Luke did with me. I couldn't have asked for more.",
+      name: "Antony Selby",
+      title: "Financial Planner"
+    },
+    {
+      quote: "Luke's insight, strategic advice and tactical direction was critical in preparing me to navigate a challenging selection process. What I found even more valuable was his ability to incrementally increase my confidence in the value of my experience, performance and decision-making.",
+      name: "William Brown",
+      title: "CFO, RedR"
+    },
+    {
+      quote: "I found Luke Heath extremely discrete and professional to deal with, while maintaining genuine concern for the people that he was supporting. The outplacement reviews were all extremely positive both for Luke and also for GTS in providing this service.",
+      name: "Murray Chatfield",
+      title: "COO, GTS (Goldman Sachs JBWere fund)"
     }
   ];
 
@@ -76,38 +186,26 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Featured Testimonial */}
-      <section className="bg-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-[hsl(var(--dark-text))] mb-8">
-              Featured Testimonial
-            </h2>
-            <div className="bg-[hsl(var(--light-beige))] rounded-lg p-8">
-              <blockquote className="text-xl md:text-2xl text-[hsl(var(--dark-text))] italic mb-6">
-                "I am happy to highly recommend Luke as an Executive Coach, as Luke has a flair for the psychology of corporations as well as adaptive style, to suit many leaders' individual needs."
-              </blockquote>
-              <div className="text-center">
-                <p className="font-semibold text-[hsl(var(--dark-text))] text-lg">Alva Devoy</p>
-                <p className="text-[hsl(var(--medium-text))]">Managing Director, Fidelity International</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* All Testimonials */}
-      <section className="bg-[#f6f2ed] py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-16 lg:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--dark-text))] mb-4">
               See what our clients say about working with Coacha
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredTestimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} />
+          <div className="space-y-8">
+            {clientTestimonials.map((testimonial, index) => (
+              <div key={index} className="bg-[#f6f2ed] rounded-lg p-8">
+                <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-6 leading-relaxed">
+                  "{testimonial.quote}"
+                </blockquote>
+                <div>
+                  <p className="font-semibold text-[hsl(var(--dark-text))] text-lg">{testimonial.name}</p>
+                  <p className="text-[hsl(var(--medium-text))]">{testimonial.title}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
