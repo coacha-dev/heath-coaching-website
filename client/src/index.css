@@ -137,28 +137,31 @@ h1, h2, h3, h4, h5, h6 {
 
   .logo-scroll-track {
     display: flex;
-    animation: scroll 40s linear infinite;
-    width: calc(200% + 32px); /* Double width for seamless loop */
+    animation: scroll 60s linear infinite;
+    width: 200%;
+    will-change: transform;
+  }
+
+  .logo-set {
+    display: flex;
+    width: 50%;
+    flex-shrink: 0;
   }
 
   .logo-item {
     flex: 0 0 auto;
-    margin-right: 64px;
+    margin-right: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
+    min-width: 120px;
   }
 
   .logo-image {
     max-height: 40px;
     max-width: 120px;
     object-fit: contain;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-  }
-
-  .logo-image:hover {
     opacity: 1;
   }
 

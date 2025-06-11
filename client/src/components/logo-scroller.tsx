@@ -58,25 +58,29 @@ export default function LogoScroller() {
           <div className="logo-scroll-container">
             <div className="logo-scroll-track">
               {/* First set of logos */}
-              {logos.map((logo, index) => (
-                <div key={`first-${index}`} className="logo-item">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="logo-image"
-                  />
-                </div>
-              ))}
+              <div className="logo-set">
+                {logos.map((logo, index) => (
+                  <div key={`first-${index}`} className="logo-item">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="logo-image"
+                    />
+                  </div>
+                ))}
+              </div>
               {/* Duplicate set for seamless loop */}
-              {logos.map((logo, index) => (
-                <div key={`second-${index}`} className="logo-item">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="logo-image"
-                  />
-                </div>
-              ))}
+              <div className="logo-set">
+                {logos.map((logo, index) => (
+                  <div key={`second-${index}`} className="logo-item">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="logo-image"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
