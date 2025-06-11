@@ -108,21 +108,21 @@ h1, h2, h3, h4, h5, h6 {
   /* Navigation underline animations */
   .nav-item {
     position: relative;
+    display: inline-block;
   }
 
   .nav-underline {
     position: absolute;
     bottom: -2px;
-    left: 50%;
+    left: 12px; /* Account for left padding */
     width: 0;
     height: 2px;
     background-color: black;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+    transition: width 0.3s ease;
   }
 
   .nav-item:hover .nav-underline {
-    width: 100%;
+    width: calc(100% - 24px); /* Account for both left and right padding */
   }
 
   .service-card:hover {
