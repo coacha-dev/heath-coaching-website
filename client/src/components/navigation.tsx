@@ -30,17 +30,17 @@ export default function Navigation() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:block">
-              <div className="flex items-center space-x-6">
+            <div className="hidden md:block flex-1">
+              <div className="flex items-center justify-center space-x-8">
                 {/* Services Dropdown */}
                 <div 
-                  className="relative group"
+                  className="relative"
                   onMouseEnter={() => setIsServicesHovered(true)}
                   onMouseLeave={() => setIsServicesHovered(false)}
                 >
-                  <button className="nav-item relative px-3 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200 inline-flex items-center whitespace-nowrap min-w-max">
-                    <span>Services</span>
-                    <ChevronDown className={`ml-1 h-3 w-3 transition-transform duration-200 ${isServicesHovered ? 'rotate-180' : ''}`} />
+                  <button className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200 flex items-center gap-1">
+                    Services
+                    <ChevronDown className={`h-3 w-3 transition-transform duration-200 ${isServicesHovered ? 'rotate-180' : ''}`} />
                     <span className="nav-underline"></span>
                   </button>
                   
@@ -102,22 +102,14 @@ export default function Navigation() {
                 </div>
 
                 <Link href="/testimonials">
-                  <span className={`nav-item relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    isActive("/testimonials")
-                      ? "text-black"
-                      : "text-gray-700 hover:text-black"
-                  }`}>
+                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
                     Testimonials
                     <span className="nav-underline"></span>
                   </span>
                 </Link>
 
                 <Link href="/team">
-                  <span className={`nav-item relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    isActive("/team")
-                      ? "text-black"
-                      : "text-gray-700 hover:text-black"
-                  }`}>
+                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
                     Our Team
                     <span className="nav-underline"></span>
                   </span>
@@ -125,7 +117,7 @@ export default function Navigation() {
 
                 <a
                   href="#"
-                  className="nav-item relative text-gray-700 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="nav-item relative text-black px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   One-to-One Coaching
                   <span className="nav-underline"></span>
