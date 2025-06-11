@@ -69,26 +69,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Section */}
+      {/* Logo Scroller Section */}
       <section className="bg-[#faf8f5] py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <p className="text-sm font-medium text-[hsl(var(--light-text))] tracking-wider uppercase">
-              Trusted by Leading Companies
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
-            <div className="text-2xl font-bold text-gray-400">Bloomberg</div>
-            <div className="text-2xl font-bold text-gray-400">Goldman Sachs</div>
-            <div className="text-2xl font-bold text-gray-400">Nissan</div>
-            <div className="text-2xl font-bold text-gray-400">Deloitte</div>
-            <div className="text-2xl font-bold text-gray-400">Platinum</div>
-            <div className="text-2xl font-bold text-gray-400">J.P.Morgan</div>
-            <div className="text-2xl font-bold text-gray-400">COX</div>
-            <div className="text-2xl font-bold text-gray-400">Citi</div>
-            <div className="text-2xl font-bold text-gray-400">ANZ</div>
-          </div>
-        </div>
+        <LogoScroller />
       </section>
 
       {/* Services Section */}
@@ -125,9 +108,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Logo Scroller Section */}
-      <LogoScroller />
 
       {/* Testimonials Section */}
       <section className="bg-white py-16 lg:py-24">
