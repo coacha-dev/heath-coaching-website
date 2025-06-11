@@ -172,10 +172,10 @@ export default function Testimonials() {
             <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-8">
               Coacha has worked with companies across the globe, including:
             </p>
-            <div className="max-w-5xl mx-auto">
-              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-[hsl(var(--dark-text))]">
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-2 text-sm">
                 {companies.map((company, index) => (
-                  <span key={index} className="inline-block">
+                  <span key={index} className="inline-block bg-white px-3 py-1 rounded text-[hsl(var(--dark-text))]">
                     {company}
                   </span>
                 ))}
@@ -196,7 +196,7 @@ export default function Testimonials() {
 
           <div className="space-y-6">
             {clientTestimonials.map((testimonial, index) => (
-              <div key={index} className="p-6">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
                 <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-4 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
