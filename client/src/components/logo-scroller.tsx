@@ -77,16 +77,6 @@ export default function LogoScroller() {
                   />
                 </div>
               ))}
-              {/* Third set for extra smooth loop */}
-              {logos.map((logo, index) => (
-                <div key={`third-${index}`} className="logo-item">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="logo-image"
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </div>
