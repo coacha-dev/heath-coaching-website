@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222.2, 84%, 4.9%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222.2, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222.2, 84%, 4.9%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222.2, 84%, 4.9%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222.2, 84%, 4.9%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222.2, 84%, 4.9%);
+  --radius: 0.5rem;
+  
+  /* Coacha Brand Colors */
+  --coacha-blue: hsl(207, 100%, 46%);
+  --coacha-purple: hsl(270, 55%, 40%);
+  --coacha-red: hsl(350, 87%, 43%);
+  --cream: hsl(45, 63%, 97%);
+  --light-beige: hsl(35, 44%, 96%);
+  --dark-text: hsl(215, 28%, 17%);
+  --medium-text: hsl(215, 16%, 47%);
+  --light-text: hsl(215, 20%, 65%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', 'Public Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Axiforma', serif;
+  }
+}
+
+@layer utilities {
+  .colored-underline-blue {
+    background: linear-gradient(to right, hsl(207, 100%, 46%) 0%, hsl(207, 100%, 46%) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+  
+  .colored-underline-purple {
+    background: linear-gradient(to right, hsl(270, 55%, 40%) 0%, hsl(270, 55%, 40%) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+  
+  .colored-underline-red {
+    background: linear-gradient(to right, hsl(350, 87%, 43%) 0%, hsl(350, 87%, 43%) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .testimonial-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
