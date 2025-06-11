@@ -174,4 +174,56 @@ h1, h2, h3, h4, h5, h6 {
   .testimonial-scroll::-webkit-scrollbar {
     display: none;
   }
+
+  /* Auto-scrolling testimonials */
+  .testimonial-row-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .testimonial-row {
+    display: flex;
+    width: fit-content;
+    will-change: transform;
+  }
+
+  .testimonial-row-lr {
+    animation: scrollLeftToRight 120s linear infinite;
+  }
+
+  .testimonial-row-rl {
+    animation: scrollRightToLeft 120s linear infinite;
+  }
+
+  .testimonial-row:hover {
+    animation-play-state: paused;
+  }
+
+  .testimonial-card-auto {
+    min-height: 140px;
+    width: auto;
+    max-width: 320px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @keyframes scrollLeftToRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
