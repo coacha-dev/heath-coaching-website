@@ -161,23 +161,22 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#faf8f5]">
       {/* Hero Section */}
-      <section className="bg-[#faf8f5] py-16 lg:py-24">
+      <section className="py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-6">
               Client Testimonials
             </h1>
             <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-8">
               Coacha has worked with companies across the globe, including:
             </p>
-            <div className="max-w-4xl mx-auto">
-              <div className="flex flex-wrap justify-center gap-2 text-sm text-[hsl(var(--medium-text))]">
+            <div className="max-w-5xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-[hsl(var(--dark-text))]">
                 {companies.map((company, index) => (
                   <span key={index} className="inline-block">
                     {company}
-                    {index < companies.length - 1 && ","}
                   </span>
                 ))}
               </div>
@@ -187,23 +186,23 @@ export default function Testimonials() {
       </section>
 
       {/* All Testimonials */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="pb-16 lg:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[hsl(var(--dark-text))] mb-4">
               See what our clients say about working with Coacha
             </h2>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6">
             {clientTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-[#f6f2ed] rounded-lg p-8">
-                <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-6 leading-relaxed">
+              <div key={index} className="p-6">
+                <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-4 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
                 <div>
-                  <p className="font-semibold text-[hsl(var(--dark-text))] text-lg">{testimonial.name}</p>
-                  <p className="text-[hsl(var(--medium-text))]">{testimonial.title}</p>
+                  <p className="font-semibold text-[hsl(var(--dark-text))] text-base">{testimonial.name}</p>
+                  <p className="text-[hsl(var(--medium-text))] text-sm">{testimonial.title}</p>
                 </div>
               </div>
             ))}
