@@ -17,7 +17,7 @@ export default function Navigation() {
     <>
       <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-16 min-w-0">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/">
@@ -31,15 +31,15 @@ export default function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:block">
-              <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-6">
                 {/* Services Dropdown */}
                 <div 
                   className="relative group"
                   onMouseEnter={() => setIsServicesHovered(true)}
                   onMouseLeave={() => setIsServicesHovered(false)}
                 >
-                  <button className="nav-item relative px-3 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200 flex items-center whitespace-nowrap">
-                    Services
+                  <button className="nav-item relative px-3 py-2 text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200 inline-flex items-center whitespace-nowrap min-w-max">
+                    <span>Services</span>
                     <ChevronDown className={`ml-1 h-3 w-3 transition-transform duration-200 ${isServicesHovered ? 'rotate-180' : ''}`} />
                     <span className="nav-underline"></span>
                   </button>
