@@ -147,7 +147,7 @@ export default function Navigation() {
             <div className="hidden md:block">
               <Button
                 onClick={() => setIsContactOpen(true)}
-                className="bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800 transition-colors duration-200"
+                className="coacha-button"
               >
                 Contact Us
               </Button>
@@ -184,7 +184,7 @@ export default function Navigation() {
                 </a>
                 <Button
                   onClick={() => setIsContactOpen(true)}
-                  className="w-full mt-4 bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800"
+                  className="w-full mt-4 coacha-button"
                 >
                   Contact Us
                 </Button>

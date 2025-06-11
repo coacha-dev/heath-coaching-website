@@ -48,7 +48,7 @@ export default function ServiceCard({ title, description, theme, href }: Service
         </p>
       </div>
       <Link href={href}>
-        <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800 transition-colors duration-200 relative overflow-hidden">
+        <Button className="w-full coacha-button relative overflow-hidden">
           <span className="relative z-10">Learn More</span>
           <div 
             className="absolute bottom-0 left-0 w-full h-1"

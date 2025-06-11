@@ -51,16 +51,15 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-[hsl(var(--dark-text))] text-[hsl(var(--dark-text))] hover:bg-[hsl(var(--dark-text))] hover:text-white transition-all duration-200"
+                className="coacha-button"
               >
                 Explore Services
               </Button>
               <Button
                 size="lg"
                 onClick={() => setIsContactOpen(true)}
-                className="bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800 transition-colors duration-200"
+                className="coacha-button"
               >
                 Contact Us
               </Button>
@@ -154,9 +153,8 @@ export default function Home() {
           <div className="text-center">
             <Link href="/testimonials">
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-[hsl(var(--dark-text))] text-[hsl(var(--dark-text))] hover:bg-[hsl(var(--dark-text))] hover:text-white transition-all duration-200"
+                className="coacha-button"
               >
                 See all testimonials
               </Button>

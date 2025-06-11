@@ -46,7 +46,7 @@ export default function WinningCareers() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Empower your employees to take control of their career trajectory and maximize their impact.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Learn More
               </Button>
             </div>
@@ -58,7 +58,7 @@ export default function WinningCareers() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Provide valuable insights into your team's natural tendencies, strengths, and work preferences.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Learn More
               </Button>
             </div>
@@ -70,7 +70,7 @@ export default function WinningCareers() {
               <p className="text-[hsl(var(--medium-text))] mb-6">
                 Stay ahead of the curve with our curated insights on career development and professional growth.
               </p>
-              <Button className="w-full bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
+              <Button className="w-full coacha-button">
                 Subscribe
               </Button>
             </div>
