@@ -10,16 +10,13 @@ interface ServiceCardProps {
 
 const themeConfig = {
   blue: {
-    color: "#1e40af",
-    borderColor: "border-blue-600",
+    color: "#0081ea",
   },
   purple: {
-    color: "#7c3aed", 
-    borderColor: "border-purple-600",
+    color: "#7030a0",
   },
   red: {
-    color: "#dc2626",
-    borderColor: "border-red-600",
+    color: "#dc0725",
   },
 };
 
@@ -35,12 +32,8 @@ export default function ServiceCard({ title, description, theme, href }: Service
       />
       
       <div className="mb-6 pt-4">
-        <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3 relative">
+        <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3">
           {title}
-          <div 
-            className="absolute bottom-0 left-0 w-full h-0.5 mt-1"
-            style={{ backgroundColor: config.color }}
-          />
         </h3>
         <p className="text-[hsl(var(--medium-text))] mb-6">
           {description}
