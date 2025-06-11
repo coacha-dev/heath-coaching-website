@@ -67,9 +67,19 @@ export default function LogoScroller() {
                   />
                 </div>
               ))}
-              {/* Duplicate set for seamless loop */}
+              {/* Second set for seamless loop */}
               {logos.map((logo, index) => (
                 <div key={`second-${index}`} className="logo-item">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="logo-image"
+                  />
+                </div>
+              ))}
+              {/* Third set for extra smooth loop */}
+              {logos.map((logo, index) => (
+                <div key={`third-${index}`} className="logo-item">
                   <img
                     src={logo.src}
                     alt={logo.alt}

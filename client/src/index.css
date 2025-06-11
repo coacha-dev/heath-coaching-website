@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   .logo-scroll-track {
     display: flex;
     animation: scroll 45s linear infinite;
-    width: calc(200% + 160px);
+    width: 300%;
     will-change: transform;
   }
 
@@ -153,8 +153,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .logo-image {
-    max-height: 40px;
-    max-width: 120px;
+    max-height: 48px;
+    max-width: 144px;
     object-fit: contain;
     opacity: 1;
   }
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-33.333%);
     }
   }
 
