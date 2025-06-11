@@ -10,16 +10,16 @@ interface ServiceCardProps {
 
 const themeConfig = {
   blue: {
-    color: "hsl(var(--coacha-blue))",
-    borderColor: "border-[hsl(var(--coacha-blue))]",
+    color: "#1e40af",
+    borderColor: "border-blue-600",
   },
   purple: {
-    color: "hsl(var(--coacha-purple))",
-    borderColor: "border-[hsl(var(--coacha-purple))]",
+    color: "#7c3aed", 
+    borderColor: "border-purple-600",
   },
   red: {
-    color: "hsl(var(--coacha-red))",
-    borderColor: "border-[hsl(var(--coacha-red))]",
+    color: "#dc2626",
+    borderColor: "border-red-600",
   },
 };
 
@@ -27,12 +27,18 @@ export default function ServiceCard({ title, description, theme, href }: Service
   const config = themeConfig[theme];
 
   return (
-    <div className={`service-card bg-white rounded-lg shadow-lg border-t-4 ${config.borderColor} p-8 hover:shadow-xl transition-all duration-300`}>
-      <div className="mb-6">
+    <div className="service-card bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 relative">
+      {/* Colored top border */}
+      <div 
+        className="absolute top-0 left-0 w-full h-1 rounded-t-lg"
+        style={{ backgroundColor: config.color }}
+      />
+      
+      <div className="mb-6 pt-4">
         <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3 relative">
           {title}
           <div 
-            className="absolute bottom-0 left-0 w-full h-0.5"
+            className="absolute bottom-0 left-0 w-full h-0.5 mt-1"
             style={{ backgroundColor: config.color }}
           />
         </h3>
