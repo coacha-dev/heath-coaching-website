@@ -129,6 +129,53 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
   }
 
+  /* Logo Scroller Styles */
+  .logo-scroll-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .logo-scroll-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(200% + 32px); /* Double width for seamless loop */
+  }
+
+  .logo-item {
+    flex: 0 0 auto;
+    margin-right: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+
+  .logo-image {
+    max-height: 40px;
+    max-width: 120px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(60%);
+    transition: all 0.3s ease;
+  }
+
+  .logo-image:hover {
+    filter: grayscale(0%) opacity(100%);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Pause animation on hover */
+  .logo-scroll-container:hover .logo-scroll-track {
+    animation-play-state: paused;
+  }
+
   .testimonial-scroll {
     scrollbar-width: none;
     -ms-overflow-style: none;

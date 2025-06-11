@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/service-card";
 import TestimonialCard from "@/components/testimonial-card";
+import LogoScroller from "@/components/logo-scroller";
 import { Link } from "wouter";
 import { useState } from "react";
 import ContactDialog from "@/components/contact-dialog";
@@ -124,6 +125,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Logo Scroller Section */}
+      <LogoScroller />
 
       {/* Testimonials Section */}
       <section className="bg-white py-16 lg:py-24">
