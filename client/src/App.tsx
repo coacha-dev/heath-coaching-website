@@ -11,6 +11,7 @@ import Leadership from "@/pages/leadership";
 import Selling from "@/pages/selling";
 import Team from "@/pages/team";
 import Testimonials from "@/pages/testimonials";
+import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/selling" component={Selling} />
       <Route path="/team" component={Team} />
       <Route path="/testimonials" component={Testimonials} />
+      <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
   );
