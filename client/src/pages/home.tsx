@@ -95,8 +95,8 @@ export default function Home() {
     <>
       {/* Hero and Logo Scroller - Full Height Above Fold */}
       <section className="bg-[#faf8f5] min-h-screen flex flex-col">
-        {/* Main Hero Content - Centered vertically with proper spacing from header */}
-        <div className="flex-1 flex items-center justify-center pt-24">
+        {/* Main Hero Content - Centered vertically with large spacing from header */}
+        <div className="flex-1 flex items-center justify-center pt-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
@@ -113,7 +113,7 @@ export default function Home() {
                       behavior: 'smooth' 
                     });
                   }}
-                  className="inline-flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200"
+                  className="inline-flex items-baseline text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200"
                 >
                   <span>Explore our services</span>
                   <div className="ml-1 animate-bounce">
