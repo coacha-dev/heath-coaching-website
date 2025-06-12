@@ -138,7 +138,7 @@ export default function Home() {
         </div>
 
         {/* Logo Scroller at Bottom */}
-        <div className="py-6 mb-8">
+        <div className="py-4 mb-10">
           <div className="w-full">
             <LogoScroller />
           </div>
