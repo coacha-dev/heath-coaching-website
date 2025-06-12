@@ -93,47 +93,62 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-[#faf8f5] py-24 lg:py-32 min-h-[80vh] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
-              We build the skills that drive{" "}
-              <span className="colored-underline-blue">progress</span>,{" "}
-              <span className="colored-underline-purple">influence</span> and{" "}
-              <span className="colored-underline-red">revenue</span>.
-            </h1>
-            <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-12 max-w-3xl mx-auto">
-              Coacha delivers practical, premium training for the people driving your organisation forward.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="coacha-button"
-              >
-                Explore Services
-              </Button>
-              <Button
-                size="lg"
-                onClick={() => setIsContactOpen(true)}
-                className="coacha-button"
-              >
-                Contact Us
-              </Button>
+      {/* Hero and Logo Scroller - Full Height Above Fold */}
+      <section className="bg-[#faf8f5] min-h-screen flex flex-col justify-center">
+        {/* Main Hero Content */}
+        <div className="flex-1 flex items-center justify-center py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div className="text-center max-w-4xl mx-auto">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
+                We build the skills that drive{" "}
+                <span className="colored-underline-blue">progress</span>,{" "}
+                <span className="colored-underline-purple">influence</span> and{" "}
+                <span className="colored-underline-red">revenue</span>.
+              </h1>
+              <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-16 max-w-3xl mx-auto">
+                Coacha delivers practical, premium training for the people driving your organisation forward.
+              </p>
+              <div className="flex flex-col items-center justify-center">
+                <button 
+                  onClick={() => {
+                    document.getElementById('services-section')?.scrollIntoView({ 
+                      behavior: 'smooth' 
+                    });
+                  }}
+                  className="group flex flex-col items-center text-[hsl(var(--dark-text))] hover:text-[#0081ea] transition-colors duration-300 cursor-pointer"
+                >
+                  <span className="text-lg font-medium mb-3">Explore our services</span>
+                  <div className="animate-bounce">
+                    <svg 
+                      className="w-6 h-6 text-current" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+                      />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Logo Scroller at Bottom */}
+        <div className="py-16">
+          <div className="w-full">
+            <LogoScroller />
           </div>
         </div>
       </section>
 
-      {/* Logo Scroller Section */}
-      <section className="bg-[#faf8f5] py-16">
-        <div className="w-full">
-          <LogoScroller />
-        </div>
-      </section>
-
       {/* Services Section */}
-      <section className="bg-[#f6f2ed] py-16 lg:py-24">
+      <section id="services-section" className="bg-[#f6f2ed] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
