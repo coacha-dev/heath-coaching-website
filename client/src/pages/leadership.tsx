@@ -27,7 +27,7 @@ export default function Leadership() {
           <div className="space-y-12">
             
             {/* Triple Intelligence Leadership Workshop */}
-            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 border-l-4 border-l-[#7030a0] hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Triple Intelligence Leadership Workshop
               </h3>
@@ -43,7 +43,7 @@ export default function Leadership() {
             </div>
 
             {/* Triple Intelligence Leadership Assessment */}
-            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 border-l-4 border-l-[#7030a0] hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Triple Intelligence Leadership Assessment
               </h3>
@@ -59,7 +59,7 @@ export default function Leadership() {
             </div>
 
             {/* LeaderCoacha Newsletter */}
-            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 border-l-4 border-l-[#7030a0] hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 LeaderCoacha Newsletter
               </h3>

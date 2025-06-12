@@ -27,7 +27,7 @@ export default function WinningCareers() {
           <div className="space-y-12">
             
             {/* Winning Careers Workshop */}
-            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 border-l-4 border-l-[#0081ea] hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Winning Careers Workshop
               </h3>
@@ -43,7 +43,7 @@ export default function WinningCareers() {
             </div>
 
             {/* Winning Careers Assessment */}
-            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 border-l-4 border-l-[#0081ea] hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Winning Careers Personality Assessment
               </h3>
@@ -59,7 +59,7 @@ export default function WinningCareers() {
             </div>
 
             {/* CareerCoacha Newsletter */}
-            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 border-l-4 border-l-[#0081ea] hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 CareerCoacha Newsletter
               </h3>
