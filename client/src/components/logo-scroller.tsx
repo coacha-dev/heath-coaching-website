@@ -38,46 +38,44 @@ const logos = [
 
 export default function LogoScroller() {
   return (
-    <div className="relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <p className="text-sm font-medium text-[hsl(var(--light-text))] tracking-wider uppercase">
-            Trusted by Leading Companies
-          </p>
-        </div>
+    <div className="relative overflow-hidden w-full">
+      <div className="text-center mb-8">
+        <p className="text-sm font-medium text-[hsl(var(--light-text))] tracking-wider uppercase">
+          Trusted by Leading Companies
+        </p>
+      </div>
+      
+      {/* Logo scroller container with fade masks */}
+      <div className="relative w-full">
+        {/* Left fade mask */}
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#faf8f5] to-transparent z-10"></div>
         
-        {/* Logo scroller container with fade masks */}
-        <div className="relative">
-          {/* Left fade mask */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#faf8f5] to-transparent z-10"></div>
-          
-          {/* Right fade mask */}
-          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#faf8f5] to-transparent z-10"></div>
-          
-          {/* Scrolling logos container */}
-          <div className="logo-scroll-container">
-            <div className="logo-scroll-track">
-              {/* First set of logos */}
-              {logos.map((logo, index) => (
-                <div key={`first-${index}`} className="logo-item">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="logo-image"
-                  />
-                </div>
-              ))}
-              {/* Second set for seamless loop */}
-              {logos.map((logo, index) => (
-                <div key={`second-${index}`} className="logo-item">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="logo-image"
-                  />
-                </div>
-              ))}
-            </div>
+        {/* Right fade mask */}
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#faf8f5] to-transparent z-10"></div>
+        
+        {/* Scrolling logos container */}
+        <div className="logo-scroll-container">
+          <div className="logo-scroll-track">
+            {/* First set of logos */}
+            {logos.map((logo, index) => (
+              <div key={`first-${index}`} className="logo-item">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="logo-image"
+                />
+              </div>
+            ))}
+            {/* Second set for seamless loop */}
+            {logos.map((logo, index) => (
+              <div key={`second-${index}`} className="logo-item">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="logo-image"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

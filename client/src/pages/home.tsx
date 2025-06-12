@@ -94,16 +94,16 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-[#faf8f5] py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#faf8f5] py-24 lg:py-32 min-h-[80vh] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
               We build the skills that drive{" "}
               <span className="colored-underline-blue">progress</span>,{" "}
               <span className="colored-underline-purple">influence</span> and{" "}
               <span className="colored-underline-red">revenue</span>.
             </h1>
-            <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-12 max-w-3xl mx-auto">
               Coacha delivers practical, premium training for the people driving your organisation forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -126,8 +126,10 @@ export default function Home() {
       </section>
 
       {/* Logo Scroller Section */}
-      <section className="bg-[#faf8f5] py-12">
-        <LogoScroller />
+      <section className="bg-[#faf8f5] py-16">
+        <div className="w-full">
+          <LogoScroller />
+        </div>
       </section>
 
       {/* Services Section */}
