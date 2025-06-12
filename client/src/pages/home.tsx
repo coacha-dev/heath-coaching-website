@@ -116,7 +116,7 @@ export default function Home() {
                   className="inline-flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200"
                 >
                   <span>Explore our services</span>
-                  <div className="ml-1 animate-bounce translate-y-0.5">
+                  <div className="ml-1 animate-bounce translate-y-1">
                     <svg 
                       className="w-4 h-4" 
                       fill="none" 
