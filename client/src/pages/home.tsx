@@ -137,8 +137,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Logo Scroller at Bottom with restored spacing */}
-        <div className="py-12 mb-8">
+        {/* Logo Scroller at Bottom - positioned closer to bottom */}
+        <div className="mt-auto py-6 mb-4">
           <div className="w-full">
             <LogoScroller />
           </div>
