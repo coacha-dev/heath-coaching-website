@@ -153,6 +153,28 @@ export default function Navigation() {
           {isMobileMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100">
+                {/* Services Section */}
+                <div className="px-3 py-2">
+                  <h3 className="text-sm font-semibold text-gray-900 mb-2">Services</h3>
+                  <div className="ml-4 space-y-1">
+                    <Link href="/winning-careers">
+                      <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
+                        Winning Careers
+                      </span>
+                    </Link>
+                    <Link href="/leadership">
+                      <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
+                        Leadership
+                      </span>
+                    </Link>
+                    <Link href="/selling">
+                      <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
+                        Selling
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+
                 <Link href="/testimonials">
                   <span className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
                     Testimonials
