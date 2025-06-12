@@ -113,10 +113,10 @@ export default function Home() {
                       behavior: 'smooth' 
                     });
                   }}
-                  className="inline-flex items-baseline text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200"
+                  className="inline-flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200"
                 >
                   <span>Explore our services</span>
-                  <div className="ml-1 animate-bounce">
+                  <div className="ml-1 animate-bounce translate-y-0.5">
                     <svg 
                       className="w-4 h-4" 
                       fill="none" 
