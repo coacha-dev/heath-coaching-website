@@ -91,12 +91,12 @@ export default function Footer() {
             © 2025 Coacha. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/contact">
+            <Link href="/privacy-policy">
               <span className="text-[hsl(var(--medium-text))] text-sm hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
                 Privacy Policy
               </span>
             </Link>
-            <Link href="/contact">
+            <Link href="/terms-of-service">
               <span className="text-[hsl(var(--medium-text))] text-sm hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
                 Terms of Service
               </span>
