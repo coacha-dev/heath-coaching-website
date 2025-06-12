@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import TestimonialCard from "@/components/testimonial-card";
 
 export default function Testimonials() {
@@ -219,9 +220,11 @@ export default function Testimonials() {
           <p className="text-lg text-[hsl(var(--medium-text))] mb-8">
             Contact us to discuss how Coacha can help your team develop the skills needed for success.
           </p>
-          <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-black border-2 border-black transition-all duration-200">
-            Contact Us Today
-          </button>
+          <Link href="/contact">
+            <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-black border-2 border-black transition-all duration-200">
+              Contact Us Today
+            </button>
+          </Link>
         </div>
       </section>
     </div>

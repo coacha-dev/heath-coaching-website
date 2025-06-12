@@ -58,12 +58,26 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200">
-                  Contact
-                </a>
+                <Link href="/contact">
+                  <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                    Contact
+                  </span>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200">
+                <Link href="/team">
+                  <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                    Our Team
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <a 
+                  href="https://heathcoaching.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200"
+                >
                   One-to-One Coaching
                 </a>
               </li>
@@ -77,12 +91,16 @@ export default function Footer() {
             © 2025 Coacha. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-[hsl(var(--medium-text))] text-sm hover:text-[hsl(var(--dark-text))] transition-colors duration-200">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-[hsl(var(--medium-text))] text-sm hover:text-[hsl(var(--dark-text))] transition-colors duration-200">
-              Terms of Service
-            </a>
+            <Link href="/contact">
+              <span className="text-[hsl(var(--medium-text))] text-sm hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                Privacy Policy
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span className="text-[hsl(var(--medium-text))] text-sm hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                Terms of Service
+              </span>
+            </Link>
           </div>
         </div>
       </div>
