@@ -165,13 +165,13 @@ export default function Home() {
               href="/winning-careers"
             />
             <ServiceCard
-              title="Leadership"
+              title="Triple Intelligence Leadership"
               description="Grow exceptional leaders with science-backed development"
               theme="purple"
               href="/leadership"
             />
             <ServiceCard
-              title="Selling"
+              title="Value-Centred Selling"
               description="Transform your sales performance through human-centred methods"
               theme="red"
               href="/selling"

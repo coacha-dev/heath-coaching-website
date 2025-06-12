@@ -86,7 +86,7 @@ export default function Navigation() {
                       {/* Selling */}
                       <div className="border-l-4 border-[hsl(var(--coacha-red))] pl-4">
                         <h3 className="font-semibold text-[hsl(var(--coacha-red))] mb-2">
-                          Selling
+                          Value-Centred Selling
                         </h3>
                         <div className="space-y-1 text-sm">
                           <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
@@ -94,6 +94,9 @@ export default function Navigation() {
                           </Link>
                           <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
                             Value-Centred Selling Assessment
+                          </Link>
+                          <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
+                            SalesCoacha Newsletter
                           </Link>
                         </div>
                       </div>
@@ -164,12 +167,12 @@ export default function Navigation() {
                     </Link>
                     <Link href="/leadership">
                       <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                        Leadership
+                        Triple Intelligence Leadership
                       </span>
                     </Link>
                     <Link href="/selling">
                       <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                        Selling
+                        Value-Centred Selling
                       </span>
                     </Link>
                   </div>
