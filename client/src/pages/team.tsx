@@ -4,7 +4,7 @@ import joshHeadshot from "@assets/Josh Heath Headshot_1749691421446.jpg";
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#faf8f5]">
       {/* Team Members Section */}
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,7 +16,7 @@ export default function Team() {
 
           <div className="space-y-12">
             {/* Luke Heath */}
-            <div className="bg-[#faf8f5] rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-lg border-2 border-gray-200 p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
@@ -66,7 +66,7 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="bg-[#faf8f5] rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-lg border-2 border-gray-200 p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
