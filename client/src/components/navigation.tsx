@@ -195,55 +195,98 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100">
-          <div className="px-4 pt-2 pb-3 space-y-1">
-            <div className="flex flex-col space-y-2">
-              {/* Services Toggle */}
-              <div className="border-l-4 border-gray-300 pl-4">
-                <div className="text-lg font-semibold text-gray-900 mb-3">
-                  Services
-                </div>
-                <div className="pl-4 space-y-2">
-                  <Link href="/winning-careers">
-                    <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                      Winning Careers
-                    </span>
+        <div className="md:hidden bg-white border-b border-gray-100 max-h-screen overflow-y-auto">
+          <div className="px-3 py-3">
+            {/* Services Grid */}
+            <div className="grid grid-cols-3 gap-2 mb-4">
+              {/* Winning Careers */}
+              <div className="space-y-1">
+                <Link href="/winning-careers" className="block">
+                  <div className="font-playfair text-sm font-semibold text-black border-l-2 border-[#0081ea] pl-2 py-1">
+                    Winning Careers
+                  </div>
+                </Link>
+                <div className="space-y-1 text-xs">
+                  <Link href="/winning-careers#workshop" className="block text-gray-600 hover:text-[#0081ea] pl-4">
+                    Workshop
                   </Link>
-                  <Link href="/leadership">
-                    <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                      Triple Intelligence Leadership
-                    </span>
+                  <Link href="/winning-careers#assessment" className="block text-gray-600 hover:text-[#0081ea] pl-4">
+                    Assessment
                   </Link>
-                  <Link href="/selling">
-                    <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                      Value-Centred Selling
-                    </span>
+                  <Link href="/winning-careers#newsletter" className="block text-gray-600 hover:text-[#0081ea] pl-4">
+                    Newsletter
                   </Link>
                 </div>
               </div>
 
-              <Link href="/testimonials">
-                <span className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-black">
+              {/* Leadership */}
+              <div className="space-y-1">
+                <Link href="/leadership" className="block">
+                  <div className="font-playfair text-sm font-semibold text-black border-l-2 border-[#7030a0] pl-2 py-1">
+                    Leadership
+                  </div>
+                </Link>
+                <div className="space-y-1 text-xs">
+                  <Link href="/leadership#workshop" className="block text-gray-600 hover:text-[#7030a0] pl-4">
+                    Workshop
+                  </Link>
+                  <Link href="/leadership#assessment" className="block text-gray-600 hover:text-[#7030a0] pl-4">
+                    Assessment
+                  </Link>
+                  <Link href="/leadership#newsletter" className="block text-gray-600 hover:text-[#7030a0] pl-4">
+                    Newsletter
+                  </Link>
+                </div>
+              </div>
+
+              {/* Selling */}
+              <div className="space-y-1">
+                <Link href="/selling" className="block">
+                  <div className="font-playfair text-sm font-semibold text-black border-l-2 border-[#dc0725] pl-2 py-1">
+                    Selling
+                  </div>
+                </Link>
+                <div className="space-y-1 text-xs">
+                  <Link href="/selling#workshop" className="block text-gray-600 hover:text-[#dc0725] pl-4">
+                    Workshop
+                  </Link>
+                  <Link href="/selling#assessment" className="block text-gray-600 hover:text-[#dc0725] pl-4">
+                    Assessment
+                  </Link>
+                  <Link href="/selling#newsletter" className="block text-gray-600 hover:text-[#dc0725] pl-4">
+                    Newsletter
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Other Navigation Items */}
+            <div className="border-t border-gray-200 pt-3 space-y-2">
+              <Link href="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1">
                   Testimonials
                 </span>
               </Link>
 
-              <Link href="/team">
-                <span className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-black">
+              <Link href="/team" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1">
                   Our Team
                 </span>
               </Link>
 
-              <Link href="/contact">
-                <span className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-black">
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1">
                   One-to-One Coaching
                 </span>
               </Link>
 
-              <div className="pt-4">
+              <div className="pt-2">
                 <Button
-                  onClick={() => setIsContactOpen(true)}
-                  className="w-full bg-black text-white border-2 border-black hover:bg-transparent hover:text-black transition-all duration-200"
+                  onClick={() => {
+                    setIsContactOpen(true);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="w-full bg-black text-white border-2 border-black hover:bg-transparent hover:text-black transition-all duration-200 text-sm py-2"
                 >
                   Contact Us
                 </Button>
