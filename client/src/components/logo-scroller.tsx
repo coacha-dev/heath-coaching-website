@@ -39,7 +39,7 @@ const logos = [
 export default function LogoScroller() {
   return (
     <div className="relative overflow-hidden w-full">
-      <div className="text-center mb-8 mt-4">
+      <div className="text-center mb-8 -mt-4">
         <p className="text-sm font-medium text-[hsl(var(--light-text))] tracking-wider uppercase">
           Trusted by Leading Companies
         </p>
