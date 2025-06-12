@@ -195,102 +195,110 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100 max-h-screen overflow-y-auto">
-          <div className="px-3 py-3">
-            {/* Services Grid */}
-            <div className="grid grid-cols-3 gap-2 mb-4">
+        <div className="md:hidden bg-white border-b border-gray-100">
+          <div className="px-4 py-3 space-y-2">
+            {/* Services Section */}
+            <div className="space-y-2">
+              <div className="text-base font-semibold text-black py-1">
+                Services
+              </div>
+              
               {/* Winning Careers */}
-              <div className="space-y-1">
-                <Link href="/winning-careers" className="block">
-                  <div className="font-playfair text-sm font-semibold text-black border-l-2 border-[#0081ea] pl-2 py-1">
-                    Winning Careers
-                  </div>
-                </Link>
-                <div className="space-y-1 text-xs">
-                  <Link href="/winning-careers#workshop" className="block text-gray-600 hover:text-[#0081ea] pl-4">
-                    Workshop
-                  </Link>
-                  <Link href="/winning-careers#assessment" className="block text-gray-600 hover:text-[#0081ea] pl-4">
-                    Assessment
-                  </Link>
-                  <Link href="/winning-careers#newsletter" className="block text-gray-600 hover:text-[#0081ea] pl-4">
-                    Newsletter
-                  </Link>
-                </div>
-              </div>
-
+              <Link href="/winning-careers" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1 pl-4">
+                  Winning Careers
+                </span>
+              </Link>
+              <Link href="/winning-careers#workshop" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  Winning Careers Workshop
+                </span>
+              </Link>
+              <Link href="/winning-careers#assessment" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  Winning Careers Personality Assessment
+                </span>
+              </Link>
+              <Link href="/winning-careers#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  CareerCoacha Newsletter
+                </span>
+              </Link>
+              
               {/* Leadership */}
-              <div className="space-y-1">
-                <Link href="/leadership" className="block">
-                  <div className="font-playfair text-sm font-semibold text-black border-l-2 border-[#7030a0] pl-2 py-1">
-                    Leadership
-                  </div>
-                </Link>
-                <div className="space-y-1 text-xs">
-                  <Link href="/leadership#workshop" className="block text-gray-600 hover:text-[#7030a0] pl-4">
-                    Workshop
-                  </Link>
-                  <Link href="/leadership#assessment" className="block text-gray-600 hover:text-[#7030a0] pl-4">
-                    Assessment
-                  </Link>
-                  <Link href="/leadership#newsletter" className="block text-gray-600 hover:text-[#7030a0] pl-4">
-                    Newsletter
-                  </Link>
-                </div>
-              </div>
-
+              <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1 pl-4">
+                  Triple Intelligence Leadership
+                </span>
+              </Link>
+              <Link href="/leadership#workshop" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  Triple Intelligence Leadership Workshop
+                </span>
+              </Link>
+              <Link href="/leadership#assessment" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  Triple Intelligence Leadership Assessment
+                </span>
+              </Link>
+              <Link href="/leadership#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  LeaderCoacha Newsletter
+                </span>
+              </Link>
+              
               {/* Selling */}
-              <div className="space-y-1">
-                <Link href="/selling" className="block">
-                  <div className="font-playfair text-sm font-semibold text-black border-l-2 border-[#dc0725] pl-2 py-1">
-                    Selling
-                  </div>
-                </Link>
-                <div className="space-y-1 text-xs">
-                  <Link href="/selling#workshop" className="block text-gray-600 hover:text-[#dc0725] pl-4">
-                    Workshop
-                  </Link>
-                  <Link href="/selling#assessment" className="block text-gray-600 hover:text-[#dc0725] pl-4">
-                    Assessment
-                  </Link>
-                  <Link href="/selling#newsletter" className="block text-gray-600 hover:text-[#dc0725] pl-4">
-                    Newsletter
-                  </Link>
-                </div>
-              </div>
+              <Link href="/selling" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1 pl-4">
+                  Value-Centred Selling
+                </span>
+              </Link>
+              <Link href="/selling#workshop" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  Value-Centred Selling Workshop
+                </span>
+              </Link>
+              <Link href="/selling#assessment" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  Value-Centred Selling Assessment
+                </span>
+              </Link>
+              <Link href="/selling#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
+                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
+                  SalesCoacha Newsletter
+                </span>
+              </Link>
             </div>
 
             {/* Other Navigation Items */}
-            <div className="border-t border-gray-200 pt-3 space-y-2">
-              <Link href="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1">
-                  Testimonials
-                </span>
-              </Link>
+            <Link href="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
+                Testimonials
+              </span>
+            </Link>
 
-              <Link href="/team" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1">
-                  Our Team
-                </span>
-              </Link>
+            <Link href="/team" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
+                Our Team
+              </span>
+            </Link>
 
-              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1">
-                  One-to-One Coaching
-                </span>
-              </Link>
+            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
+                One-to-One Coaching
+              </span>
+            </Link>
 
-              <div className="pt-2">
-                <Button
-                  onClick={() => {
-                    setIsContactOpen(true);
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="w-full bg-black text-white border-2 border-black hover:bg-transparent hover:text-black transition-all duration-200 text-sm py-2"
-                >
-                  Contact Us
-                </Button>
-              </div>
+            <div className="pt-2">
+              <Button
+                onClick={() => {
+                  setIsContactOpen(true);
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full bg-black text-white border-2 border-black hover:bg-transparent hover:text-black transition-all duration-200"
+              >
+                Contact Us
+              </Button>
             </div>
           </div>
         </div>
