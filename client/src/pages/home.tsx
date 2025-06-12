@@ -137,11 +137,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Spacer to push logo scroller down */}
-        <div className="flex-1"></div>
-
-        {/* Logo Scroller at Bottom - positioned at very bottom */}
-        <div className="py-6 mb-4">
+        {/* Logo Scroller at Bottom - positioned lower but visible */}
+        <div className="mt-auto py-8 mb-8">
           <div className="w-full">
             <LogoScroller />
           </div>
