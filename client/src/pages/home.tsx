@@ -95,8 +95,8 @@ export default function Home() {
     <>
       {/* Hero and Logo Scroller - Full Height Above Fold */}
       <section className="bg-[#faf8f5] min-h-screen flex flex-col">
-        {/* Main Hero Content */}
-        <div className="flex-1 flex items-center justify-center pt-32 pb-16">
+        {/* Main Hero Content - Centered vertically */}
+        <div className="flex-1 flex items-center justify-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
@@ -105,42 +105,38 @@ export default function Home() {
                 <span className="colored-underline-purple">influence</span> and{" "}
                 <span className="colored-underline-red">revenue</span>.
               </h1>
-              <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-16 max-w-3xl mx-auto">
-                Coacha delivers practical, premium training for the people driving your organisation forward.
-              </p>
-              <div className="flex items-center justify-center mt-12">
+              <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] max-w-3xl mx-auto">
+                Coacha delivers practical, premium training for the people driving your organisation forward.{" "}
                 <button 
                   onClick={() => {
                     document.getElementById('services-section')?.scrollIntoView({ 
                       behavior: 'smooth' 
                     });
                   }}
-                  className="group flex items-center text-[hsl(var(--medium-text))] cursor-pointer opacity-80 hover:opacity-100 transition-opacity duration-200"
+                  className="inline-flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200 underline underline-offset-2"
                 >
-                  <span className="text-base font-normal mr-2">Explore our services</span>
-                  <div className="animate-bounce">
-                    <svg 
-                      className="w-4 h-4 text-current" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth={1.5} 
-                        d="M19 14l-7 7m0 0l-7-7m7 7V3" 
-                      />
-                    </svg>
-                  </div>
+                  <span>Explore our services</span>
+                  <svg 
+                    className="w-4 h-4 ml-1" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={1.5} 
+                      d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+                    />
+                  </svg>
                 </button>
-              </div>
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Logo Scroller at Bottom */}
-        <div className="py-16">
+        {/* Logo Scroller at Bottom with spacing */}
+        <div className="py-12 mb-8">
           <div className="w-full">
             <LogoScroller />
           </div>
