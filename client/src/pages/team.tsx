@@ -14,7 +14,7 @@ export default function Team() {
             </h1>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="space-y-12">
             {/* Luke Heath */}
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="flex gap-6 mb-6">
