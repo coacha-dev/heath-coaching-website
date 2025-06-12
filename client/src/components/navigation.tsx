@@ -116,7 +116,9 @@ export default function Navigation() {
                 </Link>
 
                 <a
-                  href="#"
+                  href="https://heathcoaching.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="nav-item relative text-black px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   One-to-One Coaching
@@ -161,7 +163,12 @@ export default function Navigation() {
                     Our Team
                   </span>
                 </Link>
-                <a href="#" className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
+                <a 
+                  href="https://heathcoaching.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black"
+                >
                   One-to-One Coaching
                 </a>
                 <Button

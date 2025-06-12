@@ -6,10 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
+import { Mail, Phone } from "lucide-react";
 
 interface ContactDialogProps {
   open: boolean;
@@ -17,78 +14,55 @@ interface ContactDialogProps {
 }
 
 export default function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Contact form submitted:", formData);
-    onOpenChange(false);
-    // Reset form
-    setFormData({ name: "", email: "", company: "", message: "" });
-  };
-
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[450px]">
         <DialogHeader>
-          <DialogTitle>Contact Us</DialogTitle>
+          <DialogTitle>Contact Luke Heath</DialogTitle>
           <DialogDescription>
-            Get in touch with our team to learn more about our services.
+            Get in touch with our Managing Director to discuss your training needs.
           </DialogDescription>
         </DialogHeader>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-2">
-            <Label htmlFor="name">Name</Label>
-            <Input
-              id="name"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              required
-            />
+        
+        <div className="space-y-6">
+          <div className="bg-[#faf8f5] rounded-lg p-6">
+            <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-2">
+              Luke Heath
+            </h3>
+            <p className="text-[hsl(var(--coacha-blue))] font-medium mb-4">
+              Managing Director, Executive Coach & Trainer
+            </p>
+            
+            <div className="space-y-3">
+              <a 
+                href="mailto:luke@coacha.co" 
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
+              >
+                <Mail className="w-5 h-5 mr-3 text-[hsl(var(--coacha-blue))]" />
+                luke@coacha.co
+              </a>
+              <a 
+                href="tel:+61417588346" 
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
+              >
+                <Phone className="w-5 h-5 mr-3 text-[hsl(var(--coacha-blue))]" />
+                +61 417 588 346
+              </a>
+            </div>
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              required
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="company">Company</Label>
-            <Input
-              id="company"
-              value={formData.company}
-              onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-            />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea
-              id="message"
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              rows={4}
-              required
-            />
-          </div>
-          <div className="flex justify-end space-x-2">
-            <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>
-              Cancel
-            </Button>
-            <Button type="submit" className="bg-[hsl(var(--dark-text))] text-white hover:bg-gray-800">
-              Send Message
+          
+          <div className="text-center">
+            <p className="text-sm text-[hsl(var(--medium-text))] mb-4">
+              Luke is available to discuss how Coacha can help your organization develop the skills needed for success.
+            </p>
+            <Button 
+              onClick={() => onOpenChange(false)} 
+              className="coacha-button"
+            >
+              Close
             </Button>
           </div>
-        </form>
+        </div>
       </DialogContent>
     </Dialog>
   );
