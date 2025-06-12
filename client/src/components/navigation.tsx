@@ -102,9 +102,9 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* Full-width Services Dropdown */}
+      {/* Full-width Services Dropdown - Desktop Only */}
       <div 
-        className={`bg-white border-b border-gray-100 transition-all duration-300 ${
+        className={`hidden md:block bg-white border-b border-gray-100 transition-all duration-300 ${
           isServicesHovered ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
         onMouseEnter={() => setIsServicesHovered(true)}
