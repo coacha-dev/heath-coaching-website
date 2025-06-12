@@ -54,57 +54,82 @@ export default function Navigation() {
                   </button>
                   
                   {/* Dropdown Menu */}
-                  <div className={`absolute left-0 top-full mt-1 w-96 bg-white rounded-lg shadow-lg border border-gray-100 py-6 px-6 transition-all duration-200 ${isServicesHovered ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
-                    <div className="grid grid-cols-1 gap-6">
+                  <div className={`absolute left-0 top-full mt-1 w-[800px] bg-white rounded-lg shadow-lg border border-gray-100 py-6 px-6 transition-all duration-200 ${isServicesHovered ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
+                    <div className="grid grid-cols-3 gap-8">
                       {/* Winning Careers */}
-                      <div className="border-l-4 border-[hsl(var(--coacha-blue))] pl-4">
-                        <h3 className="font-semibold text-[hsl(var(--coacha-blue))] mb-2">
-                          Winning Careers
-                        </h3>
-                        <div className="space-y-1 text-sm">
-                          <Link href="/winning-careers#workshop" className="text-gray-600 hover:text-black block py-1">
+                      <div className="space-y-3">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-4 h-4 bg-[#0081ea] rounded-sm flex items-center justify-center">
+                            <svg className="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <Link href="/winning-careers" className="font-semibold text-black hover:text-[#0081ea] transition-colors">
+                            Winning Careers
+                          </Link>
+                        </div>
+                        <div className="h-0.5 bg-[#0081ea] mb-4"></div>
+                        <p className="text-sm text-gray-600 mb-4">Build high-performing professionals with tools & insights</p>
+                        <div className="space-y-2 text-sm">
+                          <Link href="/winning-careers#workshop" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200">
                             Winning Careers Workshop
                           </Link>
-                          <Link href="/winning-careers#assessment" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/winning-careers#assessment" className="text-[#0081ea] hover:text-[#0081ea] block transition-colors duration-200">
                             Winning Careers Personality Assessment
                           </Link>
-                          <Link href="/winning-careers#newsletter" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/winning-careers#newsletter" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200">
                             CareerCoacha Newsletter
                           </Link>
                         </div>
                       </div>
 
                       {/* Leadership */}
-                      <div className="border-l-4 border-[hsl(var(--coacha-purple))] pl-4">
-                        <h3 className="font-semibold text-[hsl(var(--coacha-purple))] mb-2">
-                          Leadership
-                        </h3>
-                        <div className="space-y-1 text-sm">
-                          <Link href="/leadership#workshop" className="text-gray-600 hover:text-black block py-1">
+                      <div className="space-y-3">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-4 h-4 bg-[#7030a0] rounded-sm flex items-center justify-center">
+                            <svg className="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <Link href="/leadership" className="font-semibold text-black hover:text-[#7030a0] transition-colors">
+                            Leadership
+                          </Link>
+                        </div>
+                        <div className="h-0.5 bg-[#7030a0] mb-4"></div>
+                        <p className="text-sm text-gray-600 mb-4">Grow exceptional leaders with science-backed development</p>
+                        <div className="space-y-2 text-sm">
+                          <Link href="/leadership#workshop" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200">
                             Triple Intelligence Leadership Workshop
                           </Link>
-                          <Link href="/leadership#assessment" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/leadership#assessment" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200">
                             Triple Intelligence Leadership Assessment
                           </Link>
-                          <Link href="/leadership#newsletter" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/leadership#newsletter" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200">
                             LeaderCoacha Newsletter
                           </Link>
                         </div>
                       </div>
 
                       {/* Selling */}
-                      <div className="border-l-4 border-[hsl(var(--coacha-red))] pl-4">
-                        <h3 className="font-semibold text-[hsl(var(--coacha-red))] mb-2">
-                          Value-Centred Selling
-                        </h3>
-                        <div className="space-y-1 text-sm">
-                          <Link href="/selling#workshop" className="text-gray-600 hover:text-black block py-1">
+                      <div className="space-y-3">
+                        <div className="flex items-center space-x-2">
+                          <div className="w-4 h-4 bg-[#dc0725] rounded-sm flex items-center justify-center">
+                            <span className="text-white text-xs font-bold">$</span>
+                          </div>
+                          <Link href="/selling" className="font-semibold text-black hover:text-[#dc0725] transition-colors">
+                            Selling
+                          </Link>
+                        </div>
+                        <div className="h-0.5 bg-[#dc0725] mb-4"></div>
+                        <p className="text-sm text-gray-600 mb-4">Transform sales performance through human-centred methods</p>
+                        <div className="space-y-2 text-sm">
+                          <Link href="/selling#workshop" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200">
                             Value-Centred Selling Workshop
                           </Link>
-                          <Link href="/selling#assessment" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/selling#assessment" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200">
                             Value-Centred Selling Assessment
                           </Link>
-                          <Link href="/selling#newsletter" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/selling#newsletter" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200">
                             SalesCoacha Newsletter
                           </Link>
                         </div>
