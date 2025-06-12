@@ -3,7 +3,7 @@ import coacheLogo from "@assets/Coacha Logo LATEST_1749609249362.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 py-12 border-t-2 border-gray-200">
+    <footer className="bg-gray-50 py-12 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Tagline */}
