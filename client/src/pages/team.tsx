@@ -16,20 +16,20 @@ export default function Team() {
 
           <div className="space-y-12">
             {/* Luke Heath */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="flex gap-6 mb-6">
+            <div className="bg-[#faf8f5] rounded-lg shadow-lg p-8">
+              <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
                     src={lukeHeadshot}
                     alt="Luke Heath"
-                    className="w-32 h-32 object-cover rounded-full"
+                    className="w-40 h-40 object-cover rounded-full"
                   />
                 </div>
                 <div className="flex-1 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-2">
+                  <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3">
                     Luke Heath
                   </h3>
-                  <p className="text-[hsl(var(--coacha-blue))] font-medium mb-3">
+                  <p className="text-lg text-[hsl(var(--coacha-blue))] font-medium mb-4">
                     Managing Director, Executive Coach & Trainer
                   </p>
                   <div className="space-y-2">
@@ -66,20 +66,20 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="flex gap-6 mb-6">
+            <div className="bg-[#faf8f5] rounded-lg shadow-lg p-8">
+              <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
                     src={joshHeadshot}
                     alt="Josh Heath"
-                    className="w-32 h-32 object-cover rounded-full"
+                    className="w-40 h-40 object-cover rounded-full"
                   />
                 </div>
                 <div className="flex-1 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-2">
+                  <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3">
                     Josh Heath
                   </h3>
-                  <p className="text-[hsl(var(--coacha-purple))] font-medium mb-3">
+                  <p className="text-lg text-[hsl(var(--coacha-purple))] font-medium mb-4">
                     Product Director
                   </p>
                   <div className="space-y-2">
