@@ -108,19 +108,19 @@ export default function Home() {
               <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-16 max-w-3xl mx-auto">
                 Coacha delivers practical, premium training for the people driving your organisation forward.
               </p>
-              <div className="flex items-center justify-center mt-8">
+              <div className="flex items-center justify-center mt-12">
                 <button 
                   onClick={() => {
                     document.getElementById('services-section')?.scrollIntoView({ 
                       behavior: 'smooth' 
                     });
                   }}
-                  className="group flex items-center text-[hsl(var(--dark-text))] cursor-pointer"
+                  className="group flex items-center text-[hsl(var(--medium-text))] cursor-pointer opacity-80 hover:opacity-100 transition-opacity duration-200"
                 >
-                  <span className="text-lg font-medium mr-3">Explore our services</span>
+                  <span className="text-base font-normal mr-2">Explore our services</span>
                   <div className="animate-bounce">
                     <svg 
-                      className="w-6 h-6 text-current" 
+                      className="w-4 h-4 text-current" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -128,7 +128,7 @@ export default function Home() {
                       <path 
                         strokeLinecap="round" 
                         strokeLinejoin="round" 
-                        strokeWidth={2} 
+                        strokeWidth={1.5} 
                         d="M19 14l-7 7m0 0l-7-7m7 7V3" 
                       />
                     </svg>
