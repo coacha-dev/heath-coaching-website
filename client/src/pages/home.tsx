@@ -94,9 +94,9 @@ export default function Home() {
   return (
     <>
       {/* Hero and Logo Scroller - Full Height Above Fold */}
-      <section className="bg-[#faf8f5] min-h-screen flex flex-col justify-center">
+      <section className="bg-[#faf8f5] min-h-screen flex flex-col">
         {/* Main Hero Content */}
-        <div className="flex-1 flex items-center justify-center py-20">
+        <div className="flex-1 flex items-center justify-center pt-32 pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
@@ -108,16 +108,16 @@ export default function Home() {
               <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-16 max-w-3xl mx-auto">
                 Coacha delivers practical, premium training for the people driving your organisation forward.
               </p>
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex items-center justify-center mt-8">
                 <button 
                   onClick={() => {
                     document.getElementById('services-section')?.scrollIntoView({ 
                       behavior: 'smooth' 
                     });
                   }}
-                  className="group flex flex-col items-center text-[hsl(var(--dark-text))] hover:text-[#0081ea] transition-colors duration-300 cursor-pointer"
+                  className="group flex items-center text-[hsl(var(--dark-text))] cursor-pointer"
                 >
-                  <span className="text-lg font-medium mb-3">Explore our services</span>
+                  <span className="text-lg font-medium mr-3">Explore our services</span>
                   <div className="animate-bounce">
                     <svg 
                       className="w-6 h-6 text-current" 
