@@ -138,7 +138,7 @@ export default function Home() {
         </div>
 
         {/* Logo Scroller at Bottom */}
-        <div className="py-4 mb-10">
+        <div className="py-4 mb-10" style={{ transform: 'translateY(-16px)' }}>
           <div className="w-full">
             <LogoScroller />
           </div>
