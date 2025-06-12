@@ -95,8 +95,8 @@ export default function Home() {
     <>
       {/* Hero and Logo Scroller - Full Height Above Fold */}
       <section className="bg-[#faf8f5] min-h-screen flex flex-col">
-        {/* Main Hero Content - Centered vertically */}
-        <div className="flex-1 flex items-center justify-center">
+        {/* Main Hero Content - Centered vertically with proper spacing from header */}
+        <div className="flex-1 flex items-center justify-center pt-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
@@ -105,7 +105,7 @@ export default function Home() {
                 <span className="colored-underline-purple">influence</span> and{" "}
                 <span className="colored-underline-red">revenue</span>.
               </h1>
-              <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] max-w-3xl mx-auto mb-8">
                 Coacha delivers practical, premium training for the people driving your organisation forward.{" "}
                 <button 
                   onClick={() => {
@@ -113,22 +113,24 @@ export default function Home() {
                       behavior: 'smooth' 
                     });
                   }}
-                  className="inline-flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200 underline underline-offset-2"
+                  className="inline-flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] cursor-pointer transition-colors duration-200"
                 >
                   <span>Explore our services</span>
-                  <svg 
-                    className="w-4 h-4 ml-1" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={1.5} 
-                      d="M19 14l-7 7m0 0l-7-7m7 7V3" 
-                    />
-                  </svg>
+                  <div className="ml-1 animate-bounce">
+                    <svg 
+                      className="w-4 h-4" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={1.5} 
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+                      />
+                    </svg>
+                  </div>
                 </button>
               </p>
             </div>
