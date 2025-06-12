@@ -95,8 +95,8 @@ export default function Home() {
     <>
       {/* Hero and Logo Scroller - Full Height Above Fold */}
       <section className="bg-[#faf8f5] min-h-screen flex flex-col">
-        {/* Main Hero Content - Properly centered with offset */}
-        <div className="flex-1 flex items-center justify-center" style={{ transform: 'translateY(20vh)' }}>
+        {/* Main Hero Content - Centered with proper spacing */}
+        <div className="flex-1 flex items-center justify-center pt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
@@ -137,8 +137,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Logo Scroller at Bottom - positioned lower but visible */}
-        <div className="mt-auto py-8 mb-8">
+        {/* Logo Scroller at Bottom */}
+        <div className="py-8 mb-6">
           <div className="w-full">
             <LogoScroller />
           </div>
