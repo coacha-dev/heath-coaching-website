@@ -14,44 +14,46 @@ export default function Team() {
             </h1>
           </div>
 
-          <div className="space-y-16">
+          <div className="grid lg:grid-cols-2 gap-12">
             {/* Luke Heath */}
-            <div className="flex flex-col lg:flex-row gap-8 items-start">
-              <div className="lg:w-1/3">
-                <img
-                  src={lukeHeadshot}
-                  alt="Luke Heath"
-                  className="w-64 h-64 object-cover rounded-lg mx-auto lg:mx-0"
-                />
-              </div>
-              <div className="lg:w-2/3">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-2">
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="flex gap-6 mb-6">
+                <div className="flex-shrink-0">
+                  <img
+                    src={lukeHeadshot}
+                    alt="Luke Heath"
+                    className="w-32 h-32 object-cover rounded-full"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col justify-center">
+                  <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-2">
                     Luke Heath
                   </h3>
-                  <p className="text-[hsl(var(--coacha-blue))] font-medium mb-4">
+                  <p className="text-[hsl(var(--coacha-blue))] font-medium mb-3">
                     Managing Director, Executive Coach & Trainer
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                    <a href="mailto:luke@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] transition-colors">
+                  <div className="space-y-2">
+                    <a href="mailto:luke@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors">
                       <Mail className="w-4 h-4 mr-2" />
                       luke@coacha.co
                     </a>
-                    <a href="tel:+61417588346" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] transition-colors">
+                    <a href="tel:+61417588346" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors">
                       <Phone className="w-4 h-4 mr-2" />
                       +61 417 588 346
                     </a>
                   </div>
                 </div>
-                
-                <p className="text-[hsl(var(--medium-text))] mb-6">
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-[hsl(var(--medium-text))]">
                   Luke Heath was an investment banker and portfolio manager for 10 years with Schroders and Societe Generale. Since 2002, he has founded and run human resources consulting businesses. Luke has advised boards and senior leadership teams on strategy, financing, and people and culture. He continues to enjoy coaching and training leaders and their teams across the globe.
                 </p>
-                <p className="text-[hsl(var(--medium-text))] mb-6 italic">
+                <p className="text-[hsl(var(--medium-text))] italic">
                   Luke enjoys being in the surf, SCUBA diving, and going hiking with old Schroders' mates.
                 </p>
                 <div>
-                  <h4 className="font-semibold text-[hsl(var(--dark-text))] mb-3">Qualifications:</h4>
+                  <h4 className="font-semibold text-[hsl(var(--dark-text))] mb-2">Qualifications:</h4>
                   <ul className="text-sm text-[hsl(var(--medium-text))] space-y-1">
                     <li>• Master of HRM and Coaching (Sydney University)</li>
                     <li>• Company Directors Diploma and FAICD</li>
@@ -64,37 +66,46 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="flex flex-col lg:flex-row gap-8 items-start">
-              <div className="lg:w-1/3">
-                <img
-                  src={joshHeadshot}
-                  alt="Josh Heath"
-                  className="w-64 h-64 object-cover rounded-lg mx-auto lg:mx-0"
-                />
-              </div>
-              <div className="lg:w-2/3">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-2">
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="flex gap-6 mb-6">
+                <div className="flex-shrink-0">
+                  <img
+                    src={joshHeadshot}
+                    alt="Josh Heath"
+                    className="w-32 h-32 object-cover rounded-full"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col justify-center">
+                  <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-2">
                     Josh Heath
                   </h3>
-                  <p className="text-[hsl(var(--coacha-purple))] font-medium mb-4">
+                  <p className="text-[hsl(var(--coacha-purple))] font-medium mb-3">
                     Product Director
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                    <a href="mailto:josh@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] transition-colors">
+                  <div className="space-y-2">
+                    <a href="mailto:josh@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors">
                       <Mail className="w-4 h-4 mr-2" />
                       josh@coacha.co
                     </a>
-                    <a href="tel:+61423391445" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--dark-text))] transition-colors">
+                    <a href="tel:+61423391445" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors">
                       <Phone className="w-4 h-4 mr-2" />
                       +61 423 391 445
                     </a>
                   </div>
                 </div>
-                
+              </div>
+              
+              <div className="space-y-4">
                 <p className="text-[hsl(var(--medium-text))]">
                   Josh has worked for a decade in e-commerce, digital asset management, and digital media. He completed business degrees but found his passion in the creative and technical aspects of digital product development. Josh brings a unique blend of business acumen and technical expertise to Coacha's digital initiatives.
                 </p>
+                <div>
+                  <h4 className="font-semibold text-[hsl(var(--dark-text))] mb-2">Qualifications:</h4>
+                  <ul className="text-sm text-[hsl(var(--medium-text))] space-y-1">
+                    <li>• Bachelor of Commerce (Sydney University)</li>
+                    <li>• Bachelor of Advanced Studies (Sydney University)</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
