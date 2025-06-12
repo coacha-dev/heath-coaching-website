@@ -58,11 +58,14 @@ export default function Navigation() {
                     <div className="grid grid-cols-3 gap-8">
                       {/* Winning Careers */}
                       <div className="space-y-3">
-                        <Link href="/winning-careers" className="font-semibold text-black hover:text-[#0081ea] transition-colors block font-playfair text-lg">
-                          Winning Careers
+                        <Link href="/winning-careers" className="font-playfair text-lg font-semibold text-black hover:text-[#0081ea] transition-colors block flex items-center justify-between group">
+                          <span>Winning Careers</span>
+                          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
                         </Link>
-                        <p className="text-sm text-gray-600 mb-4">Build high-performing professionals with tools & insights</p>
                         <div className="h-0.5 bg-[#0081ea] mb-4"></div>
+                        <p className="text-sm text-gray-600 mb-4">Build high-performing professionals with tools & insights</p>
                         <div className="space-y-2 text-sm">
                           <Link href="/winning-careers#workshop" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
                             <span className="text-gray-400 mr-2">›</span>
@@ -81,11 +84,14 @@ export default function Navigation() {
 
                       {/* Leadership */}
                       <div className="space-y-3">
-                        <Link href="/leadership" className="font-semibold text-black hover:text-[#7030a0] transition-colors block font-playfair text-lg">
-                          Leadership
+                        <Link href="/leadership" className="font-playfair text-lg font-semibold text-black hover:text-[#7030a0] transition-colors block flex items-center justify-between group">
+                          <span>Leadership</span>
+                          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
                         </Link>
-                        <p className="text-sm text-gray-600 mb-4">Grow exceptional leaders with science-backed development</p>
                         <div className="h-0.5 bg-[#7030a0] mb-4"></div>
+                        <p className="text-sm text-gray-600 mb-4">Grow exceptional leaders with science-backed development</p>
                         <div className="space-y-2 text-sm">
                           <Link href="/leadership#workshop" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
                             <span className="text-gray-400 mr-2">›</span>
@@ -104,11 +110,14 @@ export default function Navigation() {
 
                       {/* Selling */}
                       <div className="space-y-3">
-                        <Link href="/selling" className="font-semibold text-black hover:text-[#dc0725] transition-colors block font-playfair text-lg">
-                          Selling
+                        <Link href="/selling" className="font-playfair text-lg font-semibold text-black hover:text-[#dc0725] transition-colors block flex items-center justify-between group">
+                          <span>Selling</span>
+                          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
                         </Link>
-                        <p className="text-sm text-gray-600 mb-4">Transform sales performance through human-centred methods</p>
                         <div className="h-0.5 bg-[#dc0725] mb-4"></div>
+                        <p className="text-sm text-gray-600 mb-4">Transform sales performance through human-centred methods</p>
                         <div className="space-y-2 text-sm">
                           <Link href="/selling#workshop" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
                             <span className="text-gray-400 mr-2">›</span>
