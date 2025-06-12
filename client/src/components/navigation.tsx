@@ -53,13 +53,13 @@ export default function Navigation() {
                           Winning Careers
                         </h3>
                         <div className="space-y-1 text-sm">
-                          <Link href="/winning-careers" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/winning-careers#workshop" className="text-gray-600 hover:text-black block py-1">
                             Winning Careers Workshop
                           </Link>
-                          <Link href="/winning-careers" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/winning-careers#assessment" className="text-gray-600 hover:text-black block py-1">
                             Winning Careers Personality Assessment
                           </Link>
-                          <Link href="/winning-careers" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/winning-careers#newsletter" className="text-gray-600 hover:text-black block py-1">
                             CareerCoacha Newsletter
                           </Link>
                         </div>
@@ -71,13 +71,13 @@ export default function Navigation() {
                           Leadership
                         </h3>
                         <div className="space-y-1 text-sm">
-                          <Link href="/leadership" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/leadership#workshop" className="text-gray-600 hover:text-black block py-1">
                             Triple Intelligence Leadership Workshop
                           </Link>
-                          <Link href="/leadership" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/leadership#assessment" className="text-gray-600 hover:text-black block py-1">
                             Triple Intelligence Leadership Assessment
                           </Link>
-                          <Link href="/leadership" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/leadership#newsletter" className="text-gray-600 hover:text-black block py-1">
                             LeaderCoacha Newsletter
                           </Link>
                         </div>
@@ -89,13 +89,13 @@ export default function Navigation() {
                           Value-Centred Selling
                         </h3>
                         <div className="space-y-1 text-sm">
-                          <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/selling#workshop" className="text-gray-600 hover:text-black block py-1">
                             Value-Centred Selling Workshop
                           </Link>
-                          <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/selling#assessment" className="text-gray-600 hover:text-black block py-1">
                             Value-Centred Selling Assessment
                           </Link>
-                          <Link href="/selling" className="text-gray-600 hover:text-black block py-1">
+                          <Link href="/selling#newsletter" className="text-gray-600 hover:text-black block py-1">
                             SalesCoacha Newsletter
                           </Link>
                         </div>

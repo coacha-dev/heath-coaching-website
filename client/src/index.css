@@ -35,6 +35,20 @@
   --light-text: hsl(215, 20%, 65%);
 }
 
+/* Smooth scrolling and anchor offset */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for anchor links to account for fixed header */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+div[id] {
+  scroll-margin-top: 100px;
+}
+
 .dark {
   --background: hsl(240, 10%, 3.9%);
   --foreground: hsl(0, 0%, 98%);
