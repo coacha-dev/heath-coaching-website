@@ -23,15 +23,15 @@ export default function Leadership() {
 
       {/* Service Offerings */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
             
             {/* Triple Intelligence Leadership Workshop */}
-            <div id="workshop" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#7030a0]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#7030a0]">
+            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Triple Intelligence Leadership Workshop
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Comprehensive leadership development program that builds cognitive intelligence (analytical thinking), 
                 emotional intelligence (self-awareness and empathy), and social intelligence (relationship management 
                 and influence). Participants develop integrated leadership capabilities for complex organizational challenges.
@@ -43,11 +43,11 @@ export default function Leadership() {
             </div>
 
             {/* Triple Intelligence Leadership Assessment */}
-            <div id="assessment" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#7030a0]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#7030a0]">
+            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Triple Intelligence Leadership Assessment
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Multi-dimensional leadership assessment measuring cognitive processing, emotional regulation, 
                 and social effectiveness. Provides detailed insights into leadership strengths, blind spots, 
                 and development priorities across all three intelligence domains.
@@ -59,11 +59,11 @@ export default function Leadership() {
             </div>
 
             {/* LeaderCoacha Newsletter */}
-            <div id="newsletter" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#7030a0]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#7030a0]">
+            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 LeaderCoacha Newsletter
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Monthly leadership insights featuring research-backed strategies, case studies from successful leaders, 
                 and practical tools for developing triple intelligence capabilities. Includes exclusive interviews 
                 with thought leaders and access to leadership assessment tools.

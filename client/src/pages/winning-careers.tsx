@@ -23,15 +23,15 @@ export default function WinningCareers() {
 
       {/* Service Offerings */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
             
             {/* Winning Careers Workshop */}
-            <div id="workshop" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#0081ea]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#0081ea]">
+            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Winning Careers Workshop
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Intensive workshop covering strategic career planning, goal setting, professional networking, 
                 and advancement strategies. Participants learn evidence-based approaches to career development, 
                 personal branding, and professional positioning within their industry.
@@ -43,11 +43,11 @@ export default function WinningCareers() {
             </div>
 
             {/* Winning Careers Assessment */}
-            <div id="assessment" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#0081ea]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#0081ea]">
+            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Winning Careers Personality Assessment
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Comprehensive personality and career aptitude assessment that identifies individual strengths, 
                 preferred work styles, and optimal career paths. Includes detailed reporting on communication 
                 preferences, leadership potential, and professional development recommendations.
@@ -59,11 +59,11 @@ export default function WinningCareers() {
             </div>
 
             {/* CareerCoacha Newsletter */}
-            <div id="newsletter" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#0081ea]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#0081ea]">
+            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 CareerCoacha Newsletter
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Monthly newsletter featuring career insights, industry trends, professional development tips, 
                 and exclusive content from career experts. Includes case studies, interview strategies, 
                 and actionable advice for career advancement.

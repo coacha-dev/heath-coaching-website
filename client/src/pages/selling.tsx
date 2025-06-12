@@ -23,15 +23,15 @@ export default function Selling() {
 
       {/* Service Offerings */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
             
             {/* Value-Centred Selling Workshop */}
-            <div id="workshop" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#dc0725]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#dc0725]">
+            <div id="workshop" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Value-Centred Selling Workshop
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Comprehensive sales methodology focused on understanding client values, building trust-based relationships, 
                 and creating win-win solutions. Participants learn consultative selling techniques, value proposition 
                 development, and ethical persuasion strategies that drive long-term client relationships.
@@ -43,11 +43,11 @@ export default function Selling() {
             </div>
 
             {/* Value-Centred Selling Assessment */}
-            <div id="assessment" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#dc0725]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#dc0725]">
+            <div id="assessment" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 Value-Centred Selling Assessment
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Diagnostic assessment evaluating sales strengths, communication style, relationship-building capabilities, 
                 and value identification skills. Provides insights into sales personality, client engagement patterns, 
                 and areas for improvement in the value-centred selling approach.
@@ -59,11 +59,11 @@ export default function Selling() {
             </div>
 
             {/* SalesCoacha Newsletter */}
-            <div id="newsletter" className="bg-gray-50 rounded-lg p-8 border-l-4 border-[#dc0725]">
-              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-2 pb-2 border-b-2 border-[#dc0725]">
+            <div id="newsletter" className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-3xl font-bold text-[hsl(var(--dark-text))] mb-6">
                 SalesCoacha Newsletter
               </h3>
-              <p className="text-lg text-[hsl(var(--medium-text))] mb-6 mt-6">
+              <p className="text-lg text-[hsl(var(--medium-text))] mb-6">
                 Monthly sales insights featuring value-centred selling strategies, client psychology research, 
                 and practical techniques for building authentic client relationships. Includes case studies, 
                 conversation starters, and tools for identifying and communicating value propositions.

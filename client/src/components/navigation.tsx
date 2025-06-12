@@ -1,13 +1,22 @@
 import { Link, useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "./contact-dialog";
 import coacheLogo from "@assets/Coacha Logo LATEST_1749609249362.png";
+import { scrollToAnchor } from "@/lib/scroll";
 
 export default function Navigation() {
   const [location] = useLocation();
   const [isContactOpen, setIsContactOpen] = useState(false);
+
+  // Handle anchor navigation on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => scrollToAnchor(hash), 100);
+    }
+  }, [location]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
 
