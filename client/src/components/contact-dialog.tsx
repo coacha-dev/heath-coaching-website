@@ -18,49 +18,71 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[450px]">
         <DialogHeader>
-          <DialogTitle>Contact Luke Heath</DialogTitle>
+          <DialogTitle>Contact Our Team</DialogTitle>
           <DialogDescription>
-            Get in touch with our Managing Director to discuss your training needs.
+            Get in touch with our team to discuss your training needs.
           </DialogDescription>
         </DialogHeader>
         
-        <div className="space-y-6">
+        <div className="space-y-4">
+          {/* Luke Heath */}
           <div className="bg-[#faf8f5] rounded-lg p-6">
-            <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-2">
+            <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
               Luke Heath
             </h3>
             <p className="text-[hsl(var(--coacha-blue))] font-medium mb-4">
               Managing Director, Executive Coach & Trainer
             </p>
             
-            <div className="space-y-3">
+            <div className="space-y-2">
               <a 
                 href="mailto:luke@coacha.co" 
                 className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
               >
-                <Mail className="w-5 h-5 mr-3 text-[hsl(var(--coacha-blue))]" />
+                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--coacha-blue))]" />
                 luke@coacha.co
               </a>
               <a 
                 href="tel:+61417588346" 
                 className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
               >
-                <Phone className="w-5 h-5 mr-3 text-[hsl(var(--coacha-blue))]" />
+                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--coacha-blue))]" />
                 +61 417 588 346
               </a>
             </div>
           </div>
-          
-          <div className="text-center">
-            <p className="text-sm text-[hsl(var(--medium-text))] mb-4">
-              Luke is available to discuss how Coacha can help your organization develop the skills needed for success.
+
+          {/* Josh Heath */}
+          <div className="bg-[#faf8f5] rounded-lg p-6">
+            <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
+              Josh Heath
+            </h3>
+            <p className="text-[hsl(var(--coacha-purple))] font-medium mb-4">
+              Product Director
             </p>
-            <Button 
-              onClick={() => onOpenChange(false)} 
-              className="coacha-button"
-            >
-              Close
-            </Button>
+            
+            <div className="space-y-2">
+              <a 
+                href="mailto:josh@coacha.co" 
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors"
+              >
+                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--coacha-purple))]" />
+                josh@coacha.co
+              </a>
+              <a 
+                href="tel:+61423391445" 
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors"
+              >
+                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--coacha-purple))]" />
+                +61 423 391 445
+              </a>
+            </div>
+          </div>
+          
+          <div className="text-center pt-2">
+            <p className="text-sm text-[hsl(var(--medium-text))]">
+              Our team is available to discuss how Coacha can help your organization develop the skills needed for success.
+            </p>
           </div>
         </div>
       </DialogContent>
