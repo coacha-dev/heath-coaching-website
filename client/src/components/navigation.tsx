@@ -65,7 +65,7 @@ export default function Navigation() {
                           </svg>
                         </Link>
                         <div className="h-0.5 bg-[#0081ea] mb-4"></div>
-                        <p className="text-sm text-gray-600 mb-4">Build high-performing professionals with tools & insights</p>
+                        <p className="text-sm text-gray-600 mb-4 italic">Build high-performing professionals with tools & insights</p>
                         <div className="space-y-2 text-sm">
                           <Link href="/winning-careers#workshop" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
                             <span className="text-gray-400 mr-2">›</span>
@@ -91,7 +91,7 @@ export default function Navigation() {
                           </svg>
                         </Link>
                         <div className="h-0.5 bg-[#7030a0] mb-4"></div>
-                        <p className="text-sm text-gray-600 mb-4">Grow exceptional leaders with science-backed development</p>
+                        <p className="text-sm text-gray-600 mb-4 italic">Grow exceptional leaders with science-backed development</p>
                         <div className="space-y-2 text-sm">
                           <Link href="/leadership#workshop" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
                             <span className="text-gray-400 mr-2">›</span>
@@ -117,7 +117,7 @@ export default function Navigation() {
                           </svg>
                         </Link>
                         <div className="h-0.5 bg-[#dc0725] mb-4"></div>
-                        <p className="text-sm text-gray-600 mb-4">Transform sales performance through human-centred methods</p>
+                        <p className="text-sm text-gray-600 mb-4 italic">Transform sales performance through human-centred methods</p>
                         <div className="space-y-2 text-sm">
                           <Link href="/selling#workshop" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
                             <span className="text-gray-400 mr-2">›</span>
