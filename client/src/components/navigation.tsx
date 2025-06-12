@@ -205,67 +205,25 @@ export default function Navigation() {
               
               {/* Winning Careers */}
               <Link href="/winning-careers" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1 pl-4">
+                <span className="block text-sm font-medium text-gray-700 hover:text-[#0081ea] active:text-[#0081ea] py-2 pl-4 flex items-center justify-between">
                   Winning Careers
-                </span>
-              </Link>
-              <Link href="/winning-careers#workshop" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  Winning Careers Workshop
-                </span>
-              </Link>
-              <Link href="/winning-careers#assessment" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  Winning Careers Personality Assessment
-                </span>
-              </Link>
-              <Link href="/winning-careers#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  CareerCoacha Newsletter
+                  <span className="text-gray-400">›</span>
                 </span>
               </Link>
               
               {/* Leadership */}
               <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1 pl-4">
+                <span className="block text-sm font-medium text-gray-700 hover:text-[#7030a0] active:text-[#7030a0] py-2 pl-4 flex items-center justify-between">
                   Triple Intelligence Leadership
-                </span>
-              </Link>
-              <Link href="/leadership#workshop" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  Triple Intelligence Leadership Workshop
-                </span>
-              </Link>
-              <Link href="/leadership#assessment" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  Triple Intelligence Leadership Assessment
-                </span>
-              </Link>
-              <Link href="/leadership#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  LeaderCoacha Newsletter
+                  <span className="text-gray-400">›</span>
                 </span>
               </Link>
               
               {/* Selling */}
               <Link href="/selling" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm font-medium text-gray-700 hover:text-black py-1 pl-4">
+                <span className="block text-sm font-medium text-gray-700 hover:text-[#dc0725] active:text-[#dc0725] py-2 pl-4 flex items-center justify-between">
                   Value-Centred Selling
-                </span>
-              </Link>
-              <Link href="/selling#workshop" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  Value-Centred Selling Workshop
-                </span>
-              </Link>
-              <Link href="/selling#assessment" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  Value-Centred Selling Assessment
-                </span>
-              </Link>
-              <Link href="/selling#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
-                <span className="block text-sm text-gray-600 hover:text-black py-1 pl-8">
-                  SalesCoacha Newsletter
+                  <span className="text-gray-400">›</span>
                 </span>
               </Link>
             </div>
