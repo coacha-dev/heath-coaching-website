@@ -9,6 +9,8 @@ import { scrollToAnchor } from "@/lib/scroll";
 export default function Navigation() {
   const [location] = useLocation();
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesHovered, setIsServicesHovered] = useState(false);
 
   // Handle anchor navigation on page load
   useEffect(() => {
@@ -17,14 +19,10 @@ export default function Navigation() {
       setTimeout(() => scrollToAnchor(hash), 100);
     }
   }, [location]);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isServicesHovered, setIsServicesHovered] = useState(false);
-
-  const isActive = (path: string) => location === path;
 
   return (
-    <>
-      <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <div className="sticky top-0 z-50">
+      <nav className="bg-white shadow-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 min-w-0">
             {/* Logo */}
@@ -52,89 +50,6 @@ export default function Navigation() {
                     <ChevronDown className={`h-3 w-3 flex-shrink-0 transition-transform duration-200 ${isServicesHovered ? 'rotate-180' : ''}`} />
                     <span className="nav-underline"></span>
                   </button>
-                  
-                  {/* Dropdown Menu */}
-                  <div className={`absolute left-0 top-full mt-1 w-[800px] bg-white rounded-lg shadow-lg border border-gray-100 py-6 px-6 transition-all duration-200 ${isServicesHovered ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
-                    <div className="grid grid-cols-3 gap-8">
-                      {/* Winning Careers */}
-                      <div className="space-y-3">
-                        <Link href="/winning-careers" className="font-playfair text-lg font-semibold text-black hover:text-[#0081ea] transition-colors block flex items-center justify-between group">
-                          <span>Winning Careers</span>
-                          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </Link>
-                        <div className="h-0.5 bg-[#0081ea] mb-4"></div>
-                        <p className="text-sm text-gray-600 mb-4 italic">Build high-performing professionals with tools & insights</p>
-                        <div className="space-y-2 text-sm">
-                          <Link href="/winning-careers#workshop" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            Winning Careers Workshop
-                          </Link>
-                          <Link href="/winning-careers#assessment" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            Winning Careers Personality Assessment
-                          </Link>
-                          <Link href="/winning-careers#newsletter" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            CareerCoacha Newsletter
-                          </Link>
-                        </div>
-                      </div>
-
-                      {/* Leadership */}
-                      <div className="space-y-3">
-                        <Link href="/leadership" className="font-playfair text-lg font-semibold text-black hover:text-[#7030a0] transition-colors block flex items-center justify-between group">
-                          <span>Leadership</span>
-                          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </Link>
-                        <div className="h-0.5 bg-[#7030a0] mb-4"></div>
-                        <p className="text-sm text-gray-600 mb-4 italic">Grow exceptional leaders with science-backed development</p>
-                        <div className="space-y-2 text-sm">
-                          <Link href="/leadership#workshop" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            Triple Intelligence Leadership Workshop
-                          </Link>
-                          <Link href="/leadership#assessment" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            Triple Intelligence Leadership Assessment
-                          </Link>
-                          <Link href="/leadership#newsletter" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            LeaderCoacha Newsletter
-                          </Link>
-                        </div>
-                      </div>
-
-                      {/* Selling */}
-                      <div className="space-y-3">
-                        <Link href="/selling" className="font-playfair text-lg font-semibold text-black hover:text-[#dc0725] transition-colors block flex items-center justify-between group">
-                          <span>Selling</span>
-                          <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </Link>
-                        <div className="h-0.5 bg-[#dc0725] mb-4"></div>
-                        <p className="text-sm text-gray-600 mb-4 italic">Transform sales performance through human-centred methods</p>
-                        <div className="space-y-2 text-sm">
-                          <Link href="/selling#workshop" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            Value-Centred Selling Workshop
-                          </Link>
-                          <Link href="/selling#assessment" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            Value-Centred Selling Assessment
-                          </Link>
-                          <Link href="/selling#newsletter" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
-                            <span className="text-gray-400 mr-2">›</span>
-                            SalesCoacha Newsletter
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
                 <Link href="/testimonials">
@@ -151,15 +66,12 @@ export default function Navigation() {
                   </span>
                 </Link>
 
-                <a
-                  href="https://heathcoaching.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="nav-item relative text-black px-3 py-2 text-sm font-medium transition-colors duration-200"
-                >
-                  One-to-One Coaching
-                  <span className="nav-underline"></span>
-                </a>
+                <Link href="/contact">
+                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
+                    One-to-One Coaching
+                    <span className="nav-underline"></span>
+                  </span>
+                </Link>
               </div>
             </div>
 
@@ -167,7 +79,7 @@ export default function Navigation() {
             <div className="hidden md:block">
               <Button
                 onClick={() => setIsContactOpen(true)}
-                className="coacha-button"
+                className="bg-black text-white border-2 border-black hover:bg-transparent hover:text-black transition-all duration-200 text-sm font-medium px-4 py-2"
               >
                 Contact Us
               </Button>
@@ -175,73 +87,173 @@ export default function Navigation() {
 
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <Button
-                variant="ghost"
-                size="sm"
+              <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-gray-700 hover:text-black focus:outline-none focus:text-black"
               >
-                {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-              </Button>
+                {isMobileMenuOpen ? (
+                  <X className="h-6 w-6" />
+                ) : (
+                  <Menu className="h-6 w-6" />
+                )}
+              </button>
             </div>
           </div>
+        </div>
+      </nav>
 
-          {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-100">
-                {/* Services Section */}
-                <div className="px-3 py-2">
-                  <h3 className="text-sm font-semibold text-gray-900 mb-2">Services</h3>
-                  <div className="ml-4 space-y-1">
-                    <Link href="/winning-careers">
-                      <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                        Winning Careers
-                      </span>
-                    </Link>
-                    <Link href="/leadership">
-                      <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                        Triple Intelligence Leadership
-                      </span>
-                    </Link>
-                    <Link href="/selling">
-                      <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
-                        Value-Centred Selling
-                      </span>
-                    </Link>
-                  </div>
+      {/* Full-width Services Dropdown */}
+      <div 
+        className={`bg-white border-b border-gray-100 transition-all duration-300 ${
+          isServicesHovered ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+        }`}
+        onMouseEnter={() => setIsServicesHovered(true)}
+        onMouseLeave={() => setIsServicesHovered(false)}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-3 gap-8">
+            {/* Winning Careers */}
+            <div className="space-y-3">
+              <Link href="/winning-careers" className="font-playfair text-lg font-semibold text-black hover:text-[#0081ea] transition-colors block flex items-center justify-between group">
+                <span>Winning Careers</span>
+                <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </Link>
+              <div className="h-0.5 bg-[#0081ea] mb-4"></div>
+              <p className="text-sm text-gray-600 mb-4 italic">Build high-performing professionals with tools & insights</p>
+              <div className="space-y-2 text-sm">
+                <Link href="/winning-careers#workshop" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  Winning Careers Workshop
+                </Link>
+                <Link href="/winning-careers#assessment" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  Winning Careers Personality Assessment
+                </Link>
+                <Link href="/winning-careers#newsletter" className="text-gray-700 hover:text-[#0081ea] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  CareerCoacha Newsletter
+                </Link>
+              </div>
+            </div>
+
+            {/* Leadership */}
+            <div className="space-y-3">
+              <Link href="/leadership" className="font-playfair text-lg font-semibold text-black hover:text-[#7030a0] transition-colors block flex items-center justify-between group">
+                <span>Leadership</span>
+                <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </Link>
+              <div className="h-0.5 bg-[#7030a0] mb-4"></div>
+              <p className="text-sm text-gray-600 mb-4 italic">Grow exceptional leaders with science-backed development</p>
+              <div className="space-y-2 text-sm">
+                <Link href="/leadership#workshop" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  Triple Intelligence Leadership Workshop
+                </Link>
+                <Link href="/leadership#assessment" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  Triple Intelligence Leadership Assessment
+                </Link>
+                <Link href="/leadership#newsletter" className="text-gray-700 hover:text-[#7030a0] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  LeaderCoacha Newsletter
+                </Link>
+              </div>
+            </div>
+
+            {/* Selling */}
+            <div className="space-y-3">
+              <Link href="/selling" className="font-playfair text-lg font-semibold text-black hover:text-[#dc0725] transition-colors block flex items-center justify-between group">
+                <span>Selling</span>
+                <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </Link>
+              <div className="h-0.5 bg-[#dc0725] mb-4"></div>
+              <p className="text-sm text-gray-600 mb-4 italic">Transform sales performance through human-centred methods</p>
+              <div className="space-y-2 text-sm">
+                <Link href="/selling#workshop" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  Value-Centred Selling Workshop
+                </Link>
+                <Link href="/selling#assessment" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  Value-Centred Selling Assessment
+                </Link>
+                <Link href="/selling#newsletter" className="text-gray-700 hover:text-[#dc0725] block transition-colors duration-200 flex items-center">
+                  <span className="text-gray-400 mr-2">›</span>
+                  SalesCoacha Newsletter
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white border-b border-gray-100">
+          <div className="px-4 pt-2 pb-3 space-y-1">
+            <div className="flex flex-col space-y-2">
+              {/* Services Toggle */}
+              <div className="border-l-4 border-gray-300 pl-4">
+                <div className="text-lg font-semibold text-gray-900 mb-3">
+                  Services
                 </div>
+                <div className="pl-4 space-y-2">
+                  <Link href="/winning-careers">
+                    <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
+                      Winning Careers
+                    </span>
+                  </Link>
+                  <Link href="/leadership">
+                    <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
+                      Triple Intelligence Leadership
+                    </span>
+                  </Link>
+                  <Link href="/selling">
+                    <span className="block px-3 py-1 text-sm text-gray-600 hover:text-black">
+                      Value-Centred Selling
+                    </span>
+                  </Link>
+                </div>
+              </div>
 
-                <Link href="/testimonials">
-                  <span className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
-                    Testimonials
-                  </span>
-                </Link>
-                <Link href="/team">
-                  <span className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black">
-                    Our Team
-                  </span>
-                </Link>
-                <a 
-                  href="https://heathcoaching.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-black"
-                >
+              <Link href="/testimonials">
+                <span className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-black">
+                  Testimonials
+                </span>
+              </Link>
+
+              <Link href="/team">
+                <span className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-black">
+                  Our Team
+                </span>
+              </Link>
+
+              <Link href="/contact">
+                <span className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-black">
                   One-to-One Coaching
-                </a>
+                </span>
+              </Link>
+
+              <div className="pt-4">
                 <Button
                   onClick={() => setIsContactOpen(true)}
-                  className="w-full mt-4 coacha-button"
+                  className="w-full bg-black text-white border-2 border-black hover:bg-transparent hover:text-black transition-all duration-200"
                 >
                   Contact Us
                 </Button>
               </div>
             </div>
-          )}
+          </div>
         </div>
-      </nav>
+      )}
 
       <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
-    </>
+    </div>
   );
 }
