@@ -4,7 +4,7 @@ import joshHeadshot from "@assets/Josh Heath Headshot_1749691421446.jpg";
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-gradient-to-br from-[hsl(var(--heath-gradient-start))] to-[hsl(var(--heath-gradient-end))]">
       {/* Team Members Section */}
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,15 +29,15 @@ export default function Team() {
                   <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3">
                     Luke Heath
                   </h3>
-                  <p className="text-lg text-[hsl(var(--coacha-blue))] font-medium mb-4">
-                    Managing Director, Executive Coach & Trainer
+                  <p className="text-lg text-[hsl(var(--heath-blue))] font-medium mb-4">
+                    Executive Coach & Founder
                   </p>
                   <div className="space-y-2">
-                    <a href="mailto:luke@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors">
+                    <a href="mailto:luke@heathcoaching.com" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors">
                       <Mail className="w-4 h-4 mr-2" />
-                      luke@coacha.co
+                      luke@heathcoaching.com
                     </a>
-                    <a href="tel:+61417588346" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors">
+                    <a href="tel:+61417588346" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors">
                       <Phone className="w-4 h-4 mr-2" />
                       +61 417 588 346
                     </a>
@@ -47,7 +47,7 @@ export default function Team() {
               
               <div className="space-y-4">
                 <p className="text-[hsl(var(--medium-text))]">
-                  Luke Heath was an investment banker and portfolio manager for 10 years with Schroders and Societe Generale. Since 2002, he has founded and run human resources consulting businesses. Luke has advised boards and senior leadership teams on strategy, financing, and people and culture. He continues to enjoy coaching and training leaders and their teams across the globe.
+                  Luke Heath brings over 20 years of experience in executive coaching and leadership development. As a former investment banker with Schroders and Societe Generale, Luke transitioned to founding human resources consulting businesses in 2002. He specializes in one-to-one executive coaching, helping leaders unlock their potential and accelerate their career growth through personalized coaching sessions.
                 </p>
                 <p className="text-[hsl(var(--medium-text))] italic">
                   Luke enjoys being in the surf, SCUBA diving, and going hiking with old Schroders' mates.
