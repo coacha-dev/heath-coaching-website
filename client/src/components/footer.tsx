@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import coacheLogo from "@assets/Coacha Logo LATEST_1749609249362.png";
+import heathLogo from "@assets/Asset 1@2x_1750899479635.png";
 
 export default function Footer() {
   return (
@@ -9,39 +9,33 @@ export default function Footer() {
           {/* Logo and Tagline */}
           <div className="md:col-span-2">
             <img 
-              src={coacheLogo} 
-              alt="Coacha"
+              src={heathLogo} 
+              alt="HeathCoaching"
               className="h-8 w-auto mb-4"
             />
             <p className="text-[hsl(var(--medium-text))] mb-6 max-w-md">
-              Unlock performance through leadership, culture & capability
+              Transform your career with personalized executive coaching
             </p>
           </div>
 
-          {/* Services */}
+          {/* Coaching */}
           <div>
-            <h4 className="font-semibold text-[hsl(var(--dark-text))] mb-4">Services</h4>
+            <h4 className="font-semibold text-[hsl(var(--dark-text))] mb-4">Coaching</h4>
             <ul className="space-y-2 text-[hsl(var(--medium-text))]">
               <li>
-                <Link href="/winning-careers">
-                  <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                    Winning Careers
-                  </span>
-                </Link>
+                <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                  Executive Coaching
+                </span>
               </li>
               <li>
-                <Link href="/leadership">
-                  <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                    Leadership
-                  </span>
-                </Link>
+                <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                  Leadership Development
+                </span>
               </li>
               <li>
-                <Link href="/selling">
-                  <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                    Selling
-                  </span>
-                </Link>
+                <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
+                  Career Coaching
+                </span>
               </li>
             </ul>
           </div>
@@ -58,28 +52,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                    Contact
-                  </span>
-                </Link>
-              </li>
-              <li>
                 <Link href="/team">
                   <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
                     Our Team
                   </span>
                 </Link>
-              </li>
-              <li>
-                <a 
-                  href="https://heathcoaching.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200"
-                >
-                  One-to-One Coaching
-                </a>
               </li>
             </ul>
           </div>
@@ -88,7 +65,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[hsl(var(--medium-text))] text-sm">
-            © 2025 Coacha. All rights reserved.
+            © 2025 HeathCoaching. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy-policy">
