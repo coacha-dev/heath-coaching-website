@@ -93,104 +93,92 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero and Logo Scroller - Full Height Above Fold */}
-      <section className="bg-white min-h-screen flex flex-col">
-        {/* Main Hero Content - Centered with proper spacing */}
-        <div className="flex-1 flex items-center justify-center" style={{ paddingTop: '7.5rem' }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
-                Luke Heath helps leaders and their teams to{" "}
-                <span className="text-[hsl(var(--heath-blue))]">excel</span>
-              </h1>
-              <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] max-w-3xl mx-auto mb-8">
-                He has coached and trained executives across the globe.
-              </p>
-              <div className="flex justify-center">
-                <Button
-                  onClick={() => setIsContactOpen(true)}
-                  className="heath-button text-lg px-8 py-3"
-                >
-                  Contact
-                </Button>
-              </div>
-            </div>
-          </div>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-blue-50 via-blue-50 to-white py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            Luke Heath helps leaders and their teams to{" "}
+            <span className="text-blue-600">excel</span>
+          </h1>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            He has coached and trained executives across the globe.
+          </p>
+          <Button
+            onClick={() => setIsContactOpen(true)}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
+          >
+            Contact
+          </Button>
         </div>
+      </section>
 
-        {/* Logo Scroller at Bottom */}
-        <div className="py-4 mb-10" style={{ transform: 'translateY(-16px)' }}>
-          <div className="w-full">
-            <LogoScroller />
-          </div>
+      {/* Logo Scroller */}
+      <section className="bg-white py-8">
+        <div className="w-full">
+          <LogoScroller />
         </div>
       </section>
 
       {/* Coaching Section */}
-      <section id="coaching-section" className="bg-gradient-to-br from-blue-50 to-blue-100 py-16 lg:py-24">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-8">
+      <section id="coaching-section" className="bg-gradient-to-b from-white to-blue-50 py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               One-To-One Coaching
             </h2>
-            <p className="text-lg text-[hsl(var(--medium-text))] mb-8">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Luke has been coaching C-level executives and other high-value roles since 2002. In your coaching program, you can rely on:
             </p>
           </div>
 
-          {/* 3-2 Grid Layout */}
-          <div className="space-y-6 mb-12">
-            {/* First Row - 3 items */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Support and Challenge */}
-              <div className="bg-white rounded-lg p-6 shadow-sm border">
-                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+          {/* Features Grid - 3-2 Layout */}
+          <div className="mb-12">
+            {/* First Row - 3 cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   Support and Challenge
                 </h3>
-                <p className="text-[hsl(var(--medium-text))]">
+                <p className="text-gray-600 leading-relaxed">
                   Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
                 </p>
               </div>
 
-              {/* Commercial Experience */}
-              <div className="bg-white rounded-lg p-6 shadow-sm border">
-                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   Commercial Experience
                 </h3>
-                <p className="text-[hsl(var(--medium-text))]">
+                <p className="text-gray-600 leading-relaxed">
                   Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
                 </p>
               </div>
 
-              {/* Behavioural Science */}
-              <div className="bg-white rounded-lg p-6 shadow-sm border">
-                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   Behavioural Science
                 </h3>
-                <p className="text-[hsl(var(--medium-text))]">
+                <p className="text-gray-600 leading-relaxed">
                   Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
                 </p>
               </div>
             </div>
 
-            {/* Second Row - 2 items centered */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {/* Bespoke Resources */}
-              <div className="bg-white rounded-lg p-6 shadow-sm border">
-                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+            {/* Second Row - 2 cards centered */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   Bespoke Resources
                 </h3>
-                <p className="text-[hsl(var(--medium-text))]">
+                <p className="text-gray-600 leading-relaxed">
                   You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
                 </p>
               </div>
 
-              {/* Useful Feedback */}
-              <div className="bg-white rounded-lg p-6 shadow-sm border">
-                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
                   Useful Feedback
                 </h3>
-                <p className="text-[hsl(var(--medium-text))]">
+                <p className="text-gray-600 leading-relaxed">
                   Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
                 </p>
               </div>
@@ -200,7 +188,7 @@ export default function Home() {
           <div className="text-center">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="heath-button text-lg px-8 py-3"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
             >
               Contact
             </Button>
@@ -209,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="bg-white py-16 lg:py-24 overflow-hidden">
+      <section className="bg-gray-50 py-16 lg:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
