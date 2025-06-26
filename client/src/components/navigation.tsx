@@ -52,6 +52,16 @@ export default function Navigation() {
                     <span className="nav-underline"></span>
                   </span>
                 </Link>
+
+                <a 
+                  href="https://coacha.co" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200"
+                >
+                  Other Services
+                  <span className="nav-underline"></span>
+                </a>
               </div>
             </div>
 
@@ -99,6 +109,16 @@ export default function Navigation() {
                 Our Team
               </span>
             </Link>
+
+            <a 
+              href="https://coacha.co" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block text-base font-medium text-gray-700 hover:text-black py-2"
+            >
+              Other Services
+            </a>
 
             <div className="pt-2">
               <Button

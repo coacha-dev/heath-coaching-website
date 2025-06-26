@@ -4,7 +4,7 @@ import joshHeadshot from "@assets/Josh Heath Headshot_1749691421446.jpg";
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[hsl(var(--heath-gradient-start))] to-[hsl(var(--heath-gradient-end))]">
+    <div className="min-h-screen bg-white">
       {/* Team Members Section */}
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

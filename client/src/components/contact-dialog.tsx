@@ -26,7 +26,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         
         <div className="space-y-4">
           {/* Luke Heath */}
-          <div className="bg-gradient-to-br from-[hsl(var(--heath-light-blue))] to-[hsl(var(--heath-gradient-end))] rounded-lg p-6">
+          <div className="bg-gray-50 rounded-lg p-6 border">
             <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
               Luke Heath
             </h3>
