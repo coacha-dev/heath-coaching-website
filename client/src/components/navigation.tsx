@@ -69,9 +69,23 @@ export default function Navigation() {
             <div className="hidden md:block">
               <Button
                 onClick={() => setIsContactOpen(true)}
-                className="heath-button text-sm font-medium px-4 py-2"
+                className="text-white px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 border-2"
+                style={{ 
+                  backgroundColor: '#0081ea',
+                  borderColor: '#0081ea'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'white';
+                  e.currentTarget.style.color = '#0081ea';
+                  e.currentTarget.style.borderColor = '#0081ea';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#0081ea';
+                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.borderColor = '#0081ea';
+                }}
               >
-                Contact Us
+                Contact
               </Button>
             </div>
 
@@ -126,9 +140,23 @@ export default function Navigation() {
                   setIsContactOpen(true);
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full heath-button"
+                className="w-full text-white px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 border-2"
+                style={{ 
+                  backgroundColor: '#0081ea',
+                  borderColor: '#0081ea'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'white';
+                  e.currentTarget.style.color = '#0081ea';
+                  e.currentTarget.style.borderColor = '#0081ea';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#0081ea';
+                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.borderColor = '#0081ea';
+                }}
               >
-                Contact Us
+                Contact
               </Button>
             </div>
           </div>
