@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-white py-12 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Tagline */}
           <div className="md:col-span-2">
             <img 
@@ -16,28 +16,6 @@ export default function Footer() {
             <p className="text-[hsl(var(--medium-text))] mb-6 max-w-md">
               Transform your career with personalized executive coaching
             </p>
-          </div>
-
-          {/* Coaching */}
-          <div>
-            <h4 className="font-semibold text-[hsl(var(--dark-text))] mb-4">Coaching</h4>
-            <ul className="space-y-2 text-[hsl(var(--medium-text))]">
-              <li>
-                <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                  Executive Coaching
-                </span>
-              </li>
-              <li>
-                <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                  Leadership Development
-                </span>
-              </li>
-              <li>
-                <span className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer">
-                  Career Coaching
-                </span>
-              </li>
-            </ul>
           </div>
 
           {/* Company */}
@@ -57,6 +35,16 @@ export default function Footer() {
                     Our Team
                   </span>
                 </Link>
+              </li>
+              <li>
+                <a 
+                  href="https://coacha.co" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[hsl(var(--dark-text))] transition-colors duration-200 cursor-pointer"
+                >
+                  Other Services
+                </a>
               </li>
             </ul>
           </div>
