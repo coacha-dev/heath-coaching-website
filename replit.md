@@ -1,0 +1,104 @@
+# Coacha - Professional Business Coaching & Training Platform
+
+## Overview
+
+Coacha is a full-stack web application that provides professional business coaching and training services. The platform showcases various training programs including leadership development, career coaching, and sales training. Built with a modern tech stack, it features a responsive frontend with React and a Node.js/Express backend, designed for deployment on Replit's infrastructure.
+
+## System Architecture
+
+### Frontend Architecture
+- **Framework**: React 18 with TypeScript
+- **Routing**: Wouter for client-side routing
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Radix UI primitives with shadcn/ui component library
+- **State Management**: TanStack Query for server state management
+- **Build Tool**: Vite for development and production builds
+
+### Backend Architecture
+- **Runtime**: Node.js with Express.js framework
+- **Language**: TypeScript with ES modules
+- **Development**: Hot reloading with tsx
+- **Production**: Compiled with esbuild for optimal performance
+
+### Data Storage Solutions
+- **Database**: PostgreSQL (configured via Drizzle)
+- **ORM**: Drizzle ORM with PostgreSQL dialect
+- **Schema**: Centralized schema definitions in `/shared/schema.ts`
+- **Migrations**: Managed through drizzle-kit
+- **Storage Interface**: Abstracted storage layer with in-memory fallback for development
+
+### Database Connection
+- **Provider**: Neon Database (@neondatabase/serverless)
+- **Configuration**: Environment-based DATABASE_URL
+- **Session Storage**: PostgreSQL-backed sessions (connect-pg-simple)
+
+## Key Components
+
+### Frontend Components
+1. **Navigation System**: Responsive navigation with dropdown menus
+2. **Service Pages**: Dedicated pages for each service offering (Leadership, Winning Careers, Selling)
+3. **Testimonials**: Client testimonial display system
+4. **Contact System**: Contact dialog and team information
+5. **Logo Scroller**: Animated client logo display
+6. **UI Library**: Comprehensive component system based on shadcn/ui
+
+### Backend Components
+1. **Server**: Express.js application with middleware setup
+2. **Routes**: Modular route system (currently minimal, ready for expansion)
+3. **Storage Layer**: Abstract storage interface with memory implementation
+4. **Error Handling**: Centralized error handling middleware
+5. **Development Tools**: Vite integration for development mode
+
+### Shared Components
+1. **Schema Definitions**: User management schema with Zod validation
+2. **Type Definitions**: Shared TypeScript types between client and server
+
+## Data Flow
+
+1. **Client Requests**: React frontend makes requests to Express backend via `/api` routes
+2. **Server Processing**: Express middleware handles authentication, logging, and error handling
+3. **Data Persistence**: Storage interface abstracts database operations
+4. **Response Handling**: TanStack Query manages client-side caching and state
+
+## External Dependencies
+
+### Core Dependencies
+- **@neondatabase/serverless**: PostgreSQL database connectivity
+- **drizzle-orm**: Database ORM and query builder
+- **@tanstack/react-query**: Server state management
+- **@radix-ui/***: Accessible UI primitives
+- **wouter**: Lightweight React router
+
+### Development Dependencies
+- **vite**: Build tool and development server
+- **tsx**: TypeScript execution for development
+- **esbuild**: Production bundling
+- **tailwindcss**: Utility-first CSS framework
+
+## Deployment Strategy
+
+### Replit Configuration
+- **Environment**: Node.js 20, Web, PostgreSQL 16 modules
+- **Development**: `npm run dev` with hot reloading
+- **Production Build**: `npm run build` (Vite + esbuild)
+- **Production Start**: `npm run start`
+- **Port Configuration**: Internal port 5000, external port 80
+- **Scaling**: Autoscale deployment target
+
+### Build Process
+1. Frontend: Vite builds React app to `dist/public`
+2. Backend: esbuild bundles server code to `dist/index.js`
+3. Static Assets: Served from `dist/public` in production
+
+### Environment Requirements
+- **DATABASE_URL**: PostgreSQL connection string (required)
+- **NODE_ENV**: Environment mode (development/production)
+
+## User Preferences
+
+Preferred communication style: Simple, everyday language.
+
+## Changelog
+
+Changelog:
+- June 26, 2025. Initial setup
