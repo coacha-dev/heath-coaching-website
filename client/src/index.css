@@ -27,10 +27,10 @@
   --radius: 0.5rem;
   
   /* HeathCoaching Brand Colors */
-  --heath-blue: hsl(207, 100%, 46%);
-  --heath-light-blue: hsl(207, 100%, 90%);
+  --heath-blue: hsl(213, 100%, 46%); /* #0081ea */
+  --heath-light-blue: hsl(213, 100%, 90%);
   --heath-gradient-start: hsl(210, 100%, 95%);
-  --heath-gradient-end: hsl(207, 100%, 92%);
+  --heath-gradient-end: hsl(213, 100%, 92%);
   --dark-text: hsl(215, 28%, 17%);
   --medium-text: hsl(215, 16%, 47%);
   --light-text: hsl(215, 20%, 65%);

@@ -93,34 +93,37 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-blue-50 via-blue-50 to-white py-20">
+      {/* Hero Section - White background */}
+      <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Luke Heath helps leaders and their teams to{" "}
-            <span className="text-blue-600">excel</span>
+            <span style={{ color: '#0081ea' }}>excel</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             He has coached and trained executives across the globe.
           </p>
           <Button
             onClick={() => setIsContactOpen(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
+            className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
+            style={{ backgroundColor: '#0081ea' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0066bb'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0081ea'}
           >
             Contact
           </Button>
         </div>
       </section>
 
-      {/* Logo Scroller */}
-      <section className="bg-white py-8">
+      {/* Logo Scroller - Start of gradient */}
+      <section className="bg-gradient-to-b from-white to-blue-50 py-8">
         <div className="w-full">
           <LogoScroller />
         </div>
       </section>
 
-      {/* Coaching Section */}
-      <section id="coaching-section" className="bg-gradient-to-b from-white to-blue-50 py-20">
+      {/* Coaching Section - Peak of blue gradient */}
+      <section id="coaching-section" className="bg-gradient-to-b from-blue-50 via-blue-100 to-blue-50 py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -133,8 +136,10 @@ export default function Home() {
 
           {/* Features List */}
           <div className="max-w-4xl mx-auto mb-12 space-y-6">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
-              <h3 className="text-xl font-bold text-blue-600 mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:bg-blue-50/30"
+                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
+                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
                 Support and Challenge
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -142,8 +147,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
-              <h3 className="text-xl font-bold text-blue-600 mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:bg-blue-50/30"
+                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
+                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
                 Commercial Experience
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -151,8 +158,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
-              <h3 className="text-xl font-bold text-blue-600 mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:bg-blue-50/30"
+                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
+                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
                 Behavioural Science
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -160,8 +169,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
-              <h3 className="text-xl font-bold text-blue-600 mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:bg-blue-50/30"
+                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
+                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
                 Bespoke Resources
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -169,8 +180,10 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
-              <h3 className="text-xl font-bold text-blue-600 mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:bg-blue-50/30"
+                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
+                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
                 Useful Feedback
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -182,7 +195,10 @@ export default function Home() {
           <div className="text-center">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
+              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
+              style={{ backgroundColor: '#0081ea' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0066bb'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0081ea'}
             >
               Contact
             </Button>
@@ -190,8 +206,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="bg-gray-50 py-16 lg:py-24 overflow-hidden">
+      {/* Testimonials Section - Return to white */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-16 lg:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
