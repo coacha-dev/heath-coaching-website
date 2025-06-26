@@ -105,10 +105,21 @@ export default function Home() {
           </p>
           <Button
             onClick={() => setIsContactOpen(true)}
-            className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
-            style={{ backgroundColor: '#0081ea' }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0066bb'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0081ea'}
+            className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
+            style={{ 
+              backgroundColor: '#0081ea',
+              borderColor: '#0081ea'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'white';
+              e.currentTarget.style.color = '#0081ea';
+              e.currentTarget.style.borderColor = '#0081ea';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#0081ea';
+              e.currentTarget.style.color = 'white';
+              e.currentTarget.style.borderColor = '#0081ea';
+            }}
           >
             Contact
           </Button>
@@ -116,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* Logo Scroller - Start of gradient */}
-      <section className="bg-gradient-to-b from-white to-blue-50 py-8">
+      <section className="bg-gradient-to-b from-white to-blue-100 py-8">
         <div className="w-full">
           <LogoScroller />
         </div>
@@ -124,7 +135,7 @@ export default function Home() {
 
       {/* Coaching Section - Peak of blue gradient, fading back to white */}
       <section id="coaching-section" className="py-20" style={{
-        background: 'linear-gradient(to bottom, rgb(239 246 255), rgb(219 234 254) 30%, rgb(239 246 255) 70%, white)'
+        background: 'linear-gradient(to bottom, rgb(219 234 254), rgb(191 219 254) 30%, rgb(239 246 255) 70%, white)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -197,10 +208,21 @@ export default function Home() {
           <div className="text-center">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-colors"
-              style={{ backgroundColor: '#0081ea' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0066bb'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0081ea'}
+              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
+              style={{ 
+                backgroundColor: '#0081ea',
+                borderColor: '#0081ea'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'white';
+                e.currentTarget.style.color = '#0081ea';
+                e.currentTarget.style.borderColor = '#0081ea';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#0081ea';
+                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.borderColor = '#0081ea';
+              }}
             >
               Contact
             </Button>
@@ -264,7 +286,21 @@ export default function Home() {
             <Link href="/testimonials">
               <Button
                 size="lg"
-                className="heath-button"
+                className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
+                style={{ 
+                  backgroundColor: '#0081ea',
+                  borderColor: '#0081ea'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'white';
+                  e.currentTarget.style.color = '#0081ea';
+                  e.currentTarget.style.borderColor = '#0081ea';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#0081ea';
+                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.borderColor = '#0081ea';
+                }}
               >
                 See all testimonials
               </Button>
