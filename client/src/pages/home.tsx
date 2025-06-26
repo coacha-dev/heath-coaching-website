@@ -131,57 +131,51 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Features Grid - 3-2 Layout */}
-          <div className="mb-12">
-            {/* First Row - 3 cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Support and Challenge
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Commercial Experience
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Behavioural Science
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
-                </p>
-              </div>
+          {/* Features List */}
+          <div className="max-w-4xl mx-auto mb-12 space-y-6">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
+              <h3 className="text-xl font-bold text-blue-600 mb-4">
+                Support and Challenge
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
+              </p>
             </div>
 
-            {/* Second Row - 2 cards centered */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Bespoke Resources
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
-                </p>
-              </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
+              <h3 className="text-xl font-bold text-blue-600 mb-4">
+                Commercial Experience
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
+              </p>
+            </div>
 
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Useful Feedback
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
-                </p>
-              </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
+              <h3 className="text-xl font-bold text-blue-600 mb-4">
+                Behavioural Science
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
+              <h3 className="text-xl font-bold text-blue-600 mb-4">
+                Bespoke Resources
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl hover:border-blue-200 hover:bg-blue-50/30">
+              <h3 className="text-xl font-bold text-blue-600 mb-4">
+                Useful Feedback
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
+              </p>
             </div>
           </div>
 
