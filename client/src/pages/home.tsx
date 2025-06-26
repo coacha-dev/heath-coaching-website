@@ -100,14 +100,20 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[hsl(var(--dark-text))] leading-tight mb-8">
-                Luke Heath helps{" "}
-                <span className="text-[hsl(var(--heath-blue))]">leaders</span>{" "}
-                and their teams to{" "}
+                Luke Heath helps leaders and their teams to{" "}
                 <span className="text-[hsl(var(--heath-blue))]">excel</span>
               </h1>
               <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] max-w-3xl mx-auto mb-8">
                 He has coached and trained executives across the globe.
               </p>
+              <div className="flex justify-center">
+                <Button
+                  onClick={() => setIsContactOpen(true)}
+                  className="heath-button text-lg px-8 py-3"
+                >
+                  Contact
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -121,8 +127,8 @@ export default function Home() {
       </section>
 
       {/* Coaching Section */}
-      <section id="coaching-section" className="bg-gray-50 py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="coaching-section" className="bg-gradient-to-br from-blue-50 to-blue-100 py-16 lg:py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-8">
               One-To-One Coaching
@@ -132,55 +138,62 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {/* Support and Challenge */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border">
-              <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
-                Support and Challenge
-              </h3>
-              <p className="text-[hsl(var(--medium-text))]">
-                Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
-              </p>
+          {/* 3-2 Grid Layout */}
+          <div className="space-y-6 mb-12">
+            {/* First Row - 3 items */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Support and Challenge */}
+              <div className="bg-white rounded-lg p-6 shadow-sm border">
+                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+                  Support and Challenge
+                </h3>
+                <p className="text-[hsl(var(--medium-text))]">
+                  Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
+                </p>
+              </div>
+
+              {/* Commercial Experience */}
+              <div className="bg-white rounded-lg p-6 shadow-sm border">
+                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+                  Commercial Experience
+                </h3>
+                <p className="text-[hsl(var(--medium-text))]">
+                  Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
+                </p>
+              </div>
+
+              {/* Behavioural Science */}
+              <div className="bg-white rounded-lg p-6 shadow-sm border">
+                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+                  Behavioural Science
+                </h3>
+                <p className="text-[hsl(var(--medium-text))]">
+                  Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
+                </p>
+              </div>
             </div>
 
-            {/* Commercial Experience */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border">
-              <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
-                Commercial Experience
-              </h3>
-              <p className="text-[hsl(var(--medium-text))]">
-                Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
-              </p>
-            </div>
+            {/* Second Row - 2 items centered */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {/* Bespoke Resources */}
+              <div className="bg-white rounded-lg p-6 shadow-sm border">
+                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+                  Bespoke Resources
+                </h3>
+                <p className="text-[hsl(var(--medium-text))]">
+                  You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
+                </p>
+              </div>
 
-            {/* Behavioural Science */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border">
-              <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
-                Behavioural Science
-              </h3>
-              <p className="text-[hsl(var(--medium-text))]">
-                Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
-              </p>
-            </div>
-
-            {/* Bespoke Resources */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border">
-              <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
-                Bespoke Resources
-              </h3>
-              <p className="text-[hsl(var(--medium-text))]">
-                You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
-              </p>
-            </div>
-
-            {/* Useful Feedback */}
-            <div className="bg-white rounded-lg p-6 shadow-sm border md:col-span-2">
-              <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
-                Useful Feedback
-              </h3>
-              <p className="text-[hsl(var(--medium-text))]">
-                Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
-              </p>
+              {/* Useful Feedback */}
+              <div className="bg-white rounded-lg p-6 shadow-sm border">
+                <h3 className="text-xl font-bold text-[hsl(var(--dark-text))] mb-4">
+                  Useful Feedback
+                </h3>
+                <p className="text-[hsl(var(--medium-text))]">
+                  Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
+                </p>
+              </div>
             </div>
           </div>
 
