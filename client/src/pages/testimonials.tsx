@@ -162,7 +162,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#faf8f5]">
+    <div className="min-h-screen bg-gradient-to-br from-[hsl(var(--heath-gradient-start))] to-[hsl(var(--heath-gradient-end))]">
       {/* Hero Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

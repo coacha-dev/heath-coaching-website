@@ -1,8 +1,8 @@
-# Coacha - Professional Business Coaching & Training Platform
+# HeathCoaching - Executive One-to-One Coaching Platform
 
 ## Overview
 
-Coacha is a full-stack web application that provides professional business coaching and training services. The platform showcases various training programs including leadership development, career coaching, and sales training. Built with a modern tech stack, it features a responsive frontend with React and a Node.js/Express backend, designed for deployment on Replit's infrastructure.
+HeathCoaching is a full-stack web application that provides personalized executive coaching services. The platform focuses exclusively on one-to-one coaching sessions to help leaders and professionals reach their full potential. Built with a modern tech stack, it features a responsive frontend with React and a Node.js/Express backend, designed for deployment on Replit's infrastructure.
 
 ## System Architecture
 
@@ -35,9 +35,9 @@ Coacha is a full-stack web application that provides professional business coach
 ## Key Components
 
 ### Frontend Components
-1. **Navigation System**: Responsive navigation with dropdown menus
-2. **Service Pages**: Dedicated pages for each service offering (Leadership, Winning Careers, Selling)
-3. **Testimonials**: Client testimonial display system
+1. **Navigation System**: Simplified responsive navigation for coaching focus
+2. **Home Page**: Hero section with one-to-one coaching focus and "What to Expect" section
+3. **Testimonials**: Client testimonial display system with auto-scrolling layout
 4. **Contact System**: Contact dialog and team information
 5. **Logo Scroller**: Animated client logo display
 6. **UI Library**: Comprehensive component system based on shadcn/ui
@@ -100,5 +100,14 @@ Preferred communication style: Simple, everyday language.
 
 ## Changelog
 
-Changelog:
-- June 26, 2025. Initial setup
+- June 26, 2025: Complete rebrand to HeathCoaching
+  - Updated branding from Coacha to HeathCoaching
+  - Implemented light blue gradient color scheme
+  - Focused content on one-to-one executive coaching
+  - Updated navigation to remove services dropdown
+  - Changed hero section to emphasize personalized coaching
+  - Added "What to Expect" section with coaching benefits
+  - Updated team page with HeathCoaching contact details
+  - Applied blue theme throughout testimonials and contact forms
+  - Updated favicon and page title
+- June 26, 2025: Initial setup
