@@ -126,16 +126,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Logo Scroller - Clean transition */}
-      <section className="bg-white py-8">
+      {/* Logo Scroller - Start of gentle gradient */}
+      <section className="bg-gradient-to-b from-white to-blue-50/40 py-8">
         <div className="w-full">
           <LogoScroller />
         </div>
       </section>
 
-      {/* Coaching Section - Barely visible blue tint */}
+      {/* Coaching Section - Visible but gentle blue */}
       <section id="coaching-section" className="py-20" style={{
-        background: 'linear-gradient(to bottom, white, rgba(239, 246, 255, 0.15) 25%, rgba(239, 246, 255, 0.1) 50%, white 75%)'
+        background: 'linear-gradient(to bottom, rgba(239, 246, 255, 0.4), rgba(219, 234, 254, 0.6) 30%, rgba(239, 246, 255, 0.3) 60%, white 80%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
