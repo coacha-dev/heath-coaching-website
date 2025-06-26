@@ -48,10 +48,10 @@ export default function LogoScroller() {
       {/* Logo scroller container with fade masks */}
       <div className="relative w-full">
         {/* Left fade mask */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#faf8f5] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-blue-50 to-transparent z-10"></div>
         
         {/* Right fade mask */}
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#faf8f5] to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-blue-50 to-transparent z-10"></div>
         
         {/* Scrolling logos container */}
         <div className="logo-scroll-container">
