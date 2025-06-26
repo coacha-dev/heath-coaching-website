@@ -45,13 +45,8 @@ export default function LogoScroller() {
         </p>
       </div>
       
-      {/* Logo scroller container with fade masks */}
-      <div className="relative w-full">
-        {/* Left fade mask */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-blue-50 to-transparent z-10"></div>
-        
-        {/* Right fade mask */}
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-blue-50 to-transparent z-10"></div>
+      {/* Logo scroller container */}
+      <div className="relative w-full overflow-hidden">
         
         {/* Scrolling logos container */}
         <div className="logo-scroll-container">
