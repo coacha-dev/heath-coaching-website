@@ -93,9 +93,9 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section - White background with more spacing */}
-      <section className="bg-white pt-32 pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Hero Section - Enhanced with more blue and larger spacing */}
+      <section className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-white via-blue-50/30 to-blue-100/50 pt-20 pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex-grow flex flex-col justify-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
             Luke Heath helps leaders and their teams to{" "}
             <span style={{ color: '#0081ea' }}>excel</span>
@@ -124,18 +124,21 @@ export default function Home() {
             Contact
           </Button>
         </div>
-      </section>
-
-      {/* Logo Scroller - Start of gentle gradient */}
-      <section className="bg-gradient-to-b from-white to-blue-50/40 py-8">
-        <div className="w-full">
+        
+        {/* Logo Scroller at bottom of hero section */}
+        <div className="w-full bg-gradient-to-b from-blue-100/50 to-blue-50/60 py-12 mt-auto">
+          <div className="text-center mb-8">
+            <p className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
+              TRUSTED BY LEADING COMPANIES
+            </p>
+          </div>
           <LogoScroller />
         </div>
       </section>
 
-      {/* Coaching Section - Visible but gentle blue */}
+      {/* Coaching Section - Enhanced blue presence */}
       <section id="coaching-section" className="py-20" style={{
-        background: 'linear-gradient(to bottom, rgba(239, 246, 255, 0.4), rgba(219, 234, 254, 0.6) 30%, rgba(239, 246, 255, 0.3) 60%, white 80%)'
+        background: 'linear-gradient(to bottom, rgba(0, 129, 234, 0.1), rgba(0, 129, 234, 0.15) 30%, rgba(0, 129, 234, 0.1) 60%, white 80%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -230,8 +233,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - Gentle blue fade in and out */}
-      <section className="bg-gradient-to-b from-white via-blue-50 to-white py-16 lg:py-24 overflow-hidden">
+      {/* Testimonials Section - Enhanced blue integration */}
+      <section className="bg-gradient-to-b from-white via-blue-50/60 to-white py-16 lg:py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
