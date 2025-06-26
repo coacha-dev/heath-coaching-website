@@ -26,12 +26,11 @@
   --ring: hsl(222.2, 84%, 4.9%);
   --radius: 0.5rem;
   
-  /* Coacha Brand Colors */
-  --coacha-blue: hsl(207, 100%, 46%);
-  --coacha-purple: hsl(270, 55%, 40%);
-  --coacha-red: hsl(350, 87%, 43%);
-  --cream: hsl(45, 63%, 97%);
-  --light-beige: hsl(35, 44%, 96%);
+  /* HeathCoaching Brand Colors */
+  --heath-blue: hsl(207, 100%, 46%);
+  --heath-light-blue: hsl(207, 100%, 90%);
+  --heath-gradient-start: hsl(210, 100%, 95%);
+  --heath-gradient-end: hsl(207, 100%, 92%);
   --dark-text: hsl(215, 28%, 17%);
   --medium-text: hsl(215, 16%, 47%);
   --light-text: hsl(215, 20%, 65%);
@@ -85,10 +84,10 @@ div[id] {
   }
 }
 
-/* Heading styles with higher specificity */
+/* Heading styles with higher specificity - HeathCoaching uses standard fonts */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', 'Axiforma', serif !important;
-  font-weight: 450 !important;
+  font-family: 'Inter', 'Public Sans', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 @layer utilities {
@@ -113,12 +112,12 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 0 100%;
   }
 
-  .coacha-button {
-    @apply bg-black text-white border-2 border-black transition-all duration-200;
+  .heath-button {
+    @apply bg-[hsl(var(--heath-blue))] text-white border-2 border-[hsl(var(--heath-blue))] transition-all duration-200;
   }
   
-  .coacha-button:hover {
-    @apply bg-transparent text-black border-black;
+  .heath-button:hover {
+    @apply bg-transparent text-[hsl(var(--heath-blue))] border-[hsl(var(--heath-blue))];
   }
 
   /* Navigation underline animations */
