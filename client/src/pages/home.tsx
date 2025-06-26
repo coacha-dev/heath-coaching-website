@@ -128,11 +128,6 @@ export default function Home() {
 
       {/* Logo Scroller - More blue presence */}
       <section className="bg-gradient-to-b from-blue-100/60 to-blue-50/50 py-12">
-        <div className="text-center mb-8">
-          <p className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
-            TRUSTED BY LEADING COMPANIES
-          </p>
-        </div>
         <div className="w-full">
           <LogoScroller />
         </div>
