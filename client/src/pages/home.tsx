@@ -123,7 +123,9 @@ export default function Home() {
       </section>
 
       {/* Coaching Section - Peak of blue gradient, fading back to white */}
-      <section id="coaching-section" className="bg-gradient-to-b from-blue-50 via-blue-100 to-white py-20">
+      <section id="coaching-section" className="py-20" style={{
+        background: 'linear-gradient(to bottom, rgb(239 246 255), rgb(219 234 254) 30%, rgb(239 246 255) 70%, white)'
+      }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
