@@ -130,7 +130,7 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full py-12">
+        <div className="w-full py-8 pb-16">
           <LogoScroller />
         </div>
       </section>
