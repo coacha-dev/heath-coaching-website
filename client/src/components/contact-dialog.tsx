@@ -26,7 +26,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         
         <div className="space-y-4">
           {/* Luke Heath */}
-          <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-[hsl(var(--heath-blue))] transition-colors group">
+          <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group">
             <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
               Luke Heath
             </h3>
@@ -37,23 +37,23 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
             <div className="space-y-2">
               <a 
                 href="mailto:luke@heathcoaching.com" 
-                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors group"
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
               >
-                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] group-hover:text-[hsl(var(--heath-blue))] transition-colors" />
-                <span className="group-hover:text-[hsl(var(--heath-blue))] transition-colors">luke@heathcoaching.com</span>
+                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors" />
+                luke@heathcoaching.com
               </a>
               <a 
                 href="tel:+61417588346" 
-                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors group"
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
               >
-                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] group-hover:text-[hsl(var(--heath-blue))] transition-colors" />
-                <span className="group-hover:text-[hsl(var(--heath-blue))] transition-colors">+61 417 588 346</span>
+                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors" />
+                +61 417 588 346
               </a>
             </div>
           </div>
 
           {/* Josh Heath */}
-          <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-[hsl(var(--heath-blue))] transition-colors group">
+          <div className="bg-white rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group">
             <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
               Josh Heath
             </h3>
@@ -64,17 +64,17 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
             <div className="space-y-2">
               <a 
                 href="mailto:josh@coacha.co" 
-                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors group"
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
               >
-                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] group-hover:text-[hsl(var(--heath-blue))] transition-colors" />
-                <span className="group-hover:text-[hsl(var(--heath-blue))] transition-colors">josh@coacha.co</span>
+                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors" />
+                josh@coacha.co
               </a>
               <a 
                 href="tel:+61423391445" 
-                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors group"
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors"
               >
-                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] group-hover:text-[hsl(var(--heath-blue))] transition-colors" />
-                <span className="group-hover:text-[hsl(var(--heath-blue))] transition-colors">+61 423 391 445</span>
+                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--medium-text))] hover:text-[#0081ea] transition-colors" />
+                +61 423 391 445
               </a>
             </div>
           </div>
