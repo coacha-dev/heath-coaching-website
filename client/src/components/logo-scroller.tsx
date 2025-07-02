@@ -2,7 +2,7 @@ import logo1 from "@assets/Coacha Logo Slider Icons-01_1749611089711.png";
 import logo2 from "@assets/Coacha Logo Slider Icons-02_1749611089711.png";
 import logo3 from "@assets/Coacha Logo Slider Icons-03_1749611089711.png";
 import logo4 from "@assets/Coacha Logo Slider Icons-04_1749611089711.png";
-import logo5 from "@assets/Coacha Logo Slider Icons-05_1749611089711.png";
+import logo5 from "@assets/Deloitte Logo Site_1751428803124.png";
 import logo6 from "@assets/Coacha Logo Slider Icons-06_1749611089711.png";
 import logo7 from "@assets/Coacha Logo Slider Icons-07_1749611089710.png";
 import logo8 from "@assets/Coacha Logo Slider Icons-08_1749611089710.png";
@@ -21,7 +21,7 @@ const logos = [
   { src: logo2, alt: "Company 2" },
   { src: logo3, alt: "Company 3" },
   { src: logo4, alt: "Company 4" },
-  { src: logo5, alt: "Company 5" },
+  { src: logo5, alt: "Deloitte" },
   { src: logo6, alt: "Company 6" },
   { src: logo7, alt: "Company 7" },
   { src: logo8, alt: "Company 8" },
