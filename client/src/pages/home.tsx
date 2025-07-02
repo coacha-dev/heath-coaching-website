@@ -93,9 +93,9 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section - Full viewport with logo scroller at bottom */}
+      {/* Hero Section - Full viewport with seamless gradient */}
       <section className="min-h-screen flex flex-col" style={{
-        background: 'linear-gradient(to bottom, white, rgba(239, 246, 255, 0.6) 50%, rgba(219, 234, 254, 0.8) 100%)'
+        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.4) 40%, rgba(219, 234, 254, 0.6) 70%, rgba(191, 219, 254, 0.8) 100%)'
       }}>
         <div className="flex-1 flex items-center justify-center pt-20 pb-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -129,17 +129,15 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Logo Scroller at bottom of viewport */}
-        <div className="w-full py-12" style={{
-          background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.8), rgba(239, 246, 255, 0.7))'
-        }}>
+        {/* Logo Scroller at bottom of viewport - inherits gradient */}
+        <div className="w-full py-12">
           <LogoScroller />
         </div>
       </section>
 
-      {/* Coaching Section - Subtle blue gradient */}
+      {/* Coaching Section - Continues gradient flow */}
       <section id="coaching-section" className="py-20" style={{
-        background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.3), rgba(219, 234, 254, 0.5) 30%, rgba(219, 234, 254, 0.3) 60%, white 80%)'
+        background: 'linear-gradient(to bottom, rgba(191, 219, 254, 0.8) 0%, rgba(219, 234, 254, 0.6) 30%, rgba(239, 246, 255, 0.4) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -234,8 +232,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - Full width layout */}
-      <section className="bg-gradient-to-b from-white via-blue-50/40 to-white py-16 lg:py-24 overflow-hidden">
+      {/* Testimonials Section - Continues gradient flow */}
+      <section className="py-16 lg:py-24 overflow-hidden" style={{
+        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 25%, rgba(219, 234, 254, 0.4) 50%, rgba(239, 246, 255, 0.3) 75%, white 100%)'
+      }}>
         <div className="text-center mb-16 px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
             What our clients say
