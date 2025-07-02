@@ -162,7 +162,9 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{
+      background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.2) 30%, rgba(219, 234, 254, 0.3) 70%, white 100%)'
+    }}>
       {/* Hero Section */}
       <section className="py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,7 +173,7 @@ export default function Testimonials() {
               Client Testimonials
             </h1>
             <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-8">
-              Coacha has worked with companies across the globe, including:
+              HeathCoaching has worked with companies across the globe, including:
             </p>
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap justify-center gap-2 text-sm">

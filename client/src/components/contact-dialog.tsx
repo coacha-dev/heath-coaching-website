@@ -26,7 +26,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         
         <div className="space-y-4">
           {/* Luke Heath */}
-          <div className="bg-gray-50 rounded-lg p-6 border">
+          <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
             <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
               Luke Heath
             </h3>
@@ -53,27 +53,27 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
           </div>
 
           {/* Josh Heath */}
-          <div className="bg-[#faf8f5] rounded-lg p-6">
+          <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
             <h3 className="text-lg font-bold text-[hsl(var(--dark-text))] mb-2">
               Josh Heath
             </h3>
-            <p className="text-[hsl(var(--coacha-purple))] font-medium mb-4">
+            <p className="text-[hsl(var(--heath-blue))] font-medium mb-4">
               Product Director
             </p>
             
             <div className="space-y-2">
               <a 
                 href="mailto:josh@coacha.co" 
-                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors"
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors"
               >
-                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--coacha-purple))]" />
+                <Mail className="w-4 h-4 mr-3 text-[hsl(var(--heath-blue))]" />
                 josh@coacha.co
               </a>
               <a 
                 href="tel:+61423391445" 
-                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors"
+                className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors"
               >
-                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--coacha-purple))]" />
+                <Phone className="w-4 h-4 mr-3 text-[hsl(var(--heath-blue))]" />
                 +61 423 391 445
               </a>
             </div>
@@ -81,7 +81,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
           
           <div className="text-center pt-2">
             <p className="text-sm text-[hsl(var(--medium-text))]">
-              Our team is available to discuss how Coacha can help your organization develop the skills needed for success.
+              Our team is available to discuss how HeathCoaching can help your organization develop the skills needed for success.
             </p>
           </div>
         </div>

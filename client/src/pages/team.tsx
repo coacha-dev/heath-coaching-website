@@ -4,7 +4,9 @@ import joshHeadshot from "@assets/Josh Heath Headshot_1749691421446.jpg";
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen" style={{
+      background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.2) 30%, rgba(219, 234, 254, 0.3) 70%, white 100%)'
+    }}>
       {/* Team Members Section */}
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,7 +18,7 @@ export default function Team() {
 
           <div className="space-y-12">
             {/* Luke Heath */}
-            <div className="bg-white rounded-lg shadow-lg border-2 border-gray-200 p-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg border border-blue-100 p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
@@ -34,11 +36,11 @@ export default function Team() {
                   </p>
                   <div className="space-y-2">
                     <a href="mailto:luke@heathcoaching.com" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors">
-                      <Mail className="w-4 h-4 mr-2" />
+                      <Mail className="w-4 h-4 mr-2 text-[hsl(var(--heath-blue))]" />
                       luke@heathcoaching.com
                     </a>
                     <a href="tel:+61417588346" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors">
-                      <Phone className="w-4 h-4 mr-2" />
+                      <Phone className="w-4 h-4 mr-2 text-[hsl(var(--heath-blue))]" />
                       +61 417 588 346
                     </a>
                   </div>
@@ -66,7 +68,7 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="bg-white rounded-lg shadow-lg border-2 border-gray-200 p-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg border border-blue-100 p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
@@ -79,16 +81,16 @@ export default function Team() {
                   <h3 className="text-2xl font-bold text-[hsl(var(--dark-text))] mb-3">
                     Josh Heath
                   </h3>
-                  <p className="text-lg text-[hsl(var(--coacha-purple))] font-medium mb-4">
+                  <p className="text-lg text-[hsl(var(--heath-blue))] font-medium mb-4">
                     Product Director
                   </p>
                   <div className="space-y-2">
-                    <a href="mailto:josh@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors">
-                      <Mail className="w-4 h-4 mr-2" />
+                    <a href="mailto:josh@coacha.co" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors">
+                      <Mail className="w-4 h-4 mr-2 text-[hsl(var(--heath-blue))]" />
                       josh@coacha.co
                     </a>
-                    <a href="tel:+61423391445" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[#7030a0] transition-colors">
-                      <Phone className="w-4 h-4 mr-2" />
+                    <a href="tel:+61423391445" className="flex items-center text-[hsl(var(--medium-text))] hover:text-[hsl(var(--heath-blue))] transition-colors">
+                      <Phone className="w-4 h-4 mr-2 text-[hsl(var(--heath-blue))]" />
                       +61 423 391 445
                     </a>
                   </div>
