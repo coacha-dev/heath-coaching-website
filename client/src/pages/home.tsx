@@ -94,7 +94,9 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Full viewport with logo scroller at bottom */}
-      <section className="min-h-screen flex flex-col bg-gradient-to-b from-white via-blue-50/40 to-blue-100/60">
+      <section className="min-h-screen flex flex-col" style={{
+        background: 'linear-gradient(to bottom, white, rgba(239, 246, 255, 0.6) 50%, rgba(219, 234, 254, 0.8) 100%)'
+      }}>
         <div className="flex-1 flex items-center justify-center pt-20 pb-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
@@ -128,7 +130,9 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport */}
-        <div className="w-full py-12 bg-gradient-to-b from-blue-100/60 to-blue-50/50">
+        <div className="w-full py-12" style={{
+          background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.8), rgba(239, 246, 255, 0.7))'
+        }}>
           <LogoScroller />
         </div>
       </section>
