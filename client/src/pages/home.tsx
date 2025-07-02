@@ -93,42 +93,42 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section - Enhanced with more blue presence */}
-      <section className="bg-gradient-to-b from-white via-blue-50/40 to-blue-100/60 pt-32 pb-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Luke Heath helps leaders and their teams to{" "}
-            <span style={{ color: '#0081ea' }}>excel</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            He has coached and trained executives across the globe.
-          </p>
-          <Button
-            onClick={() => setIsContactOpen(true)}
-            className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
-            style={{ 
-              backgroundColor: '#0081ea',
-              borderColor: '#0081ea'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'white';
-              e.currentTarget.style.color = '#0081ea';
-              e.currentTarget.style.borderColor = '#0081ea';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#0081ea';
-              e.currentTarget.style.color = 'white';
-              e.currentTarget.style.borderColor = '#0081ea';
-            }}
-          >
-            Contact
-          </Button>
+      {/* Hero Section - Full viewport with logo scroller at bottom */}
+      <section className="min-h-screen flex flex-col bg-gradient-to-b from-white via-blue-50/40 to-blue-100/60">
+        <div className="flex-1 flex items-center justify-center pt-20 pb-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+              Luke Heath helps leaders and their teams to{" "}
+              <span style={{ color: '#0081ea' }}>excel</span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              He has coached and trained executives across the globe.
+            </p>
+            <Button
+              onClick={() => setIsContactOpen(true)}
+              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
+              style={{ 
+                backgroundColor: '#0081ea',
+                borderColor: '#0081ea'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'white';
+                e.currentTarget.style.color = '#0081ea';
+                e.currentTarget.style.borderColor = '#0081ea';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#0081ea';
+                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.borderColor = '#0081ea';
+              }}
+            >
+              Contact
+            </Button>
+          </div>
         </div>
-      </section>
-
-      {/* Logo Scroller - More blue presence */}
-      <section className="bg-gradient-to-b from-blue-100/60 to-blue-50/50 py-12">
-        <div className="w-full">
+        
+        {/* Logo Scroller at bottom of viewport */}
+        <div className="w-full py-12 bg-gradient-to-b from-blue-100/60 to-blue-50/50">
           <LogoScroller />
         </div>
       </section>
@@ -230,22 +230,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - Gentle blue fade in and out */}
+      {/* Testimonials Section - Full width layout */}
       <section className="bg-gradient-to-b from-white via-blue-50/40 to-white py-16 lg:py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
-              What our clients say
-            </h2>
-          </div>
+        <div className="text-center mb-16 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
+            What our clients say
+          </h2>
+        </div>
 
-          {/* Two Row Auto-Scrolling Layout */}
-          <div className="space-y-8 relative">
-            {/* Left fade mask */}
-            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-            
-            {/* Right fade mask */}
-            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        {/* Two Row Auto-Scrolling Layout - Full width */}
+        <div className="space-y-8 relative w-full">
+          {/* Left fade mask - matches background */}
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+          
+          {/* Right fade mask - matches background */}
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
             {/* Row 1 - Left to Right */}
             <div className="testimonial-row-container">
@@ -282,30 +281,29 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-center mt-16">
-            <Link href="/testimonials">
-              <Button
-                size="lg"
-                className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
-                style={{ 
-                  backgroundColor: '#0081ea',
-                  borderColor: '#0081ea'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'white';
-                  e.currentTarget.style.color = '#0081ea';
-                  e.currentTarget.style.borderColor = '#0081ea';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#0081ea';
-                  e.currentTarget.style.color = 'white';
-                  e.currentTarget.style.borderColor = '#0081ea';
-                }}
-              >
-                See all testimonials
-              </Button>
-            </Link>
-          </div>
+        <div className="text-center mt-16 px-4 sm:px-6 lg:px-8">
+          <Link href="/testimonials">
+            <Button
+              size="lg"
+              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
+              style={{ 
+                backgroundColor: '#0081ea',
+                borderColor: '#0081ea'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'white';
+                e.currentTarget.style.color = '#0081ea';
+                e.currentTarget.style.borderColor = '#0081ea';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#0081ea';
+                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.borderColor = '#0081ea';
+              }}
+            >
+              See all testimonials
+            </Button>
+          </Link>
         </div>
       </section>
 
