@@ -95,7 +95,7 @@ export default function Home() {
     <>
       {/* Hero Section - Full viewport with seamless gradient */}
       <section className="min-h-screen flex flex-col" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.4) 40%, rgba(219, 234, 254, 0.6) 70%, rgba(191, 219, 254, 0.8) 100%)'
+        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 40%, rgba(219, 234, 254, 0.4) 70%, rgba(219, 234, 254, 0.5) 100%)'
       }}>
         <div className="flex-1 flex items-center justify-center pt-20 pb-8">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -137,7 +137,7 @@ export default function Home() {
 
       {/* Coaching Section - Continues gradient flow */}
       <section id="coaching-section" className="py-20" style={{
-        background: 'linear-gradient(to bottom, rgba(191, 219, 254, 0.8) 0%, rgba(219, 234, 254, 0.6) 30%, rgba(239, 246, 255, 0.4) 60%, white 90%)'
+        background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
