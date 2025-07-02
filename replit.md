@@ -100,6 +100,14 @@ Preferred communication style: Simple, everyday language.
 
 ## Changelog
 
+- July 2, 2025: Enhanced gradient system and visual consistency
+  - Added subtle gradient backgrounds to testimonials and team pages matching home page
+  - Standardized contact dialog box colors to consistent blue theme (blue-50 background)
+  - Updated team page boxes with semi-transparent backgrounds (white/80) and blue borders
+  - Applied HeathCoaching branding consistently across contact forms and testimonials
+  - Replaced additional logo in company scroller with Deloitte logo
+  - Fine-tuned home page gradient subtlety for smoother blue transitions
+
 - June 26, 2025: Complete rebrand to HeathCoaching
   - Updated branding from Coacha to HeathCoaching
   - Implemented light blue gradient color scheme
