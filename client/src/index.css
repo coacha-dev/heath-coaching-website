@@ -124,11 +124,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .heath-button {
-    @apply bg-[hsl(var(--heath-blue))] text-white border-2 border-[hsl(var(--heath-blue))] transition-all duration-200;
+    background: linear-gradient(90deg, #0081ea 0%, #40a3f7 100%) !important;
+    @apply text-white border-2 border-transparent transition-all duration-300;
   }
   
   .heath-button:hover {
-    @apply bg-transparent text-[hsl(var(--heath-blue))] border-[hsl(var(--heath-blue))];
+    background: white !important;
+    @apply text-[#0081ea] border-[#0081ea];
+  }
+
+  /* Gradient button variant with consistent styling */
+  .heath-gradient-button {
+    background: linear-gradient(90deg, #0081ea 0%, #40a3f7 100%) !important;
+    @apply text-white border-2 border-transparent transition-all duration-300;
+  }
+
+  .heath-gradient-button:hover {
+    background: white !important;
+    @apply text-[#0081ea] border-[#0081ea];
   }
 
   /* Navigation underline animations */

@@ -113,21 +113,7 @@ export default function Home() {
             </p>
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
-              style={{ 
-                backgroundColor: '#0081ea',
-                borderColor: '#0081ea'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'white';
-                e.currentTarget.style.color = '#0081ea';
-                e.currentTarget.style.borderColor = '#0081ea';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#0081ea';
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.borderColor = '#0081ea';
-              }}
+              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-lg"
             >
               Contact
             </Button>
@@ -215,21 +201,7 @@ export default function Home() {
           <div className="text-center">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
-              style={{ 
-                backgroundColor: '#0081ea',
-                borderColor: '#0081ea'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'white';
-                e.currentTarget.style.color = '#0081ea';
-                e.currentTarget.style.borderColor = '#0081ea';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#0081ea';
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.borderColor = '#0081ea';
-              }}
+              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-lg"
             >
               Contact
             </Button>

@@ -79,7 +79,7 @@ export default function Selling() {
           <div className="text-center mt-16">
             <Button
               size="lg"
-              className="coacha-button"
+              className="heath-gradient-button"
               onClick={() => setIsContactOpen(true)}
             >
               Contact Us About Value-Centred Selling
