@@ -26,64 +26,54 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         
         <div className="space-y-4">
           {/* Luke Heath */}
-          <div 
-            className="rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group"
-            style={{
-              background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-            }}
-          >
-            <h3 className="text-lg font-bold text-white mb-2">
+          <div className="rounded-lg p-6 bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors group">
+            <h3 className="text-lg font-bold text-[#0081ea] mb-2">
               Luke Heath
             </h3>
-            <p className="text-white/90 font-medium mb-4">
+            <p className="text-[#0081ea]/80 font-medium mb-4">
               Executive Coach & Founder
             </p>
             
             <div className="space-y-2">
               <a 
                 href="mailto:luke@heathcoaching.com" 
-                className="flex items-center text-white hover:text-white/80 transition-colors"
+                className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors"
               >
-                <Mail className="w-4 h-4 mr-3 text-white" />
+                <Mail className="w-4 h-4 mr-3 text-[#0081ea]" />
                 luke@heathcoaching.com
               </a>
               <a 
                 href="tel:+61417588346" 
-                className="flex items-center text-white hover:text-white/80 transition-colors"
+                className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors"
               >
-                <Phone className="w-4 h-4 mr-3 text-white" />
+                <Phone className="w-4 h-4 mr-3 text-[#0081ea]" />
                 +61 417 588 346
               </a>
             </div>
           </div>
 
           {/* Josh Heath */}
-          <div 
-            className="rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group"
-            style={{
-              background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-            }}
-          >
-            <h3 className="text-lg font-bold text-white mb-2">
+          <div className="rounded-lg p-6 bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors group">
+            <h3 className="text-lg font-bold text-[#0081ea] mb-2">
               Josh Heath
             </h3>
-            <p className="text-white/90 font-medium mb-4">
+            <p className="text-[#0081ea]/80 font-medium mb-4">
               Product Director
             </p>
             
             <div className="space-y-2">
               <a 
                 href="mailto:josh@coacha.co" 
-                className="flex items-center text-white hover:text-white/80 transition-colors"
+                className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors"
               >
-                <Mail className="w-4 h-4 mr-3 text-white" />
+                <Mail className="w-4 h-4 mr-3 text-[#0081ea]" />
                 josh@coacha.co
               </a>
               <a 
                 href="tel:+61423391445" 
-                className="flex items-center text-white hover:text-white/80 transition-colors"
+                className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors"
               >
-                <Phone className="w-4 h-4 mr-3 text-white" />
+                <Phone className="w-4 h-4 mr-3 text-[#0081ea]" />
                 +61 423 391 445
               </a>
             </div>
