@@ -102,7 +102,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Luke Heath helps leaders and their teams to{" "}
               <span style={{ 
-                background: 'linear-gradient(90deg, #005bb5 0%, #0081ea 50%, #005bb5 100%)',
+                background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text'
