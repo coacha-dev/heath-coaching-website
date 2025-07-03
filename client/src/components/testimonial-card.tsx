@@ -9,16 +9,18 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ quote, name, title, company }: TestimonialCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-100 min-w-80 flex-shrink-0">
+    <div className="rounded-lg shadow-lg p-6 border border-gray-100 min-w-80 flex-shrink-0" style={{
+      background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
+    }}>
       <div className="mb-4">
-        <Quote className="h-6 w-6 text-gray-300 mb-4" />
-        <p className="text-[hsl(var(--medium-text))] italic mb-4">
+        <Quote className="h-6 w-6 text-white/60 mb-4" />
+        <p className="text-white/90 italic mb-4">
           "{quote}"
         </p>
       </div>
-      <div className="border-t border-gray-100 pt-4">
-        <p className="font-semibold text-[hsl(var(--dark-text))]">{name}</p>
-        <p className="text-sm text-[hsl(var(--light-text))]">
+      <div className="border-t border-white/20 pt-4">
+        <p className="font-semibold text-white">{name}</p>
+        <p className="text-sm text-white/80">
           {title}{company && `, ${company}`}
         </p>
       </div>
