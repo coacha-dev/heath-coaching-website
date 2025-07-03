@@ -27,10 +27,10 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         <div className="space-y-4">
           {/* Luke Heath */}
           <div className="rounded-lg p-6 bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors group">
-            <h3 className="text-lg font-bold text-[#0081ea] mb-2">
+            <h3 className="text-lg font-bold text-black mb-2">
               Luke Heath
             </h3>
-            <p className="text-[#0081ea]/80 font-medium mb-4">
+            <p className="text-gray-600 font-medium mb-4">
               Executive Coach & Founder
             </p>
             
@@ -54,10 +54,10 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
 
           {/* Josh Heath */}
           <div className="rounded-lg p-6 bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors group">
-            <h3 className="text-lg font-bold text-[#0081ea] mb-2">
+            <h3 className="text-lg font-bold text-black mb-2">
               Josh Heath
             </h3>
-            <p className="text-[#0081ea]/80 font-medium mb-4">
+            <p className="text-gray-600 font-medium mb-4">
               Product Director
             </p>
             
