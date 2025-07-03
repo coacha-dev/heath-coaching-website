@@ -36,6 +36,11 @@
   --light-text: hsl(215, 20%, 65%);
 }
 
+/* Gradient utility classes */
+.heath-gradient {
+  background: linear-gradient(90deg, #0081ea 0%, #40a3f7 100%) !important;
+}
+
 /* Smooth scrolling and anchor offset */
 html {
   scroll-behavior: smooth;

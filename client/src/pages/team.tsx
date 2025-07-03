@@ -18,9 +18,7 @@ export default function Team() {
 
           <div className="space-y-12">
             {/* Luke Heath */}
-            <div className="rounded-lg shadow-lg border border-blue-100 p-8" style={{
-              background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-            }}>
+            <div className="heath-gradient rounded-lg shadow-lg border border-blue-100 p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
@@ -70,9 +68,7 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="rounded-lg shadow-lg border border-blue-100 p-8" style={{
-              background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-            }}>
+            <div className="heath-gradient rounded-lg shadow-lg border border-blue-100 p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img

@@ -24,9 +24,7 @@ export default function ServiceCard({ title, description, theme, href }: Service
   const config = themeConfig[theme];
 
   return (
-    <div className="service-card rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 relative" style={{
-      background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-    }}>
+    <div className="service-card heath-gradient rounded-lg shadow-lg p-8 hover:shadow-xl transition-all duration-300 relative">
       
       <div className="mb-6 pt-4">
         <h3 className="text-2xl font-bold text-white mb-3">

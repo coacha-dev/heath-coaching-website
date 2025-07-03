@@ -9,9 +9,7 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ quote, name, title, company }: TestimonialCardProps) {
   return (
-    <div className="rounded-lg shadow-lg p-6 border border-gray-100 min-w-80 flex-shrink-0" style={{
-      background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-    }}>
+    <div className="heath-gradient rounded-lg shadow-lg p-6 border border-gray-100 min-w-80 flex-shrink-0">
       <div className="mb-4">
         <Quote className="h-6 w-6 text-white/60 mb-4" />
         <p className="text-white/90 italic mb-4">

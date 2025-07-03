@@ -178,9 +178,7 @@ export default function Testimonials() {
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap justify-center gap-2 text-sm">
                 {companies.map((company, index) => (
-                  <span key={index} className="inline-block px-3 py-1 rounded shadow-md hover:shadow-lg transition-shadow duration-200 text-white" style={{
-                    background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
-                  }}>
+                  <span key={index} className="inline-block heath-gradient px-3 py-1 rounded shadow-md hover:shadow-lg transition-shadow duration-200 text-white">
                     {company}
                   </span>
                 ))}
