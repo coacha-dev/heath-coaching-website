@@ -132,9 +132,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .heath-gradient-button:hover {
-    background: white !important;
-    @apply text-[#0081ea];
-    box-shadow: inset 0 0 0 2px #0081ea !important;
+    background: linear-gradient(90deg, #1a91ff 0%, #50b3ff 100%) !important;
+    @apply text-white;
   }
 
   /* Navigation underline animations */
