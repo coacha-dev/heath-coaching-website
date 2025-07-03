@@ -71,18 +71,18 @@ export default function Navigation() {
                 onClick={() => setIsContactOpen(true)}
                 className="text-white px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 border-2"
                 style={{ 
-                  backgroundColor: '#0081ea',
-                  borderColor: '#0081ea'
+                  background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
+                  borderColor: 'transparent'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'white';
+                  e.currentTarget.style.background = 'white';
                   e.currentTarget.style.color = '#0081ea';
                   e.currentTarget.style.borderColor = '#0081ea';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#0081ea';
+                  e.currentTarget.style.background = 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)';
                   e.currentTarget.style.color = 'white';
-                  e.currentTarget.style.borderColor = '#0081ea';
+                  e.currentTarget.style.borderColor = 'transparent';
                 }}
               >
                 Contact
@@ -142,18 +142,18 @@ export default function Navigation() {
                 }}
                 className="w-full text-white px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 border-2"
                 style={{ 
-                  backgroundColor: '#0081ea',
-                  borderColor: '#0081ea'
+                  background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
+                  borderColor: 'transparent'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'white';
+                  e.currentTarget.style.background = 'white';
                   e.currentTarget.style.color = '#0081ea';
                   e.currentTarget.style.borderColor = '#0081ea';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#0081ea';
+                  e.currentTarget.style.background = 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)';
                   e.currentTarget.style.color = 'white';
-                  e.currentTarget.style.borderColor = '#0081ea';
+                  e.currentTarget.style.borderColor = 'transparent';
                 }}
               >
                 Contact
