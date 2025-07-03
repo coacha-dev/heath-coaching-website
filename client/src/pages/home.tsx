@@ -101,7 +101,12 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Luke Heath helps leaders and their teams to{" "}
-              <span style={{ color: '#0081ea' }}>excel</span>
+              <span style={{ 
+                background: 'linear-gradient(135deg, #0081ea 0%, #4fc3f7 50%, #0081ea 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>excel</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               He has coached and trained executives across the globe.
