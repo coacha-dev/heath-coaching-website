@@ -41,6 +41,12 @@
   background: linear-gradient(90deg, #0081ea 0%, #40a3f7 100%) !important;
 }
 
+@layer utilities {
+  .bg-heath-gradient {
+    background: linear-gradient(90deg, #0081ea 0%, #40a3f7 100%);
+  }
+}
+
 /* Smooth scrolling and anchor offset */
 html {
   scroll-behavior: smooth;

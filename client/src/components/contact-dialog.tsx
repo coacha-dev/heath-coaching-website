@@ -26,7 +26,12 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         
         <div className="space-y-4">
           {/* Luke Heath */}
-          <div className="heath-gradient rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group">
+          <div 
+            className="rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group"
+            style={{
+              background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
+            }}
+          >
             <h3 className="text-lg font-bold text-white mb-2">
               Luke Heath
             </h3>
@@ -53,7 +58,12 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
           </div>
 
           {/* Josh Heath */}
-          <div className="heath-gradient rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group">
+          <div 
+            className="rounded-lg p-6 border border-gray-200 hover:border-[#0081ea] transition-colors group"
+            style={{
+              background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)'
+            }}
+          >
             <h3 className="text-lg font-bold text-white mb-2">
               Josh Heath
             </h3>
