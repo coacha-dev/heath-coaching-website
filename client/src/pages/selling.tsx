@@ -79,21 +79,7 @@ export default function Selling() {
           <div className="text-center mt-16">
             <Button
               size="lg"
-              className="text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 border-2"
-              style={{ 
-                background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
-                borderColor: 'transparent'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'white';
-                e.currentTarget.style.color = '#0081ea';
-                e.currentTarget.style.borderColor = '#0081ea';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)';
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.borderColor = 'transparent';
-              }}
+              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
               onClick={() => setIsContactOpen(true)}
             >
               Contact Us About Value-Centred Selling

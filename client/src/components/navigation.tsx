@@ -69,21 +69,7 @@ export default function Navigation() {
             <div className="hidden md:block">
               <Button
                 onClick={() => setIsContactOpen(true)}
-                className="text-white px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 border-2"
-                style={{ 
-                  background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
-                  borderColor: 'transparent'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'white';
-                  e.currentTarget.style.color = '#0081ea';
-                  e.currentTarget.style.borderColor = '#0081ea';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)';
-                  e.currentTarget.style.color = 'white';
-                  e.currentTarget.style.borderColor = 'transparent';
-                }}
+                className="heath-gradient-button px-4 py-2 text-sm font-medium rounded-md"
               >
                 Contact
               </Button>
@@ -140,21 +126,7 @@ export default function Navigation() {
                   setIsContactOpen(true);
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full text-white px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 border-2"
-                style={{ 
-                  background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
-                  borderColor: 'transparent'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'white';
-                  e.currentTarget.style.color = '#0081ea';
-                  e.currentTarget.style.borderColor = '#0081ea';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)';
-                  e.currentTarget.style.color = 'white';
-                  e.currentTarget.style.borderColor = 'transparent';
-                }}
+                className="w-full heath-gradient-button px-4 py-2 text-sm font-medium rounded-md"
               >
                 Contact
               </Button>
