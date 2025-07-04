@@ -178,7 +178,7 @@ export default function Testimonials() {
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap justify-center gap-2 text-sm">
                 {companies.map((company, index) => (
-                  <span key={index} className="inline-block bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] px-3 py-1 rounded shadow-md hover:shadow-lg transition-all duration-200 text-[#0081ea] hover:text-[#40a3f7]">
+                  <span key={index} className="inline-block bg-white border border-gray-200 hover:border-[#0081ea] px-3 py-1 rounded shadow-md hover:shadow-lg transition-all duration-200 text-gray-700 hover:text-[#0081ea]">
                     {company}
                   </span>
                 ))}

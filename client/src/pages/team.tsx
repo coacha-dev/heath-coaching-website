@@ -18,7 +18,7 @@ export default function Team() {
 
           <div className="space-y-12">
             {/* Luke Heath */}
-            <div className="bg-white rounded-lg shadow-lg border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors p-8">
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
@@ -68,7 +68,7 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="bg-white rounded-lg shadow-lg border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors p-8">
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors p-8">
               <div className="flex gap-8 mb-6">
                 <div className="flex-shrink-0">
                   <img
