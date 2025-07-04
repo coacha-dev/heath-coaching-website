@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full pt-16 pb-8">
+        <div className="w-full pt-24 pb-8">
           <LogoScroller />
         </div>
       </section>
