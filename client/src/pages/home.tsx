@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full pt-16" style={{ paddingBottom: '150px' }}>
+        <div className="w-full pt-24" style={{ paddingBottom: '150px' }}>
           <LogoScroller />
         </div>
       </section>
