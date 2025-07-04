@@ -59,7 +59,7 @@ export default function Navigation() {
                   rel="noopener noreferrer"
                   className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200"
                 >
-                  Other Services
+                  Assessments & Training
                   <span className="nav-underline"></span>
                 </a>
               </div>
@@ -117,7 +117,7 @@ export default function Navigation() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block text-base font-medium text-gray-700 hover:text-black py-2"
             >
-              Other Services
+              Assessments & Training
             </a>
 
             <div className="pt-2">
