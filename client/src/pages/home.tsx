@@ -121,13 +121,13 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full pt-24 pb-8">
+        <div className="w-full pt-16 pb-16">
           <LogoScroller />
         </div>
       </section>
 
       {/* Coaching Section - Continues gradient flow */}
-      <section id="coaching-section" className="py-20" style={{
+      <section id="coaching-section" className="pt-20 pb-20" style={{
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
