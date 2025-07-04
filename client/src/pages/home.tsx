@@ -97,7 +97,7 @@ export default function Home() {
       <section className="h-[85vh] flex flex-col" style={{
         background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 40%, rgba(219, 234, 254, 0.4) 70%, rgba(219, 234, 254, 0.5) 100%)'
       }}>
-        <div className="flex-1 flex items-center justify-center pt-16 pb-6">
+        <div className="flex-1 flex items-center justify-center pt-20 pb-6">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Luke Heath helps leaders and their teams to{" "}
