@@ -39,27 +39,6 @@ export default function Navigation() {
             {/* Desktop Navigation */}
             <div className="hidden md:block flex-1">
               <div className="flex items-center justify-center space-x-8">
-                <Link href="/testimonials">
-                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
-                    Testimonials
-                    <span className="nav-underline"></span>
-                  </span>
-                </Link>
-
-                <Link href="/team">
-                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
-                    Our Team
-                    <span className="nav-underline"></span>
-                  </span>
-                </Link>
-
-                <Link href="/one-to-one-coaching">
-                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
-                    One-to-One Coaching
-                    <span className="nav-underline"></span>
-                  </span>
-                </Link>
-
                 <div className="relative group">
                   <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200 cursor-pointer flex items-center">
                     Workshops
@@ -70,7 +49,7 @@ export default function Navigation() {
                     <div className="py-2">
                       <Link href="/workshops/winning-careers">
                         <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#0081ea]">
-                          Winning Careers Workshop
+                          Winning Careers
                         </span>
                       </Link>
                       <Link href="/workshops/triple-intelligence">
@@ -86,6 +65,27 @@ export default function Navigation() {
                     </div>
                   </div>
                 </div>
+
+                <Link href="/one-to-one-coaching">
+                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
+                    One-to-One Coaching
+                    <span className="nav-underline"></span>
+                  </span>
+                </Link>
+
+                <Link href="/testimonials">
+                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
+                    Testimonials
+                    <span className="nav-underline"></span>
+                  </span>
+                </Link>
+
+                <Link href="/team">
+                  <span className="nav-item relative px-3 py-2 text-sm font-medium text-black transition-colors duration-200">
+                    Our Team
+                    <span className="nav-underline"></span>
+                  </span>
+                </Link>
               </div>
             </div>
 
@@ -122,30 +122,12 @@ export default function Navigation() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-gray-100">
           <div className="px-4 py-3 space-y-2">
-            <Link href="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
-                Testimonials
-              </span>
-            </Link>
-
-            <Link href="/team" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
-                Our Team
-              </span>
-            </Link>
-
-            <Link href="/one-to-one-coaching" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
-                One-to-One Coaching
-              </span>
-            </Link>
-
             <div className="py-2">
               <span className="block text-base font-medium text-gray-700 py-2">Workshops</span>
               <div className="pl-4 space-y-1">
                 <Link href="/workshops/winning-careers" onClick={() => setIsMobileMenuOpen(false)}>
                   <span className="block text-sm text-gray-600 hover:text-black py-1">
-                    Winning Careers Workshop
+                    Winning Careers
                   </span>
                 </Link>
                 <Link href="/workshops/triple-intelligence" onClick={() => setIsMobileMenuOpen(false)}>
@@ -160,6 +142,24 @@ export default function Navigation() {
                 </Link>
               </div>
             </div>
+
+            <Link href="/one-to-one-coaching" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
+                One-to-One Coaching
+              </span>
+            </Link>
+
+            <Link href="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
+                Testimonials
+              </span>
+            </Link>
+
+            <Link href="/team" onClick={() => setIsMobileMenuOpen(false)}>
+              <span className="block text-base font-medium text-gray-700 hover:text-black py-2">
+                Our Team
+              </span>
+            </Link>
 
             <div className="pt-2">
               <Button
