@@ -7,9 +7,10 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import ScrollToTop from "@/components/scroll-to-top";
 import Home from "@/pages/home";
-import WinningCareers from "@/pages/winning-careers";
-import Leadership from "@/pages/leadership";
-import Selling from "@/pages/selling";
+import OneToOneCoaching from "@/pages/one-to-one-coaching";
+import WinningCareers from "@/pages/workshops/winning-careers";
+import TripleIntelligence from "@/pages/workshops/triple-intelligence";
+import ValueCentredSelling from "@/pages/workshops/value-centred-selling";
 import Team from "@/pages/team";
 import Testimonials from "@/pages/testimonials";
 import Contact from "@/pages/contact";
@@ -21,9 +22,10 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/winning-careers" component={WinningCareers} />
-      <Route path="/leadership" component={Leadership} />
-      <Route path="/selling" component={Selling} />
+      <Route path="/one-to-one-coaching" component={OneToOneCoaching} />
+      <Route path="/workshops/winning-careers" component={WinningCareers} />
+      <Route path="/workshops/triple-intelligence" component={TripleIntelligence} />
+      <Route path="/workshops/value-centred-selling" component={ValueCentredSelling} />
       <Route path="/team" component={Team} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/contact" component={Contact} />

@@ -126,86 +126,79 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Coaching Section - Continues gradient flow */}
-      <section id="coaching-section" className="pb-20" style={{
+      {/* Our Services Section - Continues gradient flow */}
+      <section id="services-section" className="pb-20" style={{
         paddingTop: '150px',
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              One-To-One Coaching
+              Our Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Luke has been coaching C-level executives and other high-value roles since 2002. In your coaching program, you can rely on:
-            </p>
           </div>
 
-          {/* Features List */}
-          <div className="max-w-4xl mx-auto mb-12 space-y-6">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
-                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
-                Support and Challenge
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* One-to-One Coaching */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+                One-to-One Coaching
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Executive coaching for C-level leaders and high-value roles with proven results across 40+ countries.
               </p>
+              <Link href="/one-to-one-coaching">
+                <Button className="heath-gradient-button w-full">
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
-                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
-                Commercial Experience
+            {/* Winning Careers Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+                Winning Careers Workshop
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Intensive workshop providing tools and insights to build high-performing professionals and accelerate career growth.
               </p>
+              <Link href="/workshops/winning-careers">
+                <Button className="heath-gradient-button w-full">
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
-                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
-                Behavioural Science
+            {/* Triple Intelligence Leadership Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+                Triple Intelligence Leadership Workshop
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Science-backed leadership development program focusing on cognitive, emotional, and social intelligence mastery.
               </p>
+              <Link href="/workshops/triple-intelligence">
+                <Button className="heath-gradient-button w-full">
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
-                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
-                Bespoke Resources
+            {/* Value-Centred Selling Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+                Value-Centred Selling Workshop
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Transform sales performance through human-centred methods focused on relationship building and value creation.
               </p>
+              <Link href="/workshops/value-centred-selling">
+                <Button className="heath-gradient-button w-full">
+                  Learn More
+                </Button>
+              </Link>
             </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                 onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0081ea'}
-                 onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(243 244 246)'}>
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#0081ea' }}>
-                Useful Feedback
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Button
-              onClick={() => setIsContactOpen(true)}
-              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
-            >
-              Contact
-            </Button>
           </div>
         </div>
       </section>

@@ -1,0 +1,333 @@
+Transform the current HeathCoaching website to include workshop offerings while preserving all existing content. Add workshops as a new service offering alongside one-to-one coaching.
+
+Navigation Updates
+
+Current Navigation: Testimonials, Our Team, Assessments & Training, Contact
+
+New Navigation:
+
+•
+Testimonials
+
+•
+Our Team
+
+•
+One-to-One Coaching (new page)
+
+•
+Workshops (new dropdown with 3 workshops)
+
+•
+Contact
+
+Remove: "Assessments & Training" header item
+
+Homepage Content Changes
+
+Preserve all existing content including:
+
+•
+Current headline: "Luke Heath helps leaders and their teams to excel"
+
+•
+Current subtext: "He has coached and trained executives across the globe"
+
+•
+Company logos section
+
+•
+All testimonials
+
+•
+Contact information
+
+Replace the "One-To-One Coaching" section with "Our Services" section:
+
+Our Services
+
+One-to-One Coaching
+Executive coaching for C-level leaders and high-value roles with proven results across 40+ countries.
+[Learn More button linking to new One-to-One Coaching page]
+
+Winning Careers Workshop
+
+
+Intensive workshop providing tools and insights to build high-performing professionals and accelerate career growth.
+[Learn More button linking to Winning Careers Workshop page]
+
+Triple Intelligence Leadership Workshop
+Science-backed leadership development program focusing on cognitive, emotional, and social intelligence mastery.
+[Learn More button linking to Triple Intelligence Leadership Workshop page]
+
+Value-Centred Selling Workshop
+Transform sales performance through human-centred methods focused on relationship building and value creation.
+[Learn More button linking to Value-Centred Selling Workshop page]
+
+New One-to-One Coaching Page
+
+Create a dedicated page with the current one-to-one coaching content from the homepage:
+
+One-To-One Coaching
+
+Luke has been coaching C-level executives and other high-value roles since 2002. In your coaching program, you can rely on:
+
+Support and Challenge
+
+Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
+
+Commercial Experience
+
+Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
+
+Behavioural Science
+
+Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
+
+Bespoke Resources
+
+You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
+
+Useful Feedback
+
+Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
+
+[Contact button]
+
+New Workshop Pages
+
+Winning Careers Workshop Page
+
+Title: Winning Careers Workshop
+
+Description:
+Intensive workshop providing tools and insights to build high-performing professionals and accelerate career growth.
+
+Content:
+This comprehensive workshop is designed for professionals who want to unlock their full potential and accelerate their career trajectory. Through evidence-based techniques and practical tools, participants will gain clarity on their optimal career path and develop the skills needed for sustained success.
+
+What You'll Learn:
+
+•
+Identify your core strengths and leverage them for career advancement
+
+•
+Develop a strategic career plan aligned with your values and goals
+
+•
+Build high-performance habits that drive professional success
+
+•
+Master the psychology of career growth and workplace excellence
+
+•
+Create actionable development plans for immediate implementation
+
+Who Should Attend:
+
+•
+Mid to senior-level professionals seeking career acceleration
+
+•
+High-potential employees preparing for leadership roles
+
+•
+Career changers looking to optimize their transition
+
+•
+Teams focused on professional development and growth
+
+Workshop Format:
+
+•
+Full-day intensive session
+
+•
+Interactive exercises and assessments
+
+•
+Personalized action planning
+
+•
+Follow-up resources and materials
+
+•
+Small group format for personalized attention
+
+[Contact button for booking]
+
+Triple Intelligence Leadership Workshop Page
+
+Title: Triple Intelligence Leadership Workshop
+
+Description:
+Science-backed leadership development program focusing on cognitive, emotional, and social intelligence mastery.
+
+Content:
+This advanced leadership workshop integrates cutting-edge research in cognitive science, emotional intelligence, and social psychology to develop exceptional leaders. Participants will master the three critical intelligence domains that distinguish outstanding leaders from average managers.
+
+What You'll Learn:
+
+•
+Cognitive Intelligence: Strategic thinking, decision-making, and problem-solving mastery
+
+•
+Emotional Intelligence: Self-awareness, self-regulation, and emotional mastery
+
+•
+Social Intelligence: Influence, communication, and relationship-building excellence
+
+•
+Integration techniques for applying all three intelligence types
+
+•
+Leadership presence and executive communication skills
+
+Who Should Attend:
+
+•
+Senior executives and C-suite leaders
+
+•
+High-potential managers preparing for executive roles
+
+•
+Leadership teams seeking enhanced collaboration
+
+•
+Entrepreneurs scaling their leadership capabilities
+
+Workshop Format:
+
+•
+Two-day comprehensive program
+
+•
+Science-based assessments and feedback
+
+•
+Real-world case studies and simulations
+
+•
+Peer learning and group coaching
+
+•
+Ongoing development resources
+
+[Contact button for booking]
+
+Value-Centred Selling Workshop Page
+
+Title: Value-Centred Selling Workshop
+
+Description:
+Transform sales performance through human-centred methods focused on relationship building and value creation.
+
+Content:
+Move beyond traditional sales tactics to a relationship-based approach that creates genuine value for clients while driving sustainable revenue growth. This workshop teaches the psychology of ethical influence and authentic relationship building in sales contexts.
+
+What You'll Learn:
+
+•
+Human-centred sales methodology and frameworks
+
+•
+Relationship building techniques that create lasting partnerships
+
+•
+Value creation strategies that benefit both parties
+
+•
+Ethical influence and persuasion psychology
+
+•
+Sustainable revenue growth through authentic connections
+
+Who Should Attend:
+
+•
+Sales professionals seeking to elevate their approach
+
+•
+Business development managers and executives
+
+•
+Entrepreneurs building client relationships
+
+•
+Service providers transitioning to consultative selling
+
+•
+Sales teams focused on long-term client success
+
+Workshop Format:
+
+•
+Full-day intensive workshop
+
+•
+Role-playing and practical exercises
+
+•
+Real client scenario practice
+
+•
+Personalized sales strategy development
+
+•
+Follow-up coaching and resources
+
+[Contact button for booking]
+
+Technical Implementation
+
+Preserve all existing:
+
+•
+Visual design and styling
+
+•
+Color scheme and typography
+
+•
+Layout structure and spacing
+
+•
+Mobile responsiveness
+
+•
+Contact forms and functionality
+
+•
+All testimonials and client logos
+
+Add new functionality:
+
+•
+Workshop dropdown navigation
+
+•
+New page routing for workshops and one-to-one coaching
+
+•
+Service boxes with hover effects on homepage
+
+•
+Contact form integration for workshop bookings
+
+Maintain brand consistency:
+
+•
+Keep Luke Heath personal branding throughout
+
+•
+Preserve professional tone and messaging
+
+•
+Maintain focus on executive coaching expertise
+
+•
+Keep all existing testimonials and social proof
+
+Transform the site to position HeathCoaching as offering both premium one-to-one executive coaching and professional development workshops while maintaining the established brand and credibility.
+

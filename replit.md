@@ -100,6 +100,20 @@ Preferred communication style: Simple, everyday language.
 
 ## Changelog
 
+- July 17, 2025: Major website transformation to include workshop offerings
+  - **Navigation Updates**: Changed from "Testimonials, Our Team, Assessments & Training, Contact" to "Testimonials, Our Team, One-to-One Coaching, Workshops (dropdown), Contact"
+  - **Homepage Transformation**: Replaced "One-To-One Coaching" section with "Our Services" section featuring 4 service boxes
+  - **New Pages Created**: 
+    - One-to-One Coaching dedicated page with previous homepage content
+    - Winning Careers Workshop page with comprehensive details
+    - Triple Intelligence Leadership Workshop page
+    - Value-Centred Selling Workshop page
+  - **Workshop Dropdown**: Desktop hover dropdown and mobile nested menu for 3 workshops
+  - **Service Cards**: Homepage now features 4 service cards in 2x2 grid with "Learn More" buttons
+  - **Preserved Content**: All existing testimonials, company logos, team information, and contact details maintained
+  - **Visual Consistency**: All new pages follow existing gradient background and card styling patterns
+  - **Routing**: Updated App.tsx with new route structure for workshops and coaching page
+
 - July 2, 2025: Enhanced gradient system and visual consistency
   - Added subtle gradient backgrounds to testimonials and team pages matching home page
   - Standardized contact dialog box colors to consistent blue theme (blue-50 background)
