@@ -13,10 +13,10 @@ export default function OneToOneCoaching() {
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            One-To-One Coaching
+            High-value coaching for executives.
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Luke has been coaching C-level executives and other high-value roles since 2002. In your coaching program, you can rely on:
+            Luke has coached C-level leaders and other senior executives since 2002. His programs are grounded in psychology, commercial experience, and global coaching insights. Clients can expect:
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ export default function OneToOneCoaching() {
               Support and Challenge
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Sessions may be challenging but you should always feel strongly supported – this includes 7-day access to help you accomplish your goals. All conversations are confidential.
+              Coaching sessions stretch you to achieve more, while ensuring you feel supported. Seven-day access ensures you can progress between sessions.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function OneToOneCoaching() {
               Commercial Experience
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Insights gained coaching leaders in more than forty countries, across industries, and stage of business. Founded and run several businesses and was an investment banker and portfolio manager for ten years at Schroders and Societe Generale.
+              Luke has founded and run businesses, and spent a decade in investment banking and portfolio management. He has coached leaders in more than 40 countries.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function OneToOneCoaching() {
               Behavioural Science
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Coaching techniques that are grounded in the psychology of high performance. These help sustain changes and can be applied by you as a leader-coach with your people.
+              Evidence-based coaching frameworks help you create sustained changes—and equip you to coach your own people more effectively.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function OneToOneCoaching() {
               Bespoke Resources
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              You will have access to proprietary surveys on leadership, self-leadership, winning teams, and sales. Each has succinct materials to help leverage strengths and enhance developmental areas.
+              You'll access proprietary assessments on leadership, self-leadership, winning teams, and sales, each with targeted developmental materials.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function OneToOneCoaching() {
               Useful Feedback
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Feedback from relevant colleagues guides coaching. With your permission, Luke will converse with these stakeholders to better understand the material things you are doing well and things you could do better.
+              With your permission, Luke gathers confidential feedback from relevant colleagues to guide your coaching journey.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function OneToOneCoaching() {
               onClick={() => setIsContactOpen(true)}
               className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
             >
-              Contact
+              Contact Luke →
             </Button>
           </div>
         </div>

@@ -100,16 +100,19 @@ export default function Home() {
         <div className="flex-1 flex justify-center pt-32 pb-6">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Luke Heath helps leaders and their teams to{" "}
+              Luke Heath helps leaders and their teams{" "}
               <span style={{ 
                 background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text'
-              }}>excel</span>
+              }}>excel</span>.
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              He has coached and trained executives across the globe.
+            <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+              For more than 20 years, he has coached and trained executives across industries and continents to perform at their very best.
+            </p>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              Trusted by leading organisations worldwide, HeathCoaching delivers coaching and workshops that elevate leadership, careers, teams, and sales performance.
             </p>
             <Button
               onClick={() => setIsContactOpen(true)}
@@ -143,29 +146,29 @@ export default function Home() {
             {/* One-to-One Coaching */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
               <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
-                One-To-One Coaching
+                One-to-One Coaching
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Supporting high-value executives to perform at their best.
+                Bespoke coaching for high-value executives who want to perform at the highest level.
               </p>
               <Link href="/one-to-one-coaching">
                 <Button className="heath-gradient-button w-full">
-                  Learn More
+                  Learn More →
                 </Button>
               </Link>
             </div>
 
-            {/* Leadership Workshop */}
+            {/* Triple Intelligence Leadership Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
               <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
-                Leadership Workshop
+                Triple Intelligence Leadership Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Enhance the 3 domains of exceptional leadership: rational, emotional, and social intelligence. Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.
+                Enhance the three domains that distinguish outstanding leaders: rational, emotional, and social intelligence.
               </p>
               <Link href="/workshops/triple-intelligence">
                 <Button className="heath-gradient-button w-full">
-                  Learn More
+                  Learn More →
                 </Button>
               </Link>
             </div>
@@ -176,11 +179,11 @@ export default function Home() {
                 Winning Careers Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Optimize the 5 personality characteristics that add extraordinary value to organizations and careers. Increase productivity, engagement, and enjoyment for everyone in the organization.
+                Optimise the five personality factors that drive career success. Build productivity, resilience, and enjoyment across your workforce.
               </p>
               <Link href="/workshops/winning-careers">
                 <Button className="heath-gradient-button w-full">
-                  Learn More
+                  Learn More →
                 </Button>
               </Link>
             </div>
@@ -191,11 +194,11 @@ export default function Home() {
                 Value-Centred Selling Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Elevate the 3 factors of outstanding sales performance: winning mindset, contact energy, and dollar productive-behaviors. Add value at each stage of the client buying cycle.
+                Elevate sales performance by mastering mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
               </p>
               <Link href="/workshops/value-centred-selling">
                 <Button className="heath-gradient-button w-full">
-                  Learn More
+                  Learn More →
                 </Button>
               </Link>
             </div>
