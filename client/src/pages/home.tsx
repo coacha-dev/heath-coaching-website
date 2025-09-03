@@ -143,12 +143,27 @@ export default function Home() {
             {/* One-to-One Coaching */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
               <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
-                One-to-One Coaching
+                One-To-One Coaching
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Executive coaching for C-level leaders and high-value roles with proven results across 40+ countries.
+                Supporting high-value executives to perform at their best.
               </p>
               <Link href="/one-to-one-coaching">
+                <Button className="heath-gradient-button w-full">
+                  Learn More
+                </Button>
+              </Link>
+            </div>
+
+            {/* Leadership Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+                Leadership Workshop
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Enhance the 3 domains of exceptional leadership: rational, emotional, and social intelligence. Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.
+              </p>
+              <Link href="/workshops/triple-intelligence">
                 <Button className="heath-gradient-button w-full">
                   Learn More
                 </Button>
@@ -161,24 +176,9 @@ export default function Home() {
                 Winning Careers Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Intensive workshop providing tools and insights to build high-performing professionals and accelerate career growth.
+                Optimize the 5 personality characteristics that add extraordinary value to organizations and careers. Increase productivity, engagement, and enjoyment for everyone in the organization.
               </p>
               <Link href="/workshops/winning-careers">
-                <Button className="heath-gradient-button w-full">
-                  Learn More
-                </Button>
-              </Link>
-            </div>
-
-            {/* Triple Intelligence Leadership Workshop */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
-                Triple Intelligence Leadership Workshop
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Science-backed leadership development program focusing on cognitive, emotional, and social intelligence mastery.
-              </p>
-              <Link href="/workshops/triple-intelligence">
                 <Button className="heath-gradient-button w-full">
                   Learn More
                 </Button>
@@ -191,7 +191,7 @@ export default function Home() {
                 Value-Centred Selling Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Transform sales performance through human-centred methods focused on relationship building and value creation.
+                Elevate the 3 factors of outstanding sales performance: winning mindset, contact energy, and dollar productive-behaviors. Add value at each stage of the client buying cycle.
               </p>
               <Link href="/workshops/value-centred-selling">
                 <Button className="heath-gradient-button w-full">
