@@ -193,7 +193,7 @@ export default function Testimonials() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-[hsl(var(--dark-text))] mb-4">
-              See what our clients say about working with Coacha
+              See what our clients say about working with HeathCoaching
             </h2>
           </div>
 
@@ -220,7 +220,7 @@ export default function Testimonials() {
             Ready to join our clients?
           </h3>
           <p className="text-lg text-[hsl(var(--medium-text))] mb-8">
-            Contact us to discuss how Coacha can help your team develop the skills needed for success.
+            Contact us to discuss how HeathCoaching can help your team develop the skills needed for success.
           </p>
           <Link href="/contact">
             <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-black border-2 border-black transition-all duration-200">

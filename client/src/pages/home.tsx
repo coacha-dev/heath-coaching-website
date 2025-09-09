@@ -111,9 +111,6 @@ export default function Home() {
             <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
               He has coached and trained executives in global organisations for more than 20 years to perform at their best.
             </p>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              HeathCoaching delivers workshops that elevate leadership, sales, and productivity.
-            </p>
             <Button
               onClick={() => setIsContactOpen(true)}
               className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
@@ -124,50 +121,53 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full pt-24" style={{ paddingBottom: '150px' }}>
+        <div className="w-full pt-24" style={{ paddingBottom: '200px' }}>
           <LogoScroller />
         </div>
       </section>
 
       {/* Our Services Section - Continues gradient flow */}
       <section id="services-section" className="pb-20" style={{
-        paddingTop: '150px',
+        paddingTop: '200px',
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our Services
+              HeathCoaching delivers workshops that elevate{" "}
+              <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Leadership</span>,{" "}
+              <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span> and{" "}
+              <span style={{textDecoration: 'underline', textDecorationColor: '#0081ea', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Productivity</span>.
             </h2>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mb-20">
-            {/* One-to-One Coaching */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
-                One-to-One Coaching
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Coaching leaders to bring out the best in themselves and their teams.
-              </p>
-              <Link href="/one-to-one-coaching">
-                <Button className="heath-gradient-button w-full">
-                  Learn More →
-                </Button>
-              </Link>
-            </div>
-
+          {/* Workshops Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-6 mb-20">
             {/* Triple Intelligence Leadership Workshop */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#7030a0]">
                 Triple Intelligence Leadership Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence.
               </p>
               <Link href="/workshops/triple-intelligence">
-                <Button className="heath-gradient-button w-full">
+                <Button className="bg-[#7030a0] hover:bg-[#5a2480] text-white w-full">
+                  Learn More →
+                </Button>
+              </Link>
+            </div>
+
+            {/* Value-Centred Selling Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#dc0725] transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-[#dc0725]">
+                Value-Centred Selling Workshop
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
+              </p>
+              <Link href="/workshops/value-centred-selling">
+                <Button className="bg-[#dc0725] hover:bg-[#b8051f] text-white w-full">
                   Learn More →
                 </Button>
               </Link>
@@ -182,21 +182,32 @@ export default function Home() {
                 Optimise the 5 personality factors that drive career success. Build productivity, engagement, and enjoyment across your workforce.
               </p>
               <Link href="/workshops/winning-careers">
-                <Button className="heath-gradient-button w-full">
+                <Button className="bg-[#0081ea] hover:bg-[#0066bb] text-white w-full">
                   Learn More →
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Value-Centred Selling Workshop */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
-                Value-Centred Selling Workshop
-              </h3>
+      {/* One-to-One Coaching Section */}
+      <section className="py-20" style={{
+        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 30%, rgba(219, 234, 254, 0.4) 60%, white 90%)'
+      }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              One-to-One Coaching
+            </h2>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors max-w-lg">
               <p className="text-gray-700 leading-relaxed mb-6">
-                Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
+                Coaching leaders to bring out the best in themselves and their teams.
               </p>
-              <Link href="/workshops/value-centred-selling">
+              <Link href="/one-to-one-coaching">
                 <Button className="heath-gradient-button w-full">
                   Learn More →
                 </Button>
