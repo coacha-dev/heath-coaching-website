@@ -109,16 +109,16 @@ export default function Home() {
               }}>excel</span>.
             </h1>
             <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
-              For more than 20 years, he has coached and trained executives across industries and continents to perform at their very best.
+              He has coached and trained executives in global organisations for more than 20 years to perform at their best.
             </p>
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Trusted by leading organisations worldwide, HeathCoaching delivers coaching and workshops that elevate leadership, careers, teams, and sales performance.
+              HeathCoaching delivers workshops that elevate leadership, sales, and productivity.
             </p>
             <Button
               onClick={() => setIsContactOpen(true)}
               className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
             >
-              Contact
+              Contact Luke →
             </Button>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 One-to-One Coaching
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Bespoke coaching for high-value executives who want to perform at the highest level.
+                Coaching leaders to bring out the best in themselves and their teams.
               </p>
               <Link href="/one-to-one-coaching">
                 <Button className="heath-gradient-button w-full">
@@ -164,7 +164,7 @@ export default function Home() {
                 Triple Intelligence Leadership Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Enhance the three domains that distinguish outstanding leaders: rational, emotional, and social intelligence.
+                Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence.
               </p>
               <Link href="/workshops/triple-intelligence">
                 <Button className="heath-gradient-button w-full">
@@ -179,7 +179,7 @@ export default function Home() {
                 Winning Careers Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Optimise the five personality factors that drive career success. Build productivity, resilience, and enjoyment across your workforce.
+                Optimise the 5 personality factors that drive career success. Build productivity, engagement, and enjoyment across your workforce.
               </p>
               <Link href="/workshops/winning-careers">
                 <Button className="heath-gradient-button w-full">
@@ -194,7 +194,7 @@ export default function Home() {
                 Value-Centred Selling Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Elevate sales performance by mastering mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
+                Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
               </p>
               <Link href="/workshops/value-centred-selling">
                 <Button className="heath-gradient-button w-full">

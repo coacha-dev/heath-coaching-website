@@ -13,7 +13,7 @@ export default function WinningCareersWorkshop() {
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Help every professional unlock their full potential.
+            Increase productivity, engagement, and enjoyment for everyone in the organisation.
           </h1>
         </div>
       </section>
@@ -25,84 +25,49 @@ export default function WinningCareersWorkshop() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
             <p className="text-gray-700 leading-relaxed text-lg mb-8">
-              This workshop develops the five personality characteristics that add extraordinary value to organisations and careers:
+              This half-day workshop helps participants optimise 5 personality characteristics that add extraordinary value: growth mindset, conscientiousness, energy management, generosity, and emotional agility.  We share practical techniques that can immediately be used.
             </p>
-            <div className="space-y-4 text-gray-700">
-              <div><strong className="text-[#0081ea]">Growth Mindset</strong></div>
-              <div><strong className="text-[#0081ea]">Conscientiousness</strong></div>
-              <div><strong className="text-[#0081ea]">Energy</strong></div>
-              <div><strong className="text-[#0081ea]">Generosity</strong></div>
-              <div><strong className="text-[#0081ea]">Emotional Agility</strong></div>
+            <div className="space-y-6 text-gray-700">
+              <div>
+                <h4 className="font-bold text-[#0081ea] mb-2">GROWTH MINDSET</h4>
+                <p>A growth mindset future-proofs your career.  We discuss how to gain and respond to feedback and refine a 12-month learning plan.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#0081ea] mb-2">CONSCIENTIOUSNESS</h4>
+                <p>Conscientiousness predicts long-term success.  We discuss how to maintain work at a high standard and help customers have an excellent psychological experience.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#0081ea] mb-2">ENERGY</h4>
+                <p>High energy people are compelling to work with.  Participants complete the Energy20 Assessment and we discuss how to be persuasive in any meeting.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#0081ea] mb-2">GENEROSITY</h4>
+                <p>Generous colleagues help teams thrive.  We discuss connecting colleagues to our networks and making a positive contribution to team morale.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#0081ea] mb-2">EMOTIONAL AGILITY</h4>
+                <p>Emotional agility equips us to deal with setbacks.  We discuss fostering resilience, taking ultimate responsibility for our career success, and the virtues of buddy coaching.</p>
+              </div>
             </div>
           </div>
 
-          {/* Participants Will Learn To */}
+          {/* Includes */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
             <h3 className="text-2xl font-bold mb-6 text-[#0081ea]">
-              Participants Will Learn To:
+              INCLUDES:
             </h3>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start">
                 <span className="text-[#0081ea] mr-3">•</span>
-                <span>Identify and leverage their core strengths</span>
+                <span>Interactive, face-to-face delivery of the Winning Careers Workshop.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#0081ea] mr-3">•</span>
-                <span>Build high-performance habits that sustain success</span>
+                <span>Winning Careers Assessment and comprehensive resources</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#0081ea] mr-3">•</span>
-                <span>Manage energy, resilience, and time for maximum productivity</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Align their career trajectory with organisational value</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Create actionable development plans</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Format */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-[#0081ea]">
-              Format
-            </h3>
-            <ul className="space-y-4 text-gray-700">
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Full-day or half-day workshop</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Interactive exercises and personalised assessments</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Developmental resources from foundation to masterclass level</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Who Should Attend */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-[#0081ea]">
-              Who Should Attend
-            </h3>
-            <ul className="space-y-4 text-gray-700">
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Mid–senior professionals building career momentum</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>High-potential employees preparing for leadership</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Teams focused on engagement, productivity, and retention</span>
+                <span>12-months of CareerCoacha newsletters.</span>
               </li>
             </ul>
           </div>

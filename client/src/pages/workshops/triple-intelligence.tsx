@@ -13,7 +13,7 @@ export default function TripleIntelligenceWorkshop() {
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Develop exceptional leaders with rational, emotional, and social intelligence.
+            Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.
           </h1>
         </div>
       </section>
@@ -25,66 +25,41 @@ export default function TripleIntelligenceWorkshop() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
             <p className="text-gray-700 leading-relaxed text-lg mb-8">
-              Outstanding leaders integrate three forms of intelligence:
+              This 1-day workshop helps leaders bring out the best in themselves and colleagues.  It focuses on the big 3 drivers of excellent leadership: rational, emotional, and social intelligence.  We share practical techniques that can immediately be used.
             </p>
             <div className="space-y-6 text-gray-700">
               <div>
-                <h4 className="font-bold text-[#0081ea] mb-2">Rational Intelligence:</h4>
-                <p>Deep thinking, innovation, and strategic decision-making.</p>
+                <h4 className="font-bold text-[#0081ea] mb-2">1.  RATIONAL INTELLIGENCE</h4>
+                <p>Excellent decision-making requires a reliable process.  We discuss how to prioritise deep thinking, generate innovative ideas, form strategy, chair productive meetings, and identify employees who are likely to be high performers.</p>
               </div>
               <div>
-                <h4 className="font-bold text-[#0081ea] mb-2">Emotional Intelligence:</h4>
-                <p>Resilience, empathy, and optimising team mood.</p>
+                <h4 className="font-bold text-[#0081ea] mb-2">2.  EMOTIONAL INTELLIGENCE</h4>
+                <p>A crucial leadership role is to be a mood manager.  We discuss how to enhance trust, cultivate empathy and generosity, display resilience, understand the motivations of a broad range of personalities, and manage underperforming colleagues.</p>
               </div>
               <div>
-                <h4 className="font-bold text-[#0081ea] mb-2">Social Intelligence:</h4>
-                <p>Influence, communication, and building winning cultures.</p>
+                <h4 className="font-bold text-[#0081ea] mb-2">3.  SOCIAL INTELLIGENCE</h4>
+                <p>Advanced social intelligence distinguishes the best leaders.  We discuss how to champion a winning culture, deliver significant change projects, defend the team's energy and time, connect colleagues to networks, and embrace the mandate to lead.</p>
               </div>
             </div>
           </div>
 
-          {/* Format */}
+          {/* Includes */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
             <h3 className="text-2xl font-bold mb-6 text-[#0081ea]">
-              Format
+              INCLUDES:
             </h3>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start">
                 <span className="text-[#0081ea] mr-3">•</span>
-                <span>1–2 day workshop</span>
+                <span>Interactive, face-to-face delivery of the Triple Intelligence Leadership Workshop.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#0081ea] mr-3">•</span>
-                <span>Practical frameworks, case studies, and simulations</span>
+                <span>Triple Intelligence Leadership Assessment and comprehensive resources</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#0081ea] mr-3">•</span>
-                <span>Peer learning and group coaching</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Immediate tools for improved leadership decisions</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Who Should Attend */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-[#0081ea]">
-              Who Should Attend
-            </h3>
-            <ul className="space-y-4 text-gray-700">
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Executives and C-suite leaders</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>High-potential managers preparing for senior roles</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0081ea] mr-3">•</span>
-                <span>Leadership teams seeking greater collaboration</span>
+                <span>12-months of LeaderCoacha newsletters.</span>
               </li>
             </ul>
           </div>
