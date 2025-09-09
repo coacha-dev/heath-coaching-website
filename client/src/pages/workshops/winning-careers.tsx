@@ -75,9 +75,9 @@ export default function WinningCareersWorkshop() {
           <div className="text-center pt-8">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
+              className="bg-[#0081ea] hover:bg-[#0066bb] text-white px-8 py-3 text-lg font-medium rounded-md"
             >
-              Contact to Book →
+              Contact Luke →
             </Button>
           </div>
         </div>
