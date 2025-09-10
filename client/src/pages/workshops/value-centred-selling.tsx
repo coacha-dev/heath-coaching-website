@@ -19,7 +19,7 @@ export default function ValueCentredSellingWorkshop() {
               textDecorationThickness: '4px',
               textUnderlineOffset: '8px'
             }}>Value-Centred Selling</span>
-            <br />Workshop
+            <br /><br />Workshop
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Accelerate how salespeople win sales and enjoy their work.
@@ -34,25 +34,25 @@ export default function ValueCentredSellingWorkshop() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Content Box */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#dc0725] transition-colors mb-8">
-            <p className="text-gray-700 leading-relaxed text-lg mb-8 text-center">
+            <p className="text-gray-700 leading-relaxed text-lg mb-8">
               This half-day workshop helps salespeople sell more by being value-centred. It focuses on the big 3 drivers of selling success: winning mindset, contact energy, and dollar-productive behaviours. We share practical techniques that can immediately be used.
             </p>
             
             <div className="space-y-6">
               <div>
-                <h4 className="font-bold text-[#dc0725] mb-4 text-2xl">1. Winning Mindset</h4>
+                <h4 className="font-bold text-[#dc0725] mb-4 text-xl">1. Winning Mindset</h4>
                 <p className="text-gray-700 leading-relaxed">
                   Knowing the value we create is authentic and powerful. We discuss the value we want to give and receive each client meeting, knowing what motivates us to sell, having annual SMART goals, and having ambitious weekly process goals.
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-[#dc0725] mb-4 text-2xl">2. Contact Energy</h4>
+                <h4 className="font-bold text-[#dc0725] mb-4 text-xl">2. Contact Energy</h4>
                 <p className="text-gray-700 leading-relaxed">
                   The energy we bring to selling unlocks value. We discuss bringing positive energy to client conversations, overcoming the different forms of contact reluctance, and quickly rebounding from prospects saying 'no'.
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-[#dc0725] mb-4 text-2xl">3. Dollar Productive Behaviours</h4>
+                <h4 className="font-bold text-[#dc0725] mb-4 text-xl">3. Dollar Productive Behaviours</h4>
                 <p className="text-gray-700 leading-relaxed">
                   Regular valuable actions compound sales success. We discuss optimising sales team meetings, daily activity plans, matching value to the stage of the buying cycle, language for closing sales, and being confident and skilful negotiating price and terms.
                 </p>

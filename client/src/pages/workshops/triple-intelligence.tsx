@@ -19,7 +19,7 @@ export default function TripleIntelligenceWorkshop() {
               textDecorationThickness: '4px',
               textUnderlineOffset: '8px'
             }}>Triple Intelligence Leadership</span>
-            <br />Workshop
+            <br /><br />Workshop
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.
@@ -34,25 +34,25 @@ export default function TripleIntelligenceWorkshop() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Content Box */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors mb-8">
-            <p className="text-gray-700 leading-relaxed text-lg mb-8 text-center">
+            <p className="text-gray-700 leading-relaxed text-lg mb-8">
               This 1-day workshop helps leaders bring out the best in themselves and colleagues. It focuses on the big 3 drivers of excellent leadership: rational, emotional, and social intelligence. We share practical techniques that can immediately be used.
             </p>
             
             <div className="space-y-6">
               <div>
-                <h4 className="font-bold text-[#7030a0] mb-4 text-2xl">1. Rational Intelligence</h4>
+                <h4 className="font-bold text-[#7030a0] mb-4 text-xl">1. Rational Intelligence</h4>
                 <p className="text-gray-700 leading-relaxed">
                   Excellent decision-making requires a reliable process. We discuss how to prioritise deep thinking, generate innovative ideas, form strategy, chair productive meetings, and identify employees who are likely to be high performers.
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-[#7030a0] mb-4 text-2xl">2. Emotional Intelligence</h4>
+                <h4 className="font-bold text-[#7030a0] mb-4 text-xl">2. Emotional Intelligence</h4>
                 <p className="text-gray-700 leading-relaxed">
                   A crucial leadership role is to be a mood manager. We discuss how to enhance trust, cultivate empathy and generosity, display resilience, understand the motivations of a broad range of personalities, and manage underperforming colleagues.
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-[#7030a0] mb-4 text-2xl">3. Social Intelligence</h4>
+                <h4 className="font-bold text-[#7030a0] mb-4 text-xl">3. Social Intelligence</h4>
                 <p className="text-gray-700 leading-relaxed">
                   Advanced social intelligence distinguishes the best leaders. We discuss how to champion a winning culture, deliver significant change projects, defend the team's energy and time, connect colleagues to networks, and embrace the mandate to lead.
                 </p>
