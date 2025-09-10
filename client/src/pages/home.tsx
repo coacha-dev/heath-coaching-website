@@ -161,8 +161,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-6 mb-20">
             {/* Triple Intelligence Leadership Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#7030a0] text-center">
-                Triple Intelligence Leadership Workshop
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                <span className="text-[#7030a0]">Triple Intelligence Leadership</span> <span className="text-black">Workshop</span>
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence.
@@ -176,8 +176,8 @@ export default function Home() {
 
             {/* Value-Centred Selling Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#dc0725] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#dc0725] text-center">
-                Value-Centred Selling Workshop
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                <span className="text-[#dc0725]">Value-Centred Selling</span> <span className="text-black">Workshop</span>
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
@@ -191,8 +191,8 @@ export default function Home() {
 
             {/* Winning Careers Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#0081ea] text-center">
-                Winning Careers Workshop
+              <h3 className="text-2xl font-bold mb-4 text-center">
+                <span className="text-[#0081ea]">Winning Careers</span> <span className="text-black">Workshop</span>
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Optimise the 5 personality factors that drive career success. Build productivity, engagement, and enjoyment across your workforce.
