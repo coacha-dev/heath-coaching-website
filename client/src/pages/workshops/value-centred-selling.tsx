@@ -19,7 +19,7 @@ export default function ValueCentredSellingWorkshop() {
               textDecorationThickness: '4px',
               textUnderlineOffset: '8px'
             }}>Value-Centred Selling</span>
-            <br />Workshop
+            <br /><span style={{marginTop: '0.5rem', display: 'inline-block'}}>Workshop</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Accelerate how salespeople win sales and enjoy their work.
