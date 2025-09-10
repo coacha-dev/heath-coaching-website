@@ -9,16 +9,16 @@ export default function ValueCentredSellingWorkshop() {
     <>
       {/* Hero Section */}
       <section className="pt-24 pb-16" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(220, 7, 37, 0.1) 40%, rgba(220, 7, 37, 0.15) 70%, rgba(220, 7, 37, 0.2) 100%)'
+        background: 'linear-gradient(to bottom, white 0%, rgba(220, 7, 37, 0.05) 40%, rgba(220, 7, 37, 0.08) 70%, rgba(220, 7, 37, 0.1) 100%)'
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{
-            textDecoration: 'underline',
-            textDecorationColor: '#dc0725',
-            textDecorationThickness: '4px',
-            textUnderlineOffset: '8px'
-          }}>
-            Value-Centred Selling Workshop
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <span style={{
+              textDecoration: 'underline',
+              textDecorationColor: '#dc0725',
+              textDecorationThickness: '4px',
+              textUnderlineOffset: '8px'
+            }}>Value-Centred Selling</span> Workshop
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Accelerate how salespeople win sales and enjoy their work.
@@ -28,7 +28,7 @@ export default function ValueCentredSellingWorkshop() {
 
       {/* Content Section */}
       <section className="py-16" style={{
-        background: 'linear-gradient(to bottom, rgba(220, 7, 37, 0.2) 0%, rgba(220, 7, 37, 0.15) 30%, rgba(220, 7, 37, 0.1) 60%, white 90%)'
+        background: 'linear-gradient(to bottom, rgba(220, 7, 37, 0.1) 0%, rgba(220, 7, 37, 0.08) 30%, rgba(220, 7, 37, 0.05) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#dc0725] transition-colors mb-8 text-center">
@@ -38,7 +38,7 @@ export default function ValueCentredSellingWorkshop() {
           </div>
 
           {/* Three Sales Drivers Boxes */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          <div className="space-y-6 mb-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#dc0725] transition-colors">
               <h4 className="font-bold text-[#dc0725] mb-4 text-xl text-center">1. Winning Mindset</h4>
               <p className="text-gray-700 leading-relaxed">
