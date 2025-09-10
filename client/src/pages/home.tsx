@@ -167,7 +167,7 @@ export default function Home() {
                 Triple Intelligence Leadership Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence.
+                Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence. Deepen organisational leadership.
               </p>
               <Link href="/workshops/triple-intelligence">
                 <Button className="bg-[#7030a0] hover:bg-[#5a2480] text-white w-full">
