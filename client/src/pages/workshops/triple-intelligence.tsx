@@ -9,7 +9,7 @@ export default function TripleIntelligenceWorkshop() {
     <>
       {/* Hero Section */}
       <section className="pt-24 pb-16" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(112, 48, 160, 0.05) 40%, rgba(112, 48, 160, 0.08) 70%, rgba(112, 48, 160, 0.1) 100%)'
+        background: 'linear-gradient(to bottom, white 0%, rgba(112, 48, 160, 0.02) 40%, rgba(112, 48, 160, 0.03) 70%, rgba(112, 48, 160, 0.05) 100%)'
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -18,7 +18,7 @@ export default function TripleIntelligenceWorkshop() {
               textDecorationColor: '#7030a0',
               textDecorationThickness: '4px',
               textUnderlineOffset: '8px'
-            }}>Triple Intelligence Leadership</span> Workshop
+            }}>Triple Intelligence Leadership</span>{' '}Workshop
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.
@@ -27,11 +27,11 @@ export default function TripleIntelligenceWorkshop() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16" style={{
-        background: 'linear-gradient(to bottom, rgba(112, 48, 160, 0.1) 0%, rgba(112, 48, 160, 0.08) 30%, rgba(112, 48, 160, 0.05) 60%, white 90%)'
+      <section className="pt-8 pb-16" style={{
+        background: 'linear-gradient(to bottom, rgba(112, 48, 160, 0.05) 0%, rgba(112, 48, 160, 0.03) 30%, rgba(112, 48, 160, 0.02) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors mb-8 text-center">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors mb-6 text-center">
             <p className="text-gray-700 leading-relaxed text-lg mb-8">
               This 1-day workshop helps leaders bring out the best in themselves and colleagues. It focuses on the big 3 drivers of excellent leadership: rational, emotional, and social intelligence. We share practical techniques that can immediately be used.
             </p>
@@ -40,19 +40,19 @@ export default function TripleIntelligenceWorkshop() {
           {/* Three Intelligence Boxes */}
           <div className="space-y-6 mb-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">1. Rational Intelligence</h4>
+              <h4 className="font-bold text-[#7030a0] mb-4 text-2xl">1. Rational Intelligence</h4>
               <p className="text-gray-700 leading-relaxed">
                 Excellent decision-making requires a reliable process. We discuss how to prioritise deep thinking, generate innovative ideas, form strategy, chair productive meetings, and identify employees who are likely to be high performers.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">2. Emotional Intelligence</h4>
+              <h4 className="font-bold text-[#7030a0] mb-4 text-2xl">2. Emotional Intelligence</h4>
               <p className="text-gray-700 leading-relaxed">
                 A crucial leadership role is to be a mood manager. We discuss how to enhance trust, cultivate empathy and generosity, display resilience, understand the motivations of a broad range of personalities, and manage underperforming colleagues.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">3. Social Intelligence</h4>
+              <h4 className="font-bold text-[#7030a0] mb-4 text-2xl">3. Social Intelligence</h4>
               <p className="text-gray-700 leading-relaxed">
                 Advanced social intelligence distinguishes the best leaders. We discuss how to champion a winning culture, deliver significant change projects, defend the team's energy and time, connect colleagues to networks, and embrace the mandate to lead.
               </p>
