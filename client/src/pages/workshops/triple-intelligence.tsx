@@ -69,7 +69,7 @@ export default function TripleIntelligenceWorkshop() {
               onClick={() => setIsContactOpen(true)}
               className="bg-[#7030a0] hover:bg-[#5a2480] text-white px-8 py-3 text-lg font-medium rounded-md"
             >
-              Contact Luke →
+              Contact Us →
             </Button>
           </div>
         </div>

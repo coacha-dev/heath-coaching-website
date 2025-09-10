@@ -76,7 +76,7 @@ export default function OneToOneCoaching() {
               onClick={() => setIsContactOpen(true)}
               className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
             >
-              Contact Luke →
+              Contact Us →
             </Button>
           </div>
         </div>

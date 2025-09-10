@@ -69,7 +69,7 @@ export default function ValueCentredSellingWorkshop() {
               onClick={() => setIsContactOpen(true)}
               className="bg-[#dc0725] hover:bg-[#b8051f] text-white px-8 py-3 text-lg font-medium rounded-md"
             >
-              Contact Luke →
+              Contact Us →
             </Button>
           </div>
         </div>
