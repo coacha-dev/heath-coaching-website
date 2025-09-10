@@ -99,7 +99,7 @@ export default function Team() {
               
               <div className="space-y-4">
                 <p className="text-gray-700">
-                  Josh has worked for a decade in e-commerce, digital asset management, and digital media. He completed business degrees but found his passion in the creative and technical aspects of digital product development. Josh brings a unique blend of business acumen and technical expertise to Heath Coaching's digital initiatives.
+                  Josh Heath oversees product development and digital systems that enhance HeathCoaching's executive coaching and workshops. With more than a decade of experience in e-commerce, digital media, and software, he applies expertise in AI and modern software development to create tools that strengthen client resources, streamline delivery, and expand the value HeathCoaching provides to organisations and leaders.
                 </p>
                 <div>
                   <h4 className="font-semibold text-black mb-2">Qualifications:</h4>
