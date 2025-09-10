@@ -150,7 +150,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Heath Coaching delivers workshops that elevate{" "}
+              Heath Coaching delivers workshops and coaching that elevate{" "}
               <span style={{whiteSpace: 'nowrap'}}>
                 <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Leadership</span>,{" "}
                 <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span>,{" "}and{" "}
@@ -206,34 +206,20 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* One-to-One Coaching Section */}
-      <section className="py-12" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 30%, rgba(219, 234, 254, 0.4) 60%, white 90%)'
-      }}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              High-value coaching for executives
-            </h2>
-          </div>
-
+          {/* One-to-One Coaching Box */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-            <h3 className="text-2xl font-bold mb-6 text-center text-[#0081ea]">
+            <h3 className="text-2xl font-bold mb-4 text-[#0081ea] text-center">
               One-to-One Coaching
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              Luke coaches leaders to bring out the best in themselves and their teams. He has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Luke Heath coaches leaders to bring out the best in themselves and their teams. He has coached C-level leaders since 2002 in more than 40 countries. Luke's coaching is grounded in psychology and commercial experience.
             </p>
-            <div className="text-center">
-              <Link href="/one-to-one-coaching">
-                <Button className="heath-gradient-button px-8 py-3">
-                  Learn More →
-                </Button>
-              </Link>
-            </div>
+            <Link href="/one-to-one-coaching">
+              <Button className="heath-gradient-button w-full">
+                Learn More →
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
