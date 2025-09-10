@@ -111,24 +111,27 @@ export default function Home() {
             <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
               He has coached and trained executives in global organisations for more than 20 years to perform at their best.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button
                 onClick={() => {
                   const element = document.getElementById('services-section');
                   if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
+                    const yOffset = -100; // Offset to position title at top
+                    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
                   }
                 }}
-                className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-lg font-medium rounded-md"
+                className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
               >
                 Our Services
               </Button>
-              <Button
+              <span
                 onClick={() => setIsContactOpen(true)}
-                className="bg-transparent hover:bg-gray-50 text-black border-2 border-gray-300 hover:border-gray-400 px-8 py-3 text-lg font-medium rounded-md"
+                className="text-black text-lg font-medium cursor-pointer group flex items-center"
               >
-                Contact Us →
-              </Button>
+                Contact Us 
+                <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">→</span>
+              </span>
             </div>
           </div>
         </div>
