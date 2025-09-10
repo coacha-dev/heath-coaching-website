@@ -224,11 +224,8 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-6 text-center text-[#0081ea]">
               One-to-One Coaching
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-              Coaching leaders to bring out the best in themselves and their teams.
-            </p>
             <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-              Luke has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
+              Luke coaches leaders to bring out the best in themselves and their teams. He has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
             </p>
             <div className="text-center">
               <Link href="/one-to-one-coaching">
