@@ -208,15 +208,15 @@ export default function Home() {
           </div>
 
           {/* One-to-One Coaching Box */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-            <h3 className="text-2xl font-bold mb-4 text-[#0081ea] text-center">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-black transition-colors">
+            <h3 className="text-2xl font-bold mb-4 text-black text-center">
               One-to-One Coaching
             </h3>
             <p className="text-gray-700 leading-relaxed mb-6">
               Luke Heath coaches leaders to bring out the best in themselves and their teams. He has coached C-level leaders since 2002 in more than 40 countries. Luke's coaching is grounded in psychology and commercial experience.
             </p>
             <Link href="/one-to-one-coaching">
-              <Button className="heath-gradient-button w-full">
+              <Button className="bg-black hover:bg-gray-800 text-white w-full">
                 Learn More →
               </Button>
             </Link>
