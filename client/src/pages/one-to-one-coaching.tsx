@@ -22,7 +22,7 @@ export default function OneToOneCoaching() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16" style={{
+      <section className="pt-4 pb-16" style={{
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
