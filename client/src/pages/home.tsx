@@ -164,7 +164,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4 text-[#7030a0] text-center">
                 Triple Intelligence Leadership Workshop
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6 text-center">
                 Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence.
               </p>
               <Link href="/workshops/triple-intelligence">
@@ -179,7 +179,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4 text-[#dc0725] text-center">
                 Value-Centred Selling Workshop
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6 text-center">
                 Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
               </p>
               <Link href="/workshops/value-centred-selling">
@@ -194,7 +194,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-4 text-[#0081ea] text-center">
                 Winning Careers Workshop
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6 text-center">
                 Optimise the 5 personality factors that drive career success. Build productivity, engagement, and enjoyment across your workforce.
               </p>
               <Link href="/workshops/winning-careers">
@@ -219,13 +219,13 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-            <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">
+            <h3 className="text-2xl font-bold mb-6 text-center text-[#0081ea]">
               One-to-One Coaching
             </h3>
-            <p className="text-gray-700 leading-relaxed mb-4 text-lg">
+            <p className="text-gray-700 leading-relaxed mb-4 text-lg text-center">
               Coaching leaders to bring out the best in themselves and their teams.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+            <p className="text-gray-700 leading-relaxed mb-6 text-lg text-center">
               Luke has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
             </p>
             <div className="text-center">
