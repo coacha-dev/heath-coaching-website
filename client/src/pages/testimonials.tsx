@@ -199,7 +199,7 @@ export default function Testimonials() {
 
           <div className="space-y-6">
             {clientTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-200">
+              <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg border border-gray-200 hover:border-[#0081ea] transition-all duration-200">
                 <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-4 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>

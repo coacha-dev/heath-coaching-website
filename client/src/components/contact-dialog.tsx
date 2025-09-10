@@ -26,7 +26,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
         
         <div className="space-y-4">
           {/* Luke Heath */}
-          <div className="rounded-lg p-6 bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors group">
+          <div className="rounded-lg p-6 bg-white border-2 border-gray-200 hover:border-[#0081ea] transition-colors group">
             <h3 className="text-lg font-bold text-black mb-2">
               Luke Heath
             </h3>
@@ -53,7 +53,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
           </div>
 
           {/* Josh Heath */}
-          <div className="rounded-lg p-6 bg-white border-2 border-[#0081ea] hover:border-[#40a3f7] transition-colors group">
+          <div className="rounded-lg p-6 bg-white border-2 border-gray-200 hover:border-[#0081ea] transition-colors group">
             <h3 className="text-lg font-bold text-black mb-2">
               Josh Heath
             </h3>
