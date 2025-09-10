@@ -84,9 +84,9 @@ export default function ValueCentredSellingWorkshop() {
           <div className="text-center pt-8">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="bg-[#dc0725] hover:bg-[#b8051f] text-white px-8 py-3 text-lg font-medium rounded-md"
+              className="bg-[#dc0725] text-white px-8 py-3 text-lg font-medium rounded-md group transition-all duration-200 hover:bg-transparent hover:text-[#dc0725] border-2 border-transparent hover:border-[#dc0725]"
             >
-              Contact Us →
+              Contact Us <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
             </Button>
           </div>
         </div>

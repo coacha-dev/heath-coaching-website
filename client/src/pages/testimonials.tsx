@@ -223,8 +223,8 @@ export default function Testimonials() {
             Contact us to discuss how Heath Coaching can help your team develop the skills needed for success.
           </p>
           <Link href="/contact">
-            <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-black border-2 border-black transition-all duration-200">
-              Contact Us Today
+            <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-black border-2 border-black transition-all duration-200 group">
+              Contact Us Today <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
             </button>
           </Link>
         </div>

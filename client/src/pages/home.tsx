@@ -121,9 +121,9 @@ export default function Home() {
                     window.scrollTo({ top: y, behavior: 'smooth' });
                   }
                 }}
-                className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
+                className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md group transition-all duration-200 hover:bg-transparent hover:text-[#0081ea] border-2 border-transparent hover:border-[#0081ea]"
               >
-                Our Services
+                Our Services <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Button>
               <span
                 onClick={() => setIsContactOpen(true)}
@@ -170,8 +170,8 @@ export default function Home() {
                 Advance the 3 domains of outstanding leadership: rational, emotional, and social intelligence. Deepen organisational leadership.
               </p>
               <Link href="/workshops/triple-intelligence">
-                <Button className="bg-[#7030a0] hover:bg-[#5a2480] text-white w-full">
-                  Learn More →
+                <Button className="bg-[#7030a0] text-white w-full group transition-all duration-200 hover:bg-transparent hover:text-[#7030a0] border-2 border-transparent hover:border-[#7030a0]">
+                  Learn More <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </Button>
               </Link>
             </div>
@@ -185,8 +185,8 @@ export default function Home() {
                 Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the buying cycle.
               </p>
               <Link href="/workshops/value-centred-selling">
-                <Button className="bg-[#dc0725] hover:bg-[#b8051f] text-white w-full">
-                  Learn More →
+                <Button className="bg-[#dc0725] text-white w-full group transition-all duration-200 hover:bg-transparent hover:text-[#dc0725] border-2 border-transparent hover:border-[#dc0725]">
+                  Learn More <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </Button>
               </Link>
             </div>
@@ -200,8 +200,8 @@ export default function Home() {
                 Optimise the 5 personality factors that drive career success. Build productivity, engagement, and enjoyment across your workforce.
               </p>
               <Link href="/workshops/winning-careers">
-                <Button className="bg-[#0081ea] hover:bg-[#0066bb] text-white w-full">
-                  Learn More →
+                <Button className="bg-[#0081ea] text-white w-full group transition-all duration-200 hover:bg-transparent hover:text-[#0081ea] border-2 border-transparent hover:border-[#0081ea]">
+                  Learn More <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </Button>
               </Link>
             </div>
@@ -216,8 +216,8 @@ export default function Home() {
               Luke Heath coaches leaders to bring out the best in themselves and their teams. He has coached C-level leaders since 2002 in more than 40 countries. Luke's coaching is grounded in psychology and commercial experience.
             </p>
             <Link href="/one-to-one-coaching">
-              <Button className="bg-black hover:bg-gray-800 text-white w-full">
-                Learn More →
+              <Button className="bg-black text-white w-full group transition-all duration-200 hover:bg-transparent hover:text-black border-2 border-transparent hover:border-black">
+                Learn More <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Button>
             </Link>
           </div>
@@ -281,9 +281,9 @@ export default function Home() {
           <Link href="/testimonials">
             <Button
               size="lg"
-              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md"
+              className="heath-gradient-button px-8 py-3 text-lg font-medium rounded-md group transition-all duration-200 hover:bg-transparent hover:text-[#0081ea] border-2 border-transparent hover:border-[#0081ea]"
             >
-              See all testimonials
+              See all testimonials <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
             </Button>
           </Link>
         </div>

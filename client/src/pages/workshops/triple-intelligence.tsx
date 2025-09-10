@@ -84,9 +84,9 @@ export default function TripleIntelligenceWorkshop() {
           <div className="text-center pt-8">
             <Button
               onClick={() => setIsContactOpen(true)}
-              className="bg-[#7030a0] hover:bg-[#5a2480] text-white px-8 py-3 text-lg font-medium rounded-md"
+              className="bg-[#7030a0] text-white px-8 py-3 text-lg font-medium rounded-md group transition-all duration-200 hover:bg-transparent hover:text-[#7030a0] border-2 border-transparent hover:border-[#7030a0]"
             >
-              Contact Us →
+              Contact Us <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
             </Button>
           </div>
         </div>

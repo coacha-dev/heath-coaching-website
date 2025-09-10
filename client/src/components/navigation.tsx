@@ -100,9 +100,9 @@ export default function Navigation() {
             <div className="hidden md:block">
               <Button
                 onClick={() => setIsContactOpen(true)}
-                className="heath-gradient-button px-4 py-2 text-sm font-medium rounded-md"
+                className="heath-gradient-button px-4 py-2 text-sm font-medium rounded-md group transition-all duration-200 hover:bg-transparent hover:text-[#0081ea] border-2 border-transparent hover:border-[#0081ea]"
               >
-                Contact
+                Contact <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Button>
             </div>
 
@@ -180,9 +180,9 @@ export default function Navigation() {
                   setIsContactOpen(true);
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full heath-gradient-button px-4 py-2 text-sm font-medium rounded-md"
+                className="w-full heath-gradient-button px-4 py-2 text-sm font-medium rounded-md group transition-all duration-200 hover:bg-transparent hover:text-[#0081ea] border-2 border-transparent hover:border-[#0081ea]"
               >
-                Contact
+                Contact <span className="ml-1 transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Button>
             </div>
           </div>
