@@ -161,7 +161,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-6 mb-20">
             {/* Triple Intelligence Leadership Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#7030a0]">
+              <h3 className="text-2xl font-bold mb-4 text-[#7030a0] text-center">
                 Triple Intelligence Leadership Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -176,7 +176,7 @@ export default function Home() {
 
             {/* Value-Centred Selling Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#dc0725] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#dc0725]">
+              <h3 className="text-2xl font-bold mb-4 text-[#dc0725] text-center">
                 Value-Centred Selling Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -191,7 +191,7 @@ export default function Home() {
 
             {/* Winning Careers Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h3 className="text-2xl font-bold mb-4 text-[#0081ea]">
+              <h3 className="text-2xl font-bold mb-4 text-[#0081ea] text-center">
                 Winning Careers Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -208,17 +208,20 @@ export default function Home() {
       </section>
 
       {/* One-to-One Coaching Section */}
-      <section className="py-20" style={{
+      <section className="py-12" style={{
         background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 30%, rgba(219, 234, 254, 0.4) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              One-to-One Coaching
+              High-value coaching for executives
             </h2>
           </div>
 
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+            <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">
+              One-to-One Coaching
+            </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-lg">
               Coaching leaders to bring out the best in themselves and their teams.
             </p>
