@@ -30,7 +30,7 @@ export default function Navigation() {
               <Link href="/">
                 <img 
                   src={heathLogo} 
-                  alt="HeathCoaching"
+                  alt="Heath Coaching"
                   className="h-8 w-auto cursor-pointer"
                 />
               </Link>

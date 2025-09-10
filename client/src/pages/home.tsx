@@ -106,7 +106,7 @@ export default function Home() {
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text'
-              }}>excel</span>.
+              }}>excel</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               He has coached and trained executives in global organisations for more than 20 years to perform at their best.
@@ -150,12 +150,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              HeathCoaching delivers workshops that elevate{" "}
+              Heath Coaching delivers workshops that elevate{" "}
               <span style={{whiteSpace: 'nowrap'}}>
                 <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Leadership</span>,{" "}
                 <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span>,{" "}and{" "}
                 <span style={{textDecoration: 'underline', textDecorationColor: '#0081ea', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Productivity</span>
-              </span>.
+              </span>
             </h2>
           </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
                 Value-Centred Selling Workshop
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the client buying cycle.
+                Accelerate sales by a winning mindset, contact energy, and dollar-productive behaviours. Add value at every stage of the buying cycle.
               </p>
               <Link href="/workshops/value-centred-selling">
                 <Button className="bg-[#dc0725] hover:bg-[#b8051f] text-white w-full">
@@ -246,7 +246,7 @@ export default function Home() {
         background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 25%, rgba(219, 234, 254, 0.4) 50%, rgba(239, 246, 255, 0.3) 75%, white 100%)'
       }}>
         <div className="text-center mb-16 px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[hsl(var(--dark-text))] mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(var(--dark-text))] mb-4">
             What our clients say
           </h2>
         </div>

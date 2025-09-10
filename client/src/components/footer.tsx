@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <img 
               src={heathLogo} 
-              alt="HeathCoaching"
+              alt="Heath Coaching"
               className="h-8 w-auto mb-4"
             />
             <p className="text-[hsl(var(--medium-text))] mb-6 max-w-md">
@@ -53,7 +53,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[hsl(var(--medium-text))] text-sm">
-            © 2025 HeathCoaching. All rights reserved.
+            © 2025 Heath Coaching. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy-policy">

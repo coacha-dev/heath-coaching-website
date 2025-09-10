@@ -99,7 +99,7 @@ export default function Team() {
               
               <div className="space-y-4">
                 <p className="text-gray-700">
-                  Josh has worked for a decade in e-commerce, digital asset management, and digital media. He completed business degrees but found his passion in the creative and technical aspects of digital product development. Josh brings a unique blend of business acumen and technical expertise to HeathCoaching's digital initiatives.
+                  Josh has worked for a decade in e-commerce, digital asset management, and digital media. He completed business degrees but found his passion in the creative and technical aspects of digital product development. Josh brings a unique blend of business acumen and technical expertise to Heath Coaching's digital initiatives.
                 </p>
                 <div>
                   <h4 className="font-semibold text-black mb-2">Qualifications:</h4>

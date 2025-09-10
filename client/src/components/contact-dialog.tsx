@@ -81,7 +81,7 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
           
           <div className="text-center pt-2">
             <p className="text-sm text-[hsl(var(--medium-text))]">
-              Our team is available to discuss how HeathCoaching can help your organization develop the skills needed for success.
+              Our team is available to discuss how Heath Coaching can help your organization develop the skills needed for success.
             </p>
           </div>
         </div>

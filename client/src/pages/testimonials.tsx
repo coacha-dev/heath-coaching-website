@@ -173,7 +173,7 @@ export default function Testimonials() {
               Client Testimonials
             </h1>
             <p className="text-lg md:text-xl text-[hsl(var(--medium-text))] mb-8">
-              HeathCoaching has worked with companies across the globe, including:
+              Heath Coaching has worked with companies across the globe, including:
             </p>
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-wrap justify-center gap-2 text-sm">
@@ -193,7 +193,7 @@ export default function Testimonials() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[hsl(var(--dark-text))] mb-4">
-              See what our clients say about working with HeathCoaching
+              See what our clients say about working with Heath Coaching
             </h2>
           </div>
 
@@ -220,7 +220,7 @@ export default function Testimonials() {
             Ready to join our clients?
           </h3>
           <p className="text-lg text-[hsl(var(--medium-text))] mb-8">
-            Contact us to discuss how HeathCoaching can help your team develop the skills needed for success.
+            Contact us to discuss how Heath Coaching can help your team develop the skills needed for success.
           </p>
           <Link href="/contact">
             <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-transparent hover:text-black border-2 border-black transition-all duration-200">
