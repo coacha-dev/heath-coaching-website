@@ -133,10 +133,10 @@ export default function Home() {
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               HeathCoaching delivers workshops that elevate{" "}
               <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Leadership</span>,{" "}
-              <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span> and{" "}
+              <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span>,{" "}and{" "}
               <span style={{textDecoration: 'underline', textDecorationColor: '#0081ea', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Productivity</span>.
             </h2>
           </div>
@@ -197,21 +197,29 @@ export default function Home() {
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               One-to-One Coaching
             </h2>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              High-value coaching for executives.
+            </p>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              Luke has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
+            </p>
           </div>
 
           <div className="flex justify-center">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors max-w-lg">
-              <p className="text-gray-700 leading-relaxed mb-6">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors max-w-2xl">
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                 Coaching leaders to bring out the best in themselves and their teams.
               </p>
-              <Link href="/one-to-one-coaching">
-                <Button className="heath-gradient-button w-full">
-                  Learn More →
-                </Button>
-              </Link>
+              <div className="text-center">
+                <Link href="/one-to-one-coaching">
+                  <Button className="heath-gradient-button px-8 py-3">
+                    Learn More →
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
