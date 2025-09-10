@@ -216,26 +216,21 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               One-to-One Coaching
             </h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              High-value coaching for executives.
-            </p>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Luke has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
-            </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors max-w-2xl">
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                Coaching leaders to bring out the best in themselves and their teams.
-              </p>
-              <div className="text-center">
-                <Link href="/one-to-one-coaching">
-                  <Button className="heath-gradient-button px-8 py-3">
-                    Learn More →
-                  </Button>
-                </Link>
-              </div>
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
+            <p className="text-gray-700 leading-relaxed mb-4 text-lg">
+              Coaching leaders to bring out the best in themselves and their teams.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+              Luke has coached C-level leaders since 2002 in more than 40 countries. His coaching is grounded in psychology and commercial experience.
+            </p>
+            <div className="text-center">
+              <Link href="/one-to-one-coaching">
+                <Button className="heath-gradient-button px-8 py-3">
+                  Learn More →
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
