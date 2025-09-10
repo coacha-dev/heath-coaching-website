@@ -19,7 +19,7 @@ export default function TripleIntelligenceWorkshop() {
               textDecorationThickness: '4px',
               textUnderlineOffset: '8px'
             }}>Triple Intelligence Leadership</span>
-            <br /><br />Workshop
+            <br />Workshop
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.

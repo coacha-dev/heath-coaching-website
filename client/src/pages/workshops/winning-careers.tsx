@@ -19,7 +19,7 @@ export default function WinningCareersWorkshop() {
               textDecorationThickness: '4px',
               textUnderlineOffset: '8px'
             }}>Winning Careers</span>
-            <br /><br />Workshop
+            <br />Workshop
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Increase productivity, engagement, and enjoyment for everyone in the organisation.
