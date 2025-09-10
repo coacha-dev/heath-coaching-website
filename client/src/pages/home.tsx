@@ -151,9 +151,11 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               HeathCoaching delivers workshops that elevate{" "}
-              <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Leadership</span>,{" "}
-              <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span>,{" "}and{" "}
-              <span style={{textDecoration: 'underline', textDecorationColor: '#0081ea', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Productivity</span>.
+              <span style={{whiteSpace: 'nowrap'}}>
+                <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Leadership</span>,{" "}
+                <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Sales</span>,{" "}and{" "}
+                <span style={{textDecoration: 'underline', textDecorationColor: '#0081ea', textDecorationThickness: '4px', textUnderlineOffset: '6px'}}>Productivity</span>
+              </span>.
             </h2>
           </div>
 
