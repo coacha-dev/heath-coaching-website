@@ -9,21 +9,26 @@ export default function WinningCareersWorkshop() {
     <>
       {/* Hero Section */}
       <section className="pt-24 pb-16" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 40%, rgba(219, 234, 254, 0.4) 70%, rgba(219, 234, 254, 0.5) 100%)'
+        background: 'linear-gradient(to bottom, white 0%, rgba(0, 129, 234, 0.1) 40%, rgba(0, 129, 234, 0.15) 70%, rgba(0, 129, 234, 0.2) 100%)'
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-[#0081ea]">Winning Careers</span> <span className="text-black">Workshop</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{
+            textDecoration: 'underline',
+            textDecorationColor: '#0081ea',
+            textDecorationThickness: '4px',
+            textUnderlineOffset: '8px'
+          }}>
+            Winning Careers Workshop
           </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-700 mb-6">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Increase productivity, engagement, and enjoyment for everyone in the organisation.
-          </h2>
+          </p>
         </div>
       </section>
 
       {/* Content Section */}
       <section className="py-16" style={{
-        background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
+        background: 'linear-gradient(to bottom, rgba(0, 129, 234, 0.2) 0%, rgba(0, 129, 234, 0.15) 30%, rgba(0, 129, 234, 0.1) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors mb-8 text-center">
@@ -35,31 +40,31 @@ export default function WinningCareersWorkshop() {
           {/* Five Personality Factors Boxes */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">Growth Mindset</h4>
+              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">1. Growth Mindset</h4>
               <p className="text-gray-700 leading-relaxed">
                 A growth mindset future-proofs your career. We discuss how to gain and respond to feedback and refine a 12-month learning plan.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">Conscientiousness</h4>
+              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">2. Conscientiousness</h4>
               <p className="text-gray-700 leading-relaxed">
                 Conscientiousness predicts long-term success. We discuss how to maintain work at a high standard and help customers have an excellent psychological experience.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">Energy</h4>
+              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">3. Energy</h4>
               <p className="text-gray-700 leading-relaxed">
                 High energy people are compelling to work with. Participants complete the Energy20 Assessment and we discuss how to be persuasive in any meeting.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors md:col-start-1 lg:col-start-2">
-              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">Generosity</h4>
+              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">4. Generosity</h4>
               <p className="text-gray-700 leading-relaxed">
                 Generous colleagues help teams thrive. We discuss connecting colleagues to our networks and making a positive contribution to team morale.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors">
-              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">Emotional Agility</h4>
+              <h4 className="font-bold text-[#0081ea] mb-4 text-xl text-center">5. Emotional Agility</h4>
               <p className="text-gray-700 leading-relaxed">
                 Emotional agility equips us to deal with setbacks. We discuss fostering resilience, taking ultimate responsibility for our career success, and the virtues of buddy coaching.
               </p>

@@ -9,21 +9,26 @@ export default function TripleIntelligenceWorkshop() {
     <>
       {/* Hero Section */}
       <section className="pt-24 pb-16" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 40%, rgba(219, 234, 254, 0.4) 70%, rgba(219, 234, 254, 0.5) 100%)'
+        background: 'linear-gradient(to bottom, white 0%, rgba(112, 48, 160, 0.1) 40%, rgba(112, 48, 160, 0.15) 70%, rgba(112, 48, 160, 0.2) 100%)'
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-[#7030a0]">Triple Intelligence Leadership</span> <span className="text-black">Workshop</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{
+            textDecoration: 'underline',
+            textDecorationColor: '#7030a0',
+            textDecorationThickness: '4px',
+            textUnderlineOffset: '8px'
+          }}>
+            Triple Intelligence Leadership Workshop
           </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-700 mb-6">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Transform how leaders make decisions, manage emotions, and optimise team dynamics to win.
-          </h2>
+          </p>
         </div>
       </section>
 
       {/* Content Section */}
       <section className="py-16" style={{
-        background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
+        background: 'linear-gradient(to bottom, rgba(112, 48, 160, 0.2) 0%, rgba(112, 48, 160, 0.15) 30%, rgba(112, 48, 160, 0.1) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors mb-8 text-center">
@@ -35,19 +40,19 @@ export default function TripleIntelligenceWorkshop() {
           {/* Three Intelligence Boxes */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">Rational Intelligence</h4>
+              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">1. Rational Intelligence</h4>
               <p className="text-gray-700 leading-relaxed">
                 Excellent decision-making requires a reliable process. We discuss how to prioritise deep thinking, generate innovative ideas, form strategy, chair productive meetings, and identify employees who are likely to be high performers.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">Emotional Intelligence</h4>
+              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">2. Emotional Intelligence</h4>
               <p className="text-gray-700 leading-relaxed">
                 A crucial leadership role is to be a mood manager. We discuss how to enhance trust, cultivate empathy and generosity, display resilience, understand the motivations of a broad range of personalities, and manage underperforming colleagues.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-[#7030a0] transition-colors">
-              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">Social Intelligence</h4>
+              <h4 className="font-bold text-[#7030a0] mb-4 text-xl text-center">3. Social Intelligence</h4>
               <p className="text-gray-700 leading-relaxed">
                 Advanced social intelligence distinguishes the best leaders. We discuss how to champion a winning culture, deliver significant change projects, defend the team's energy and time, connect colleagues to networks, and embrace the mandate to lead.
               </p>
