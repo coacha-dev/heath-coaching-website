@@ -94,12 +94,12 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Adjusted height for better content visibility */}
-      <section className="h-[85vh] flex flex-col" style={{
+      <section className="h-[85vh] md:h-[85vh] flex flex-col" style={{
         background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 40%, rgba(219, 234, 254, 0.4) 70%, rgba(219, 234, 254, 0.5) 100%)'
       }}>
-        <div className="flex-1 flex justify-center pt-32 pb-6">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+        <div className="flex-1 flex justify-center pt-8 md:pt-32 pb-6">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-8 text-center mt-4 md:mt-16">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4 md:mb-6">
               Luke Heath helps leaders and their teams{" "}
               <span style={{ 
                 background: 'linear-gradient(90deg, #0081ea 0%, #40a3f7 100%)',
@@ -108,7 +108,7 @@ export default function Home() {
                 backgroundClip: 'text'
               }}>excel</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl mx-auto">
               He has coached and trained executives in global organisations for more than 20 years to perform at their best.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -137,14 +137,14 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full pt-24" style={{ paddingBottom: '200px' }}>
+        <div className="w-full pt-12 md:pt-24" style={{ paddingBottom: '80px' }}>
           <LogoScroller />
         </div>
       </section>
 
       {/* Our Services Section - Continues gradient flow */}
       <section id="services-section" className="pb-20" style={{
-        paddingTop: '200px',
+        paddingTop: '100px',
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
