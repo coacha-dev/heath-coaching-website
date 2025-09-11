@@ -164,11 +164,14 @@ h1, h2, h3, h4, h5, h6 {
   .logo-scroll-container {
     overflow: hidden;
     width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 1;
   }
 
   .logo-scroll-track {
     display: flex;
-    animation: scroll 40s linear infinite;
+    animation: scroll 25s linear infinite;
     width: 200%;
     will-change: transform;
   }
@@ -186,6 +189,23 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 144px;
     object-fit: contain;
     opacity: 1;
+  }
+
+  /* Mobile optimizations for logo scroller */
+  @media (max-width: 768px) {
+    .logo-scroll-track {
+      animation: scroll 20s linear infinite;
+    }
+    
+    .logo-item {
+      flex: 0 0 160px;
+      height: 50px;
+    }
+    
+    .logo-image {
+      max-height: 36px;
+      max-width: 120px;
+    }
   }
 
   @keyframes scroll {
