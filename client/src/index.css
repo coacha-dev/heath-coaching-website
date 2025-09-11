@@ -201,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .logo-scroll-track {
     display: flex;
-    animation: scroll 25s linear infinite;
+    animation: scroll 12s linear infinite;
     width: 200%;
     will-change: transform;
   }
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Mobile optimizations for logo scroller */
   @media (max-width: 768px) {
     .logo-scroll-track {
-      animation: scroll 20s linear infinite;
+      animation: scroll 8s linear infinite;
     }
     
     .logo-item {
@@ -269,11 +269,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .testimonial-row-lr {
-    animation: scrollLeftToRight 120s linear infinite;
+    animation: scrollLeftToRight 30s linear infinite;
   }
 
   .testimonial-row-rl {
-    animation: scrollRightToLeft 120s linear infinite;
+    animation: scrollRightToLeft 30s linear infinite;
   }
 
   .testimonial-row:hover {
