@@ -176,9 +176,9 @@ export default function Testimonials() {
               Heath Coaching has worked with companies across the globe, including:
             </p>
             <div className="max-w-4xl mx-auto">
-              <div className="flex flex-wrap justify-center gap-2 text-sm">
+              <div className="flex flex-wrap justify-center gap-1 md:gap-2 text-xs md:text-sm">
                 {companies.map((company, index) => (
-                  <span key={index} className="inline-block bg-white border border-gray-200 hover:border-[#0081ea] px-3 py-1 rounded shadow-md hover:shadow-lg transition-all duration-200 text-gray-700 hover:text-[#0081ea]">
+                  <span key={index} className="inline-block bg-white border border-gray-200 hover:border-[#0081ea] px-2 md:px-3 py-1 rounded shadow-md hover:shadow-lg transition-all duration-200 text-gray-700 hover:text-[#0081ea]">
                     {company}
                   </span>
                 ))}
@@ -197,15 +197,15 @@ export default function Testimonials() {
             </h2>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             {clientTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg border border-gray-200 hover:border-[#0081ea] transition-all duration-200">
-                <blockquote className="text-lg text-[hsl(var(--dark-text))] mb-4 leading-relaxed">
+              <div key={index} className="bg-white rounded-lg p-4 md:p-6 shadow-md hover:shadow-lg border border-gray-200 hover:border-[#0081ea] transition-all duration-200">
+                <blockquote className="text-base md:text-lg text-[hsl(var(--dark-text))] mb-3 md:mb-4 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
                 <div>
-                  <p className="font-semibold text-[hsl(var(--dark-text))] text-base">{testimonial.name}</p>
-                  <p className="text-[hsl(var(--medium-text))] text-sm">{testimonial.title}</p>
+                  <p className="font-semibold text-[hsl(var(--dark-text))] text-sm md:text-base">{testimonial.name}</p>
+                  <p className="text-[hsl(var(--medium-text))] text-xs md:text-sm">{testimonial.title}</p>
                 </div>
               </div>
             ))}
