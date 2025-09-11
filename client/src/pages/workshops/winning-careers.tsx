@@ -12,16 +12,16 @@ export default function WinningCareersWorkshop() {
         background: 'linear-gradient(to bottom, white 0%, rgba(0, 129, 234, 0.02) 40%, rgba(0, 129, 234, 0.03) 70%, rgba(0, 129, 234, 0.05) 100%)'
       }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
             <span style={{
               textDecoration: 'underline',
               textDecorationColor: '#0081ea',
-              textDecorationThickness: '4px',
-              textUnderlineOffset: '8px'
-            }}>Winning Careers</span>
-            <br /><span style={{marginTop: '0.5rem', display: 'inline-block'}}>Workshop</span>
+              textDecorationThickness: '3px',
+              textUnderlineOffset: '4px'
+            }} className="md:!decoration-4 md:!underline-offset-8">Winning Careers</span>
+            <br /><span style={{marginTop: '0.25rem', display: 'inline-block'}} className="md:!mt-2">Workshop</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Increase productivity, engagement, and enjoyment for everyone in the organisation.
           </p>
         </div>
