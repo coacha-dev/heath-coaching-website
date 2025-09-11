@@ -18,29 +18,29 @@ export default function Team() {
 
           <div className="space-y-12">
             {/* Luke Heath */}
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors p-8">
-              <div className="flex gap-8 mb-6">
-                <div className="flex-shrink-0">
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors p-4 md:p-8">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-8 mb-4 md:mb-6">
+                <div className="flex-shrink-0 mx-auto md:mx-0">
                   <img
                     src={lukeHeadshot}
                     alt="Luke Heath"
-                    className="w-40 h-40 object-cover rounded-full"
+                    className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full"
                   />
                 </div>
-                <div className="flex-1 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-black mb-3">
+                <div className="flex-1 flex flex-col justify-center text-center md:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-black mb-2 md:mb-3">
                     Luke Heath
                   </h3>
-                  <p className="text-lg text-gray-600 font-medium mb-4">
+                  <p className="text-base md:text-lg text-gray-600 font-medium mb-3 md:mb-4">
                     Executive Coach & Founder
                   </p>
-                  <div className="space-y-2">
-                    <a href="mailto:luke@heathcoaching.com" className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors">
-                      <Mail className="w-4 h-4 mr-2 text-[#0081ea]" />
-                      luke@heathcoaching.com
+                  <div className="space-y-1 md:space-y-2">
+                    <a href="mailto:luke@heathcoaching.com" className="flex items-center justify-center md:justify-start text-[#0081ea] hover:text-[#40a3f7] transition-colors text-sm md:text-base">
+                      <Mail className="w-3 h-3 md:w-4 md:h-4 mr-2 text-[#0081ea] flex-shrink-0" />
+                      <span className="break-words md:break-normal">luke@heathcoaching.com</span>
                     </a>
-                    <a href="tel:+61417588346" className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors">
-                      <Phone className="w-4 h-4 mr-2 text-[#0081ea]" />
+                    <a href="tel:+61417588346" className="flex items-center justify-center md:justify-start text-[#0081ea] hover:text-[#40a3f7] transition-colors text-sm md:text-base">
+                      <Phone className="w-3 h-3 md:w-4 md:h-4 mr-2 text-[#0081ea] flex-shrink-0" />
                       +61 417 588 346
                     </a>
                   </div>
@@ -68,29 +68,29 @@ export default function Team() {
             </div>
 
             {/* Josh Heath */}
-            <div className="bg-white rounded-lg shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors p-8">
-              <div className="flex gap-8 mb-6">
-                <div className="flex-shrink-0">
+            <div className="bg-white rounded-lg shadow-lg border border-gray-200 hover:border-[#0081ea] transition-colors p-4 md:p-8">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-8 mb-4 md:mb-6">
+                <div className="flex-shrink-0 mx-auto md:mx-0">
                   <img
                     src={joshHeadshot}
                     alt="Josh Heath"
-                    className="w-40 h-40 object-cover rounded-full"
+                    className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full"
                   />
                 </div>
-                <div className="flex-1 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-black mb-3">
+                <div className="flex-1 flex flex-col justify-center text-center md:text-left">
+                  <h3 className="text-xl md:text-2xl font-bold text-black mb-2 md:mb-3">
                     Josh Heath
                   </h3>
-                  <p className="text-lg text-gray-600 font-medium mb-4">
+                  <p className="text-base md:text-lg text-gray-600 font-medium mb-3 md:mb-4">
                     Product Director
                   </p>
-                  <div className="space-y-2">
-                    <a href="mailto:josh@coacha.co" className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors">
-                      <Mail className="w-4 h-4 mr-2 text-[#0081ea]" />
-                      josh@coacha.co
+                  <div className="space-y-1 md:space-y-2">
+                    <a href="mailto:josh@coacha.co" className="flex items-center justify-center md:justify-start text-[#0081ea] hover:text-[#40a3f7] transition-colors text-sm md:text-base">
+                      <Mail className="w-3 h-3 md:w-4 md:h-4 mr-2 text-[#0081ea] flex-shrink-0" />
+                      <span className="break-words md:break-normal">josh@coacha.co</span>
                     </a>
-                    <a href="tel:+61423391445" className="flex items-center text-[#0081ea] hover:text-[#40a3f7] transition-colors">
-                      <Phone className="w-4 h-4 mr-2 text-[#0081ea]" />
+                    <a href="tel:+61423391445" className="flex items-center justify-center md:justify-start text-[#0081ea] hover:text-[#40a3f7] transition-colors text-sm md:text-base">
+                      <Phone className="w-3 h-3 md:w-4 md:h-4 mr-2 text-[#0081ea] flex-shrink-0" />
                       +61 423 391 445
                     </a>
                   </div>
