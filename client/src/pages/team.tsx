@@ -24,7 +24,7 @@ export default function Team() {
                   <img
                     src={lukeHeadshot}
                     alt="Luke Heath"
-                    className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full"
+                    className="w-32 h-32 md:w-52 md:h-52 object-cover rounded-full"
                   />
                 </div>
                 <div className="flex-1 flex flex-col justify-center text-center md:text-left">
@@ -74,7 +74,7 @@ export default function Team() {
                   <img
                     src={joshHeadshot}
                     alt="Josh Heath"
-                    className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-full"
+                    className="w-32 h-32 md:w-52 md:h-52 object-cover rounded-full"
                   />
                 </div>
                 <div className="flex-1 flex flex-col justify-center text-center md:text-left">

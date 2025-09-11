@@ -199,13 +199,13 @@ export default function Testimonials() {
 
           <div className="space-y-4 md:space-y-6">
             {clientTestimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg p-4 md:p-6 shadow-md hover:shadow-lg border border-gray-200 hover:border-[#0081ea] transition-all duration-200">
-                <blockquote className="text-base md:text-lg text-[hsl(var(--dark-text))] mb-3 md:mb-4 leading-relaxed">
+              <div key={index} className="bg-white rounded-lg p-3 md:p-4 shadow-md hover:shadow-lg border border-gray-200 hover:border-[#0081ea] transition-all duration-200">
+                <blockquote className="text-sm md:text-base text-[hsl(var(--dark-text))] mb-2 md:mb-3 leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
                 <div>
-                  <p className="font-semibold text-[hsl(var(--dark-text))] text-sm md:text-base">{testimonial.name}</p>
-                  <p className="text-[hsl(var(--medium-text))] text-xs md:text-sm">{testimonial.title}</p>
+                  <p className="font-semibold text-[hsl(var(--dark-text))] text-xs md:text-sm">{testimonial.name}</p>
+                  <p className="text-[hsl(var(--medium-text))] text-xs md:text-xs">{testimonial.title}</p>
                 </div>
               </div>
             ))}
