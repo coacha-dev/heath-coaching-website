@@ -290,6 +290,31 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
   }
 
+  /* Mobile testimonial cards - make smaller to fit more on screen */
+  @media (max-width: 768px) {
+    .testimonial-card-auto {
+      min-height: 120px;
+      max-width: 260px;
+      min-width: 220px;
+      padding: 12px !important;
+      margin: 0 12px !important;
+    }
+    
+    .testimonial-card-auto blockquote {
+      font-size: 0.8rem !important;
+      line-height: 1.4 !important;
+      margin-bottom: 8px !important;
+    }
+    
+    .testimonial-card-auto .font-semibold {
+      font-size: 0.75rem !important;
+    }
+    
+    .testimonial-card-auto .text-xs {
+      font-size: 0.7rem !important;
+    }
+  }
+
   @keyframes scrollLeftToRight {
     0% {
       transform: translateX(-50%);
