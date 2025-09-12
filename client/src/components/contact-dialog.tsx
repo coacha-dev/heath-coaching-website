@@ -16,7 +16,7 @@ interface ContactDialogProps {
 export default function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[380px] sm:max-w-[450px]">
+      <DialogContent className="max-w-[380px] sm:max-w-[450px] rounded-xl border-0 shadow-2xl">
         <DialogHeader>
           <DialogTitle>Contact Us</DialogTitle>
           <DialogDescription>

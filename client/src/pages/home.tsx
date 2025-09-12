@@ -94,11 +94,11 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Adjusted height for better content visibility */}
-      <section className="h-[85vh] md:h-[85vh] flex flex-col" style={{
+      <section className="min-h-[60vh] md:min-h-[65vh] flex flex-col" style={{
         background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.3) 40%, rgba(219, 234, 254, 0.4) 70%, rgba(219, 234, 254, 0.5) 100%)'
       }}>
-        <div className="flex-1 flex justify-center pt-8 md:pt-32 pb-6">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-8 text-center mt-4 md:mt-16">
+        <div className="flex-1 flex justify-center pt-8 md:pt-16 pb-2 md:pb-4">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-8 text-center mt-2 md:mt-8">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4 md:mb-6">
               Luke Heath helps leaders and their teams{" "}
               <span style={{ 
@@ -137,21 +137,22 @@ export default function Home() {
         </div>
         
         {/* Logo Scroller at bottom of viewport - inherits gradient */}
-        <div className="w-full pt-6 md:pt-12" style={{ paddingBottom: '40px' }}>
+        <div className="w-full pt-2 md:pt-6" style={{ paddingBottom: '20px' }}>
           <LogoScroller />
         </div>
       </section>
 
       {/* Our Services Section - Continues gradient flow */}
       <section id="services-section" className="pb-20" style={{
-        paddingTop: '40px',
+        paddingTop: '10px',
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Heath Coaching delivers workshops and coaching that elevate{" "}
-              <span className="block sm:inline" style={{whiteSpace: 'normal'}}>
+              <span className="block sm:inline">Heath Coaching delivers workshops and coaching that</span>{" "}
+              <span className="inline">
+                elevate{" "}
                 <span style={{textDecoration: 'underline', textDecorationColor: '#7030a0', textDecorationThickness: '3px', textUnderlineOffset: '4px'}} className="md:!decoration-4 md:!underline-offset-6">Leadership</span>,{" "}
                 <span style={{textDecoration: 'underline', textDecorationColor: '#dc0725', textDecorationThickness: '3px', textUnderlineOffset: '4px'}} className="md:!decoration-4 md:!underline-offset-6">Sales</span>,{" "}and{" "}
                 <span style={{textDecoration: 'underline', textDecorationColor: '#0081ea', textDecorationThickness: '3px', textUnderlineOffset: '4px'}} className="md:!decoration-4 md:!underline-offset-6">Productivity</span>
