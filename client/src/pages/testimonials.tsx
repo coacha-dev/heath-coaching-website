@@ -10,7 +10,7 @@ export default function Testimonials() {
     "Crestone", "CVC", "Deloitte", "Deutsche Bank", "EY", "Fidelity International", 
     "GBA Capital", "GoGet", "Goldman Sachs", "IBA", "Investec", "Jack Morton Worldwide", 
     "JBWere", "JP Morgan", "ListedReserve", "Lloyds Bank", "Macquarie Bank", 
-    "NAB", "Nissan", "Nomura", "Orbis", "Platinum Asset Management"
+    "NAB", "Nissan", "Nomura", "Orbis", "Pallion", "Platinum Asset Management"
   ];
 
   const clientTestimonials = [
