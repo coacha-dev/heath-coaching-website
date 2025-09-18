@@ -1,0 +1,248 @@
+
+Quinn (Support)
+Wed 17 Sept, 11:47 (2 days ago)
+to me
+
+Hi Josh, thank you for contacting Replit Support.
+
+I can help troubleshoot this domain verification issue. Please share your repl URL so I can better understand the setup.
+
+Let's verify your DNS configuration step by step:
+
+1. Check DNS Records:
+
+A record should point to: 34.111.179.208
+TXT record should start with: replit-verify= followed by your deployment ID
+2. Verify Deployment ID:
+
+Go to your deployment pane overview
+Click the hamburger menu (3 dots)
+Scroll to top of deployment logs
+Check that the 36-digit deployment ID matches the one in your TXT record
+3. Check for Common Issues:
+
+Multiple A records for the same domain pointing to different servers
+A and AAAA records co-existing (Replit only supports A records)
+Cloudflare proxied domain records (prevents automatic SSL renewal)
+You can verify your DNS records using:
+
+A records: https://toolbox.googleapps.com/apps/dig/#A/
+TXT records: https://toolbox.googleapps.com/apps/dig/#TXT/
+If everything looks correct, try unlinking and relinking the domain again to trigger fresh verification, then wait up to 48 hours for DNS propagation.
+
+Regards,
+
+Quinn
+
+
+This email is a service from Replit. Delivered by Zendesk
+
+On September 17, 2025 at 1:44:07 AM UTC, Josh Heath josh@coacha.co wrote:
+# Title
+URGENT - Deployed Site Down While Being Connected Perfectly
+
+# Description
+Hi,
+I have connected my 'heathcoaching.com site' project to the domain 'heathcoaching.com' and have deployed. Site was working as initially intended.
+
+Approx. 1 week after, when loading site in browser, receives error message:
+
+[This site can’t be reached
+Check if there is a typo in www.heathcoaching.com.
+DNS_PROBE_FINISHED_NXDOMAIN]
+
+No changes were made to DNS in GoDaddy account. All records are correct. I unlinked and relinked domain and re-entered all records. It says verified on Replit but does not load. I have contacted GoDaddy and confirmed all records are correct - say it's a Replit issue. This has happened prior on another Replit project. Please help me get this site up and running ASAP as it is affecting our ability to connect with clients. Please also advise why this is happening. No changes were made to DNS and site stopped working after a week.
+
+Thank you for your help.
+
+Kind regards,
+Josh
+
+Username: coacha-dev
+Email: josh@coacha.co
+User ID: 42424715
+
+[V1JJL6-RL2JZ]
+
+Josh Heath <josh@coacha.co>
+Wed 17 Sept, 11:54 (2 days ago)
+to Support
+
+
+Hi Quinn, 
+
+Thanks for getting back to me quickly.
+
+Repl URL: heathcoachingcom-site-coacha-dev.replit.app
+
+Please see attached records below:
+
+Screenshot 2025-09-17 at 11.49.34 am.png
+Screenshot 2025-09-17 at 11.49.46 am.png
+
+Please see logs below:
+Screenshot 2025-09-17 at 11.53.59 am.png
+
+There is no other A or AAAA record in the DNS.
+
+I have already attempted 'unlinking and relinking the domain again to trigger fresh verification, then wait up to 48 hours for DNS propagation', however have had no success.
+
+Please advise.
+
+Kind regards,
+
+Josh
+
+Quinn (Support)
+Wed 17 Sept, 11:58 (2 days ago)
+to me
+
+I can see the potential issue. Your DNS records look correct, but there might be a mismatch between your deployment ID and the TXT record.
+
+Let's verify your deployment ID:
+
+Go to your deployment pane overview
+Click the hamburger menu (3 dots)
+Scroll to the top of the deployment logs
+Look for the full 36-digit deployment ID
+Your current TXT record shows: replit-verify=9c09c35a-597c-48db-b2e9-ed15e910ffd7
+
+Please check if this matches the 36-digit deployment ID from step 3. If they don't match, you'll need to update your TXT record with the correct deployment ID.
+
+Also, can you try these DNS verification tools to confirm your records are propagating correctly:
+
+A record check: https://toolbox.googleapps.com/apps/dig/#A/heathcoaching.com
+TXT record check: https://toolbox.googleapps.com/apps/dig/#TXT/heathcoaching.com
+Let me know what the 36-digit deployment ID shows and the results from the DNS tools.
+
+Regards,
+Quinn
+
+
+This email is a service from Replit. Delivered by Zendesk
+
+On September 17, 2025 at 1:55:20 AM UTC, Josh Heath josh@coacha.co wrote:
+
+Hi Quinn, 
+
+Thanks for getting back to me quickly.
+
+Repl URL: heathcoachingcom-site-coacha-dev.replit.app
+
+Please see attached records below:
+
+Screenshot 2025-09-17 at 11.49.34 am.png
+Screenshot 2025-09-17 at 11.49.46 am.png
+
+Please see logs below:
+Screenshot 2025-09-17 at 11.53.59 am.png
+
+There is no other A or AAAA record in the DNS.
+
+I have already attempted 'unlinking and relinking the domain again to trigger fresh verification, then wait up to 48 hours for DNS propagation', however have had no success.
+
+Please advise.
+
+Kind regards,
+
+Josh
+
+On Wed, 17 Sept 2025 at 11:47, Quinn (Support) <support@replit.com> wrote:
+[V1JJL6-RL2JZ]
+
+Josh Heath <josh@coacha.co>
+Wed 17 Sept, 12:03 (2 days ago)
+to Support
+
+I cannot find the deployment ID on the Logs.
+
+Screenshot 2025-09-17 at 12.03.26 pm.png
+
+Quinn (Support)
+Wed 17 Sept, 12:07 (2 days ago)
+to me
+
+The deployment ID should be at the very top of your deployment logs. Scroll all the way to the top (use Ctrl+Home or Cmd+Home to jump to the beginning).
+
+Look for a 36-digit string like: 493bd9cf-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+Compare this with your current TXT record: replit-verify=9c09c35a-597c-48db-b2e9-ed15e910ffd7
+
+If they don't match, update your TXT record at GoDaddy with the correct deployment ID.
+
+What deployment ID do you see at the top of the logs?
+
+Regards,
+
+Quinn
+
+
+This email is a service from Replit. Delivered by Zendesk
+
+On September 17, 2025 at 2:04:19 AM UTC, Josh Heath josh@coacha.co wrote:
+I cannot find the deployment ID on the Logs.
+
+Screenshot 2025-09-17 at 12.03.26 pm.png
+
+
+On Wed, 17 Sept 2025 at 11:58, Quinn (Support) <support@replit.com> wrote:
+[V1JJL6-RL2JZ]
+
+Josh Heath <josh@coacha.co>
+Wed 17 Sept, 12:09 (2 days ago)
+to Support
+
+I am sorry but I am unable to find it.
+
+This is my screen at the top:
+
+Screenshot 2025-09-17 at 12.09.42 pm.png
+
+Quinn (Support)
+17 Sept 2025, 12:13 (2 days ago)
+to me
+
+I found the issue! Your TXT record and deployment ID don't match.
+
+Your current TXT record shows: replit-verify=9c09c35a-597c-48db-b2e9-ed15e910ffd7
+
+But I can see from your logs that your deployment ID starts with "493bd9cf" - these need to match for domain verification to work.
+
+To find the complete 36-digit deployment ID:
+
+In your deployment logs, scroll to the very top (use Ctrl+Home or Cmd+Home)
+Look for the full deployment ID that starts with "493bd9cf-" followed by more characters
+It should look like: 493bd9cf-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Once you find the complete deployment ID, update your TXT record at GoDaddy to:
+replit-verify=[the complete deployment ID]
+
+After updating the TXT record, wait up to 48 hours for DNS propagation. You can check if your records are propagating correctly using:
+
+TXT record check: https://toolbox.googleapps.com/apps/dig/#TXT/heathcoaching.com
+Let me know what the complete deployment ID shows and I'll help verify it matches your TXT record.
+
+Regards,
+Quinn
+
+
+This email is a service from Replit. Delivered by Zendesk
+
+On September 17, 2025 at 2:10:13 AM UTC, Josh Heath josh@coacha.co wrote:
+I am sorry but I am unable to find it.
+
+This is my screen at the top:
+
+Screenshot 2025-09-17 at 12.09.42 pm.png
+
+On Wed, 17 Sept 2025 at 12:07, Quinn (Support) <support@replit.com> wrote:
+[V1JJL6-RL2JZ]
+
+Josh Heath
+17 Sept 2025, 12:33 (2 days ago)
+The system is not letting me scroll to the top to see the full deployment ID. I don't have a CMD+Home option as I am on a Mac. Is there a way you can access thi
+
+Quinn (Support)
+17 Sept 2025, 12:36 (2 days ago)
+to me
+
+I can see the issue - your TXT record and deployment ID don't match, which is preventing domain verification. Since you're unable to scroll to the top of the deployment logs to find the complete deployment ID, I'm connecting you to a teammate who can help you get the correct 36-digit deployment ID. They'll be able to assist you in updating your TXT record with the right value. We're experiencing high demand so the teammate might take some time to get back to you.
