@@ -16,6 +16,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/github/create-repo", async (req, res) => {
     try {
       const repo = await createGitHubRepo("heath-coaching-website");
+      res.setHeader('Content-Type', 'application/json');
       res.json({ 
         success: true, 
         repo: {
@@ -25,7 +26,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       });
     } catch (error: any) {
-      res.status(500).json({ error: error.message });
+      console.error("GitHub repo creation error:", error);
+      res.setHeader('Content-Type', 'application/json');
+      res.status(500).json({ success: false, error: error.message });
     }
   });
 
@@ -43,8 +46,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
         if (entry.isDirectory()) {
           files.push(...readDirRecursive(fullPath, relativePath));
         } else {
-          const content = fs.readFileSync(fullPath, 'utf8');
-          files.push({ path: relativePath, content });
+          try {
+            // Skip binary files and only read text files
+            const ext = path.extname(entry.name).toLowerCase();
+            const textExtensions = ['.html', '.css', '.js', '.json', '.txt', '.md', '.svg', '.xml'];
+            
+            if (textExtensions.includes(ext)) {
+              const content = fs.readFileSync(fullPath, 'utf8');
+              files.push({ path: relativePath, content });
+            } else {
+              // For binary files, just skip them or handle differently
+              console.log(`Skipping binary file: ${relativePath}`);
+            }
+          } catch (error) {
+            console.error(`Error reading file ${relativePath}:`, error);
+          }
         }
       }
       return files;
@@ -76,6 +92,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       await uploadFilesToGitHub(user.data.login, "heath-coaching-website", files);
       
+      res.setHeader('Content-Type', 'application/json');
       res.json({ 
         success: true, 
         message: "Site deployed to GitHub!",
@@ -85,7 +102,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       });
     } catch (error: any) {
       console.error("Deploy error:", error);
-      res.status(500).json({ error: error.message });
+      res.setHeader('Content-Type', 'application/json');
+      res.status(500).json({ success: false, error: error.message });
     }
   });
 

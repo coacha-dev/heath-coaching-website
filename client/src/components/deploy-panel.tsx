@@ -19,6 +19,18 @@ export function DeployPanel() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
       });
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Server error (${response.status}): ${errorText}`);
+      }
+      
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        const responseText = await response.text();
+        throw new Error(`Expected JSON response but got: ${responseText.substring(0, 200)}...`);
+      }
+      
       const data = await response.json();
       
       if (data.success) {
@@ -31,6 +43,7 @@ export function DeployPanel() {
         throw new Error(data.error);
       }
     } catch (error: any) {
+      console.error('Create repo error:', error);
       toast({
         title: "Error",
         description: error.message,
@@ -48,6 +61,18 @@ export function DeployPanel() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
       });
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Server error (${response.status}): ${errorText}`);
+      }
+      
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        const responseText = await response.text();
+        throw new Error(`Expected JSON response but got: ${responseText.substring(0, 200)}...`);
+      }
+      
       const data = await response.json();
       
       if (data.success) {
@@ -60,6 +85,7 @@ export function DeployPanel() {
         throw new Error(data.error);
       }
     } catch (error: any) {
+      console.error('Deploy error:', error);
       toast({
         title: "Deployment Failed",
         description: error.message,
