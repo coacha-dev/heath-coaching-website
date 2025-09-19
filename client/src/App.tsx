@@ -16,7 +16,6 @@ import Testimonials from "@/pages/testimonials";
 import Contact from "@/pages/contact";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
-import Deploy from "@/pages/deploy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -32,7 +31,6 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />
-      <Route path="/deploy" component={Deploy} />
       <Route component={NotFound} />
     </Switch>
   );
