@@ -143,12 +143,11 @@ export default function Home() {
       </section>
 
       {/* Our Services Section - Continues gradient flow */}
-      <section id="services-section" className="pb-20" style={{
-        paddingTop: '10px',
+      <section id="services-section" className="pt-16 lg:pt-24 pb-20" style={{
         background: 'linear-gradient(to bottom, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0.4) 30%, rgba(239, 246, 255, 0.3) 60%, white 90%)'
       }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               <span className="block sm:inline">Heath Coaching delivers workshops and coaching that</span>{" "}
               <span className="inline">
