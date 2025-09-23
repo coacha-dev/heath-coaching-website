@@ -135,6 +135,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        {/* Logo Scroller at bottom of viewport - with increased spacing */}
+        <div className="w-full pt-12 md:pt-20" style={{ paddingBottom: '20px' }}>
+          <LogoScroller />
+        </div>
       </section>
 
       {/* Our Services Section - Continues gradient flow */}
@@ -216,15 +221,6 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Logo Scroller Section */}
-      <section className="py-12 lg:py-16" style={{
-        background: 'linear-gradient(to bottom, white 0%, rgba(239, 246, 255, 0.2) 50%, white 100%)'
-      }}>
-        <div className="w-full">
-          <LogoScroller />
         </div>
       </section>
 
