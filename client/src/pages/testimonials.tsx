@@ -15,6 +15,16 @@ export default function Testimonials() {
 
   const clientTestimonials = [
     {
+      quote: "Luke is a tremendous person, moreover, a brilliant executive coach with an innate ability to listen. He strikes the balance between a curious mind, with a systematic questioning model, and a capacity to distil a lot of information into tangible, digestible concepts which help inform a go forward approach. I leave every discussion with energy, a consolidation of thinking, and a confidence that I have been able to use Luke as a sounding board levering his own perspectives and unique experience. It's is a remarkable skill he has. Further, I have often used Luke to help form and facilitate our strategic offsites. He is adept at teasing out discussion that cuts to the heart of the conversation. Luke has the wherewithal to challenge in a conciliatory manner. I could not recommend Luke any more highly.",
+      name: "Jason Ciccolallo",
+      title: "Managing Director, Orbis Investments"
+    },
+    {
+      quote: "Luke was recommended to me several years ago, and we had some invaluable one to one sessions. He brought a combination of industry understanding, personal compassion and empathy, and a blend of academic and practical insights and frameworks. Luke listens intently and went deep in pointing me towards discovering better solutions. In the last year, Platinum engaged him to facilitate a range of conversations within our corporate, some challenging, but ultimately, deeply rewarding and actionable.",
+      name: "Douglas Isles",
+      title: "Head of Investment, Platinum Investment Management"
+    },
+    {
       quote: "I am happy to highly recommend Luke as an Executive Coach, as Luke has a flair for the psychology of corporations as well as adaptive style, to suit many leaders' individual needs.",
       name: "Alva Devoy",
       title: "Managing Director, Fidelity International"
