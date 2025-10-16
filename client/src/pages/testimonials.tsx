@@ -20,9 +20,29 @@ export default function Testimonials() {
       title: "Managing Director, Orbis Investments"
     },
     {
+      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits... This should be mandatory leadership training for all organisations seeking a high-performance culture.",
+      name: "Winnie Lour",
+      title: "Head of Business Finance, Asia Pacific ex Japan, Fidelity International"
+    },
+    {
+      quote: "[Testimonial content to be added]",
+      name: "Elizabeth Siu",
+      title: "Managing Director, UBS Global Banking"
+    },
+    {
+      quote: "Luke is an exceptional coach... I have no hesitation in strongly recommending him to any individual or company.",
+      name: "Ross Davies",
+      title: "Sales Director, Deutsche Bank"
+    },
+    {
       quote: "Luke was recommended to me several years ago, and we had some invaluable one to one sessions. He brought a combination of industry understanding, personal compassion and empathy, and a blend of academic and practical insights and frameworks. Luke listens intently and went deep in pointing me towards discovering better solutions. In the last year, Platinum engaged him to facilitate a range of conversations within our corporate, some challenging, but ultimately, deeply rewarding and actionable.",
       name: "Douglas Isles",
       title: "Head of Investment, Platinum Investment Management"
+    },
+    {
+      quote: "Luke has been invaluable as an executive coach to me over many years. He provides an excellent strategic sounding board…",
+      name: "Jenny Josling",
+      title: "Chair, Orbis Australia"
     },
     {
       quote: "I am happy to highly recommend Luke as an Executive Coach, as Luke has a flair for the psychology of corporations as well as adaptive style, to suit many leaders' individual needs.",
