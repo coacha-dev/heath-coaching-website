@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 
   @keyframes scrollLeftToRight {
     0% {
-      transform: translateX(-50%);
+      transform: translateX(-33.333%);
     }
     100% {
       transform: translateX(0%);
@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-33.333%);
     }
   }
 }

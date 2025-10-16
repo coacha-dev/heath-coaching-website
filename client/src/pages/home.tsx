@@ -11,7 +11,7 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits to holistically approach the complex topics of leadership and value creation. It is interactive, engaging, and thought-provoking, but most of all it is thoroughly enjoyable.",
+      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits to holistically approach the complex topics of leadership and value creation.",
       name: "Winnie Lour",
       title: "Head of Business Finance, Asia Pacific ex Japan, Fidelity International"
     },
@@ -260,7 +260,7 @@ export default function Home() {
             {/* Row 1 - Left to Right */}
             <div className="testimonial-row-container">
               <div className="testimonial-row testimonial-row-lr">
-                {[...row1Testimonials, ...row1Testimonials].map((testimonial, index) => (
+                {[...row1Testimonials, ...row1Testimonials, ...row1Testimonials].map((testimonial, index) => (
                   <div key={`row1-${index}`} className="testimonial-card-auto bg-white rounded-lg border border-gray-200 shadow-sm p-5 mx-4 flex-shrink-0">
                     <blockquote className="text-sm text-[hsl(var(--dark-text))] mb-3 italic leading-relaxed">
                       "{testimonial.quote}"
@@ -277,7 +277,7 @@ export default function Home() {
             {/* Row 2 - Right to Left */}
             <div className="testimonial-row-container">
               <div className="testimonial-row testimonial-row-rl">
-                {[...row2Testimonials, ...row2Testimonials].map((testimonial, index) => (
+                {[...row2Testimonials, ...row2Testimonials, ...row2Testimonials].map((testimonial, index) => (
                   <div key={`row2-${index}`} className="testimonial-card-auto bg-white rounded-lg border border-gray-200 shadow-sm p-5 mx-4 flex-shrink-0">
                     <blockquote className="text-sm text-[hsl(var(--dark-text))] mb-3 italic leading-relaxed">
                       "{testimonial.quote}"
