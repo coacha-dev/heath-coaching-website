@@ -11,17 +11,17 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits to holistically approach the complex topics of leadership and value creation. It is interactive, engaging, and thought-provoking, but most of all it is thoroughly enjoyable. This should be mandatory leadership training for all organisations seeking a high-performance culture.",
+      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits to holistically approach the complex topics of leadership and value creation. It is interactive, engaging, and thought-provoking, but most of all it is thoroughly enjoyable.",
       name: "Winnie Lour",
       title: "Head of Business Finance, Asia Pacific ex Japan, Fidelity International"
     },
     {
-      quote: "Luke is an exceptional coach. He has a deep knowledge of business and psychology that equips him to coach on a range of issues. Luke is an excellent sounding board for complex decisions and is genuinely interested in your challenges. I have no hesitation in strongly recommending him to any individual or company.",
+      quote: "Luke is an exceptional coach. He has a deep knowledge of business and psychology that equips him to coach on a range of issues.",
       name: "Ross Davies",
       title: "Sales Director, Deutsche Bank"
     },
     {
-      quote: "Luke has been invaluable as an executive coach to me over many years. He provides an excellent strategic sounding board. He constantly brings unique insights to me as I work through the expected and ongoing challenges as a leader in a large and complex business both locally and globally.",
+      quote: "Luke has been invaluable as an executive coach to me over many years. He provides an excellent strategic sounding board.",
       name: "Jenny Josling",
       title: "Chair, Orbis Australia"
     },
