@@ -20,17 +20,12 @@ export default function Testimonials() {
       title: "Managing Director, Orbis Investments"
     },
     {
-      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits... This should be mandatory leadership training for all organisations seeking a high-performance culture.",
+      quote: "Luke Heath's Triple Intelligence Leadership workshop provides a practical framework with useful toolkits to holistically approach the complex topics of leadership and value creation. It is interactive, engaging, and thought-provoking, but most of all it is thoroughly enjoyable. This should be mandatory leadership training for all organisations seeking a high-performance culture.",
       name: "Winnie Lour",
       title: "Head of Business Finance, Asia Pacific ex Japan, Fidelity International"
     },
     {
-      quote: "[Testimonial content to be added]",
-      name: "Elizabeth Siu",
-      title: "Managing Director, UBS Global Banking"
-    },
-    {
-      quote: "Luke is an exceptional coach... I have no hesitation in strongly recommending him to any individual or company.",
+      quote: "Luke is an exceptional coach. He has a deep knowledge of business and psychology that equips him to coach on a range of issues. Luke is an excellent sounding board for complex decisions and is genuinely interested in your challenges. I have no hesitation in strongly recommending him to any individual or company.",
       name: "Ross Davies",
       title: "Sales Director, Deutsche Bank"
     },
@@ -40,7 +35,7 @@ export default function Testimonials() {
       title: "Head of Investment, Platinum Investment Management"
     },
     {
-      quote: "Luke has been invaluable as an executive coach to me over many years. He provides an excellent strategic sounding board…",
+      quote: "Luke has been invaluable as an executive coach to me over many years. He provides an excellent strategic sounding board. He constantly brings unique insights to me as I work through the expected and ongoing challenges as a leader in a large and complex business both locally and globally.",
       name: "Jenny Josling",
       title: "Chair, Orbis Australia"
     },
