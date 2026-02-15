@@ -3,14 +3,18 @@ import TestimonialCard from "@/components/testimonial-card";
 
 export default function Testimonials() {
   const companies = [
-    "ABC Bullion", "Accenture", "Allan Gray", "ANZ", "ARC", "AT Kearney", 
-    "Australian Treasury", "Baptcare", "Bloomberg", "BNP Paribas", "BOQ", 
-    "CareerSeekers", "CareerTrackers", "CBA", "Centrepoint Alliance", "Chancellor", 
-    "Citigroup", "Cloudwerx", "COX Architecture", "Cox Automotive", "Credit Suisse", 
-    "Crestone", "CVC", "Deloitte", "Deutsche Bank", "EY", "Fidelity International", 
-    "GBA Capital", "GoGet", "Goldman Sachs", "IBA", "Investec", "Jack Morton Worldwide", 
-    "JBWere", "JP Morgan", "ListedReserve", "Lloyds Bank", "Macquarie Bank", 
-    "NAB", "Nissan", "Nomura", "Orbis", "Pallion", "Platinum Asset Management"
+    "ABC Bullion", "Accenture", "Allan Gray", "Amazon", "ANZ", "ARC", "AT Kearney",
+    "Australian Treasury", "Australian Ethical Investments", "Baptcare", "Bloomberg",
+    "BNP Paribas", "BOQ", "CareerSeekers", "CareerTrackers", "CBA", "Centrepoint Alliance",
+    "Chancellor", "Citigroup", "Cloudwerx", "Commonwealth Treasury", "COX Architecture",
+    "Cox Automotive", "Credit Suisse", "Crestone", "CVC", "Deloitte", "Deutsche Bank",
+    "EY", "Fidelity International", "GBA Capital", "GoGet", "Goldman Sachs", "IBA",
+    "Igneo Infrastructure Partners", "Investec", "Jack Morton Worldwide", "JBWere",
+    "JP Morgan", "ListedReserve", "Lloyds Bank", "Macquarie Bank", "Magellan", "NAB",
+    "Nissan", "Nomura", "NSW Parliamentary Services", "Orbis", "Orica", "Pallion",
+    "PAYCE", "Platinum", "Principal Investments", "Queensland Treasury Corporation",
+    "RedR", "RMG", "Societe Generale", "South Sydney RLFC", "UBS", "Westpac",
+    "Whiddon", "Wood Group"
   ];
 
   const clientTestimonials = [
